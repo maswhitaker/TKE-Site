@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display|Play' rel='stylesheet' type='text/css'>
     <title>TKE site</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
@@ -22,15 +23,1051 @@
     <!-- endbuild -->
   </head>
   <body>
+    <div class="container"></div>
+
+    <script src="text/template" id="startup-template">
     <header>
       <img id="letters" src="images/tke-letters.svg">
       <img id="logo" src="images/TKE-Logo4.svg">
       <div id="startup-screen">
         <h1>Enter Site</h1>
-        <a href="#/undergraduate"><button>Undergraduate</button></a>
+        <a href="#/undergraduates"><button>Undergraduate</button></a>
         <a href="#/alumni"><button>Alumni</button></a>
       </div>
     </header>
+    </script>
+
+    <script src="text/template" id="undergraduates-template">
+    <header>
+      <img id="letters2" src="images/tke-letters.svg">
+      <img id="logo2" src="images/TKE-Logo4.svg">
+      <nav>
+        <ul>
+          <li><a href="#/undergraduates">Home</a></li>
+          <li><a href="#/undergraduates/information">Information</a></li>
+          <li><a href="#/undergraduates/contact">Contact</a></li>
+          <li><a href="alumni">Alumni</a></li>
+          <li><a href="http://www.tkegear.com/">Shop</a></li>
+        </ul>
+      </nav>
+    </header>
+    </script>
+
+    <script src="text/template" id="information-template">
+    <header>
+      <img id="letters2" src="images/tke-letters.svg">
+      <img id="logo2" src="images/TKE-logo4.svg">
+      <nav>
+        <ul>
+          <li><a href="#/undergraduates">Home</a></li>
+          <li><a href="#/undergraduates/information">Information</a></li>
+          <li><a href="#/undergraduates/contact">Contact</a></li>
+          <li><a href="#/alumni">Alumni</a></li>
+          <li><a href="http://www.tkegear.com/">Shop</a></li>
+        </ul>
+      </nav>
+    </header>
+    <aside>
+      <h1>Information Directory</h1>
+      <nav>
+        <li><a href="#/undergraduates/information/scrolls">Scrolls</a></li>
+        <li><a href="#/undergraduates/information/active-member">Active Members</a></li>
+        <li><a href="#/undergraduates/information/awards">Awards</a></li>
+        <li><a href="#/undergraduates/information/history">History and Tradition</a></li>
+        <li><a href="#/undergraduates/information/photos">Photos</a></li>
+        <li><a href="#/undergraduates/information/officers">Officers</a></li>
+      </nav>
+    </aside>
+    </script>
+
+    <script src="text/template" id="scrolls-template">
+    <header>
+      <img id="letters2" src="images/tke-letters.svg">
+      <img id="logo2" src="images/TKE-logo4.svg">
+      <nav>
+        <ul>
+          <li><a href="#/undergraduates">Home</a></li>
+          <li><a href="#/undergraduates/information">Information</a></li>
+          <li><a href="#/undergraduates/contact">Contact</a></li>
+          <li><a href="#/alumni">Alumni</a></li>
+          <li><a href="http://www.tkegear.com/">Shop</a></li>
+        </ul>
+      </nav>
+    </header>
+    <aside>
+      <h1>Information Directory</h1>
+      <nav>
+        <li><a href="#/undergraduates/information/scrolls">Scrolls</a></li>
+        <li><a href="#/undergraduates/information/active-member">Active Members</a></li>
+        <li><a href="#/undergraduates/information/awards">Awards</a></li>
+        <li><a href="#/undergraduates/information/history">History and Tradition</a></li>
+        <li><a href="#/undergraduates/information/photos">Photos</a></li>
+        <li><a href="#/undergraduates/information/officers">Officers</a></li>
+      </nav>
+    </aside>
+    <section class="scroll-div">
+      <h1>Scroll Information</h1>
+      1	James H. Dobbins<br/>
+      2	Kenneth G. Reece<br/>
+      3	Buell F. Bailey<br/>
+      4	John G. Long<br/>
+      5	William R. Sain<br/>
+      6	Raymond W. Browning, Jr.<br/>
+      7	Robert H. Stowe, III<br/>
+      8	Arnold B. Lovell<br/>
+      9	Fred H. Bumgardner, Jr.<br/>
+      10	Stokes M. Craver<br/>
+      11	Ricky O. Harvey<br/>
+      12	Roy L. Huffstetler, Jr.<br/>
+      13	Gerry B. Lookabill<br/>
+      14	Michael C. Pickett<br/>
+      15	Allen P. Speer, III<br/>
+      16	Larry W. Austell<br/>
+      17	Robert E. Bush, Jr.<br/>
+      18	Paul R. Callanan<br/>
+      19	Randall K. Duncan<br/>
+      20	B. Michael Penn<br/>
+      21	Jimmy S. Sappenfield<br/>
+      22	John E. Bovender<br/>
+      23	William D. Revelle, Jr.<br/>
+      24	Carl E. Sessoms, Jr.<br/>
+      25	Phillip P. Hawkins<br/>
+      26	L. Scott Qualls<br/>
+      27	Michael P. Snell<br/>
+      28	James S. Boggs<br/>
+      29	Christopher L. Yow<br/>
+      30	Barry L. Bryant<br/>
+      31	Steven C. Corell<br/>
+      32	Timothy A. Cox<br/>
+      33	Arthur J. Hedden<br/>
+      34	Lawrence A. Laughridge<br/>
+      35	Timothy A. Wolfe<br/>
+      36	Roy L. Moore<br/>
+      37	Richard H. Wilson<br/>
+      38	Malcolm W. Carroll<br/>
+      39	Archie D. Gregory<br/>
+      40	Robert D. Twitchell<br/>
+      41	Deberry H. Blackwelder<br/>
+      42	David M. Boone<br/>
+      43	David W. Bryant<br/>
+      44	Mark A. Bumgarner<br/>
+      45	Nick P. Cline<br/>
+      46	Roger W. Davis<br/>
+      47	William H. Freeze<br/>
+      48	C. Bart Lassiter<br/>
+      49	Frank E. Roofe, III<br/>
+      50	David H. Smith<br/>
+      51	Samuel E. Swain<br/>
+      52	Kenneth G. Welborn<br/>
+      53	William G. Fisher<br/>
+      54	Tommy V. McMahan<br/>
+      55	Ronald G. McGinn<br/>
+      56	Joseph B. Craver<br/>
+      57	Robert H. West<br/>
+      58	Tod G. Allen<br/>
+      59	Fred O. Dellinger, Jr.<br/>
+      60	Richard W. Fanning<br/>
+      61	James N. Tate<br/>
+      62	James B. Allen<br/>
+      63	James C. Harris<br/>
+      64	William H. Ingram<br/>
+      65	D. Kenneth Saine<br/>
+      66	William D. Boggs<br/>
+      67	Alan H. Carter<br/>
+      68	Hugh T. Beaver<br/>
+      69	Dennis C. Hill<br/>
+      70	Timothy W. Stout<br/>
+      71	David A. Womble, Jr.<br/>
+      72	Gregory J. Hughlett<br/>
+      73	Gerald L. Jenkins<br/>
+      74	Julian F. Lamm, Jr.<br/>
+      75	Robert P. Smyre<br/>
+      76	William D. Todd, Jr.<br/>
+      77	Ray M. Farrell, Jr.<br/>
+      78	Stanley C. Bracey<br/>
+      79	Raleigh W. Hartman, Jr.<br/>
+      80	Dennis G. Hefner<br/>
+      81	Larry R. Moore<br/>
+      82	Kevin L. Culler<br/>
+      83	Reginald E. Gabriel, Jr.<br/>
+      84	Alfred L. Klingenschmidt<br/>
+      85	Gary E. Scott<br/>
+      86	Matthew P. Turner<br/>
+      87	Kenneth A. Gatlin<br/>
+      88	Randy L. Gillespie<br/>
+      89	Robert R. Harkrader, III<br/>
+      90	Richard K. Paisley<br/>
+      91	William L. Reece<br/>
+      92	Michael G. Johnson<br/>
+      93	William A. Cameron, Jr.<br/>
+      94	Charles A. McDougal, Jr.<br/>
+      95	Joseph M. Glovier<br/>
+      96	Dale R. Hubbard<br/>
+      97	Albert W. Owen, Jr.<br/>
+      98	Ed Adams<br/>
+      99	Randell E. McCaslin<br/>
+      100	Dan T. Davis<br/>
+      101	Michael R. Inman<br/>
+      102	Ronald H. Poe<br/>
+      103	Thomas C. McDade<br/>
+      104	Mark P. Frye<br/>
+      105	Jerry L. Ihme<br/>
+      106	Mark R. Johnson<br/>
+      107	W. Michael Thomas<br/>
+      108	H. Leon Hill, Jr.<br/>
+      109	Tony W. McKinnon<br/>
+      110	Hal W. Rogers<br/>
+      111	Michael T. Spain<br/>
+      112	Steven D. Abernathy<br/>
+      113	Scott S. Dallas<br/>
+      114	Lewis W. Freeze<br/>
+      115	Stephen C. Knupp<br/>
+      116	Charles M. Mishoe<br/>
+      117	Carl E. Powell, Jr.<br/>
+      118	Robert L. Query<br/>
+      119	Fred L. Brown<br/>
+      120	Christopher L. Christopher<br/>
+      121	Steven T. McCarn<br/>
+      122	David K. Everett<br/>
+      123	J. Lynn Silver<br/>
+      124	Tony L. Abernathy<br/>
+      125	Michael L. Deese<br/>
+      126	Joseph L. Hobson<br/>
+      127	Scott Lassiter<br/>
+      128	Steven L. Archer<br/>
+      129	Robert L. Dayton, Jr.<br/>
+      130	Jeffrey L. Bradley<br/>
+      131	John C. Johnston<br/>
+      132	William M. Buckner<br/>
+      133	Douglas L. Frye<br/>
+      134	Dennis B. Lyons<br/>
+      135	Thomas E. Fanning<br/>
+      136	Gary D. Israel<br/>
+      137	Robby M. Lamb<br/>
+      138	James A. Lybrand, III<br/>
+      139	Edward H. Owen<br/>
+      140	James W. Ferrell<br/>
+      141	Michael J. Greene<br/>
+      142	John Wilson Howerton<br/>
+      143	Bruce S. Solomon<br/>
+      144	Jackie R. Wilkerson, Jr.<br/>
+      145	John D. Allison<br/>
+      146	Hilton K. Eades, Jr.<br/>
+      147	Victor L. Horne<br/>
+      148	Mark C. Montgomery<br/>
+      149	Carlton R. Parker, III<br/>
+      150	Lincoln B. Scott<br/>
+      151	Ronald N. Warren<br/>
+      152	Morris D. Davis, Jr.<br/>
+      153	Frank V. Hill<br/>
+      154	James D. Perry<br/>
+      155	Richard M. Spell, Jr.<br/>
+      156	Dale M. Abernathy<br/>
+      157	Steven H. Pate<br/>
+      158	Robert K. Triplett<br/>
+      159	Edward Ford, Jr.<br/>
+      160	James B. Smith<br/>
+      161	Robert E. Yarber<br/>
+      162	Bobby K. Kerley<br/>
+      163	Rusty Nordahl<br/>
+      164	John W. Parsons<br/>
+      165	Ronald C. Lassiter<br/>
+      166	Gary G. Womack<br/>
+      167	Robert E. Barber<br/>
+      168	Patrick W. Campbell<br/>
+      169	Richard B. Slaten<br/>
+      170	David D. Smith<br/>
+      171	Roy R. Throneburg<br/>
+      172	Allan M. Berry<br/>
+      173	Richard R. Campbell, II<br/>
+      174	William J. Young, Jr.<br/>
+      175	Bradley C. Wilkinson<br/>
+      176	Keith L. Boone<br/>
+      177	Gordon A. Solomon<br/>
+      178	Derek Stafford<br/>
+      179	Brett Hayes<br/>
+      180	Harry J. King, Jr.<br/>
+      181	Dion B. Ousley<br/>
+      182	Michael J. Smith<br/>
+      183	Tod S. Harris<br/>
+      184	Jeffrey A. Heybrock<br/>
+      185	Craig Jonkers<br/>
+      186	Richard R. King<br/>
+      187	Anthony S. Loftin<br/>
+      188	J. Corby Johnson, Jr.<br/>
+      189	David K. Dollar<br/>
+      190	Kerry A. Rice<br/>
+      191	Jeffrey E. Trull<br/>
+      192	Eric D. Collins<br/>
+      193	Moody L. Chisholm, Jr<br/>
+      194	Gregory E. Eldridge<br/>
+      195	William B. West<br/>
+      196	James W. Bridges, II<br/>
+      197	Victor Lee McCaskill<br/>
+      198	Alan F. Burke<br/>
+      199	Ross M. Lewis<br/>
+      200	Parker Mills<br/>
+      201	Jonathan W. Phillips<br/>
+      202	Warren L. Ross<br/>
+      203	Dennis E. Sink<br/>
+      204	Marc D. Watson<br/>
+      205	Thomas R. White<br/>
+      206	Jackie B. Yates, Jr.<br/>
+      207	Bryan K. Ensley<br/>
+      208	Jeff Hawthorne<br/>
+      209	Bryan R. Hoots<br/>
+      210	Mitch Laney<br/>
+      211	Timothy P. Brown<br/>
+      212	Henry J. Bryant, Jr.<br/>
+      213	Franklin M. Carter, III<br/>
+      214	Michael G. Myers<br/>
+      215	Timothy R. Lassiter<br/>
+      216	James A. Deese<br/>
+      217	Max H. Garner, Jr.<br/>
+      218	Douglas C. Walker<br/>
+      219	Gary Barber<br/>
+      220	Kenneth B. Leach<br/>
+      221	Peter B. Nachand<br/>
+      222	Mark P. Severa<br/>
+      223	Robert K. Smith<br/>
+      224	Alan K. Wood<br/>
+      225	Scott B. Clay<br/>
+      226	Kenneth E. Furr<br/>
+      227	Mason C. Venable<br/>
+      228	Kelly B. Welch<br/>
+      229	Frederick P. Spach, Jr.<br/>
+      230	David A. Stone<br/>
+      231	Richard D. Fowler<br/>
+      232	Charles H. Arnett, Jr.<br/>
+      233	Carl N. Blue<br/>
+      234	Graham L. Peters<br/>
+      235	Franklin H. Brown<br/>
+      236	Mark D. Beckham<br/>
+      237	Vander G. Chilton<br/>
+      238	Robert E. Alford<br/>
+      239	Keith G. Van-Asch<br/>
+      240	Brian A. Smith<br/>
+      241	Robert M. Moore<br/>
+      242	Jeffrey H. Holden<br/>
+      243	Scott M. Simpson<br/>
+      244	Lane Bailey<br/>
+      245	Mark C. Hall<br/>
+      246	Keith U. Morhard<br/>
+      247	David W. Carleton<br/>
+      248	William M. Spake, III<br/>
+      249	Gary L. Crumpler<br/>
+      250	Gerry L. Martin<br/>
+      251	Kevin O. Mulholland<br/>
+      252	James O. Sizemore, III<br/>
+      253	Jose R. Olivas<br/>
+      254	Woody Y. Cain<br/>
+      255	John E. Zimmerman, III<br/>
+      256	Vincent C. Barnes<br/>
+      257	Jonathan T. Batchelor<br/>
+      258	Derek Alan Hooper<br/>
+      259	Philip M. Henderson<br/>
+      260	Robert M. Cheves, Jr.<br/>
+      261	Robert T. Young, II<br/>
+      262	Robert B. Stroud<br/>
+      263	Steve Henley<br/>
+      264	Matt Farel<br/>
+      265	Craig P. Coe<br/>
+      266	Robert T. Isaacson<br/>
+      267	Richard T. Biddy<br/>
+      268	Robert G. Nesbit<br/>
+      269	William G. Parsons<br/>
+      270	Michael P. Sollecito<br/>
+      271	J. Kirk Matheson<br/>
+      272	Jeffrey S. Hodge<br/>
+      273	Brett J. Dowling<br/>
+      274	John A. Ambrose<br/>
+      275	Jonathan A. Walker<br/>
+      276	Gordon L. Goodman<br/>
+      277	George G. Carras, Jr.<br/>
+      278	David W. Linthicum<br/>
+      279	Arnold B. Christie<br/>
+      280	E. Rhyne Cannon, III<br/>
+      281	Jeff L. Rollins<br/>
+      282	Michael Moncure<br/>
+      283	David L. Lamm<br/>
+      284	Paul R. Beezley<br/>
+      285	L. Wendell Collins<br/>
+      286	Martin R. Teems<br/>
+      287	Thomas A. Dawson<br/>
+      288	Michael C. Baker<br/>
+      289	Wayne F. Saraphis<br/>
+      290	Sean D. Moore<br/>
+      291	Wade H. Ison, IV<br/>
+      292	Warren Zweig<br/>
+      293	Wade M. Hobson, Jr.<br/>
+      294	Eric G. Dishman<br/>
+      295	Richard J. Cunane<br/>
+      296	Terry M. Peterson<br/>
+      297	Michael J. Rook<br/>
+      298	Gregory A. Jones<br/>
+      299	John J. Taylor<br/>
+      300	Bradley W. Durrett<br/>
+      301	Alan B. Ross<br/>
+      303	Gerald S. Jonkers<br/>
+      304	John R. Folger<br/>
+      305	Christopher W. Howell<br/>
+      306	John J. Driscoll<br/>
+      307	Richard D. Buter<br/>
+      308	Ken C. Hammond<br/>
+      309	Robert O. Mock<br/>
+      310	Ed O. Jones<br/>
+      311	Scott D. Smith<br/>
+      312	William F. Barrineau, III<br/>
+      313	R. Steve Shiver<br/>
+      314	John D. Matheson<br/>
+      315	Michael K. Phillips<br/>
+      316	David Clements<br/>
+      317	Greg Scott Gentry<br/>
+      318	Matthew Loucks<br/>
+      319	Timothy W. Goetchius<br/>
+      320	Armin R. Brach<br/>
+      321	Jeffrey T. Weber<br/>
+      322	Steven L. Fain<br/>
+      324	David L. McInnis<br/>
+      325	David J. Murphy<br/>
+      327	Michael J. Miller<br/>
+      328	Thomas D. McBrayer, Jr.<br/>
+      329	Marvin Hockaday<br/>
+      330	Randy P. Wulff<br/>
+      331	Mark M. Moser<br/>
+      332	Joseph C. Parkhurst<br/>
+      333	L. Kent Rhoney, Jr.<br/>
+      334	James M. Bradford, Jr.<br/>
+      335	Neal K. Wright<br/>
+      336	Charles J. Fletcher<br/>
+      337	Patrick D. Rook<br/>
+      339	Gregory S. McLamb<br/>
+      340	Robert U. McManus<br/>
+      341	Caleb Smith<br/>
+      342	Mark R. Ledford<br/>
+      343	Samuel D. Mizelle, II<br/>
+      344	Robert L. Chew, IV<br/>
+      346	John C. Petrey<br/>
+      347	David R. Blackburn<br/>
+      348	David L. Phillips<br/>
+      350	David J. Perry<br/>
+      351	Jeffrey T. Triplett<br/>
+      353	Milton B. Villemagne, III<br/>
+      355	Michael J. Brandsma<br/>
+      356	Michael J. Ruggles<br/>
+      357	Christopher M. Supple<br/>
+      360	Matthew D. Salters<br/>
+      361	Robert E. Bostic, Jr.<br/>
+      362	Jason S. Triplett<br/>
+      363	S. Craig McCallister, CFC<br/>
+      364	Steven E. Henson, Jr.<br/>
+      365	James R. Matthews, Jr.<br/>
+      366	Ryan L. Kelley<br/>
+      369	John L. Jacob<br/>
+      371	Amos F. Dean<br/>
+      373	Henry A. Siler<br/>
+      374	Christopher C. Herbst<br/>
+      375	Michael B. Fuller<br/>
+      376	Tom A. Thompson<br/>
+      377	Mark E. Courtney<br/>
+      378	John J. OConnor<br/>
+      379	Norman D. Herold<br/>
+      380	Cline R. Pyatt<br/>
+      381	Jonathan N. Griner<br/>
+      382	Marvin E. Collins, III<br/>
+      383	Christopher L. Coble<br/>
+      384	Dallis A. Tucker<br/>
+      385	Kevin K. Lynch<br/>
+      386	Steven T. McReynolds<br/>
+      387	Daniel J. Dudek<br/>
+      388	Marshall G. Bockoven<br/>
+      389	Larry P. Bytnar<br/>
+      390	Ronald A. Seils<br/>
+      391	Christopher S. Eller<br/>
+      392	Ronald D. Jester, Jr.<br/>
+      393	Brian J. Philips<br/>
+      394	Kirk W. Page<br/>
+      395	Robert D. Ransom<br/>
+      396	Mark A. Pucylowski<br/>
+      397	John E. Shore<br/>
+      398	Matthew D. Hemphill<br/>
+      399	Alexander R. Perry<br/>
+      400	Randall S. Marin<br/>
+      401	Jason L. Leonhardt<br/>
+      402	Stephan J. Hightower<br/>
+      403	John V. Bays<br/>
+      404	John R. McCray<br/>
+      405	Phillip B. Hunter<br/>
+      406	Khan E. Schwanhausser<br/>
+      407	Michael W. Crutchfield<br/>
+      408	John W. Stone, IV<br/>
+      409	Michael J. Ellington<br/>
+      410	William R. Adams<br/>
+      411	Robert T. Lamb<br/>
+      412	Terry M. Hernon<br/>
+      413	Christopher T. Greene<br/>
+      414	Richard S. Blackwelder<br/>
+      415	Wesley S. Madison, Jr.<br/>
+      416	Darin D. Sloop<br/>
+      417	Eric I. Burke<br/>
+      418	Christopher A. Gill<br/>
+      419	Kevin W. Zeller<br/>
+      420	Jason C. Newman<br/>
+      421	Peter Brennan<br/>
+      422	Glenn T. Blackman<br/>
+      423	Jason C. Moore<br/>
+      424	Jason J. Shell<br/>
+      425	Raymond J. Perry, Jr.<br/>
+      426	Christopher M. Woodward<br/>
+      427	Jeffrey W. Hall, Jr.<br/>
+      428	Vernon B. Koonts<br/>
+      429	Leonard R. Williams<br/>
+      430	Kirk L. Schultz<br/>
+      431	David S. Davenport<br/>
+      432	Oliver B. Johnson<br/>
+      433	Lance T. Lovins<br/>
+      434	Brannon S. Raines<br/>
+      435	Jeffrey A. Newcomer<br/>
+      436	James R. Price, Jr.<br/>
+      437	Peter P. Watkins<br/>
+      438	David T. Powers<br/>
+      439	Christopher T. Caggiano<br/>
+      440	Justin C. Cort<br/>
+      441	James D. Goodrich<br/>
+      442	Philip T. Elmore, USNR<br/>
+      443	Thomas S. Riley<br/>
+      444	Gregory G. Marks<br/>
+      445	Brian E. Wilkins<br/>
+      446	David E. Beirne<br/>
+      447	Jeffrey R. Eissinger<br/>
+      448	David E. Bounds<br/>
+      449	Robert C. T. Childs<br/>
+      450	J.Todd Gilley<br/>
+      451	David B. Reese<br/>
+      452	Kelvin N. Owen<br/>
+      453	William E. Bridges<br/>
+      454	Joshua D. Mead<br/>
+      455	Mason L. Reuter<br/>
+      456	John N. Kepple, IV<br/>
+      457	Brad C. Boughton<br/>
+      458	Jens D. Lyndrup<br/>
+      459	William Reuter, Sr.<br/>
+      461	Donald W. Knop, II<br/>
+      462	Christopher D. Glasgow<br/>
+      464	Joshua W. Eaton<br/>
+      465	Anthony R. Abeyounis<br/>
+      466	Matthew J. Oljeski<br/>
+      467	Matthew D. McNay<br/>
+      468	Robert E. Drury<br/>
+      469	Reuben J. Moretz<br/>
+      470	Kenneth D. Lisenbe<br/>
+      471	Christopher L. Wiltshire<br/>
+      472	Jason R. Stone<br/>
+      473	Erik K. Tavcar<br/>
+      474	Ryan D. Hansing<br/>
+      475	Ryan P. Beede<br/>
+      476	Richard R. Rodriguez<br/>
+      477	Ian L. Thieme<br/>
+      478	Daniel L. Stewart<br/>
+      480	Michael D. Proies<br/>
+      481	Mark F. Proies<br/>
+      482	Scott H. Mieras<br/>
+      483	Henry D. Stephens<br/>
+      484	David E. Morris<br/>
+      485	Grant D. Campbell<br/>
+      486	Robert A. Steele<br/>
+      487	James F. Baker, III<br/>
+      488	Leo McKenzie, III<br/>
+      489	Ernest B. Blaskey<br/>
+      490	Edward B. Harrell<br/>
+      491	Toby L. Chappell<br/>
+      492	Robert E. Linquist, II<br/>
+      493	Brian M. Hefner<br/>
+      494	Kazimere G. Romanczyk, Jr.<br/>
+      496	Andrew J. Chance<br/>
+      497	David W. Cornwell<br/>
+      498	Ryan T. Elrod<br/>
+      500	Michael A. Faurote<br/>
+      501	Raymond A. Smith, III<br/>
+      502	Michael P. Shumake<br/>
+      503	Derrick W. Cline<br/>
+      504	Benjamin P. Barnes<br/>
+      505	Scott P. Howard<br/>
+      506	Mark E. Jones<br/>
+      507	Stephen B. Cole<br/>
+      508	John A. Broome<br/>
+      509	Joseph S. Hourigan<br/>
+      510	William E. Boda<br/>
+      511	Owen G. Huff<br/>
+      512	Brett M. Livengood<br/>
+      513	Jay D. Carothers<br/>
+      515	Michael R. Kelley<br/>
+      516	Clifton D. Gauldin<br/>
+      517	Justin B. Bunting<br/>
+      520	Collin R. McCloy<br/>
+      521	Jason D. Riggs<br/>
+      522	Donovan D. Dockrill<br/>
+      523	Jeremy D. Hinton<br/>
+      524	Spencer R. Hutton<br/>
+      529	Brian A. Gaertner<br/>
+      530	Robert S. Martin, Jr.<br/>
+      531	Jed A. Woodcock<br/>
+      533	Christopher G. Neilson<br/>
+      534	David J. Woodle<br/>
+      535	Joshua T. Collins<br/>
+      536	Jonathan A. Hussey<br/>
+      537	Kim D. Adams, Jr.<br/>
+      538	Steven C. Wright<br/>
+      539	Michael Vetr,o Jr.<br/>
+      541	Casey Pope<br/>
+      542	Jayson J. Whiteside<br/>
+      543	Jeffrey A. Kresha<br/>
+      544	Jody C. Corum<br/>
+      545	Jason M. Hemphill<br/>
+      546	Jeffrey A. Brown<br/>
+      547	Steven M. Vincent, Jr.<br/>
+      548	Robert L. Watson, III<br/>
+      549	Michael B. Fiebernitz<br/>
+      550	Jonathan H. Phillips<br/>
+      551	Robert Z. Hubbard<br/>
+      552	Joseph W. Cullom, Jr.<br/>
+      554	Robert J. White, Jr.<br/>
+      555	Karl S. Hermann<br/>
+      556	David R. Phillips<br/>
+      558	Darius U. Duong<br/>
+      560	Matthew J. Lindsay<br/>
+      561	Phillip Parsons<br/>
+      562	Timothy J. Maness<br/>
+      563	Kurt W. Woodlief<br/>
+      564	William E. Huck<br/>
+      565	Jonathan L. Revill<br/>
+      566	Matthew G. Daigle<br/>
+      567	Scott W. Keller<br/>
+      568	Ryan G. Berliner<br/>
+      569	Thomas A. Harless<br/>
+      570	Joseph A. Kline<br/>
+      571	Andrew A. Weinkle<br/>
+      572	Craig R. Herlong<br/>
+      573	Matthew R. Brooks<br/>
+      574	Jamey Messick<br/>
+      575	Ryan K. Wagner<br/>
+      576	Brandon E. Plyler<br/>
+      577	James A. LaCroix<br/>
+      579	Matt Bethel<br/>
+      580	Nicholas Wadkins<br/>
+      581	Joey Fortner<br/>
+      582	David Brooks<br/>
+      583	Josh Snell<br/>
+      585	Carroll R. Smith, III<br/>
+      585	Jason Moore<br/>
+      586	Charles Foxx<br/>
+      587	Jimmy Pendergraph<br/>
+      588	James Carter<br/>
+      589	Justin Black<br/>
+      590	Joseph L. Clemmer<br/>
+      591	Patrick Hannon<br/>
+      592	Hunt Willis<br/>
+      593	Zack Gilmore<br/>
+      594	Adam Wiley<br/>
+      595	Lee Boswell<br/>
+      596	Erik Sommers<br/>
+      597	Ryan Eller<br/>
+      598	Josh Smith<br/>
+      599	David Peck<br/>
+      600	Dario Icardi<br/>
+      601	Nicholas McCoy<br/>
+      602	Tracy Keller<br/>
+      603	Daniel Baum<br/>
+      604	Jonathan Rodda<br/>
+      605	Jeff Earles<br/>
+      606	Greg Keys<br/>
+      608	Ross Yates<br/>
+      609	J. Daniel Lawson<br/>
+      610	Nick Farmer<br/>
+      611	Matthew Carter<br/>
+      612	Sean Ostmann<br/>
+      617	John Michael Moore<br/>
+      619	Christopher Goff<br/>
+      620	Christopher McLennan<br/>
+      621	Darren Caputo<br/>
+      622	Christopher Burke<br/>
+      623	Anthony DeRiso, III<br/>
+      626	William Miller<br/>
+      627	Jonathan Parent<br/>
+      628	John Liberto<br/>
+      629	Jacob Rutherford<br/>
+      630	Matt Brown<br/>
+      631	David Tate<br/>
+      632	Zach McCarter<br/>
+      633	Alex Newton<br/>
+      634	Joseph Moran<br/>
+      635	Douglass Herre<br/>
+      637	Jared D. Masker<br/>
+      638	Chris Ollenburg<br/>
+      639	Jason Mills<br/>
+      640	Jimmy Ingold<br/>
+      641	Christopher Franklin<br/>
+      642	Justin Horton<br/>
+      644	Shawn Dowdee<br/>
+      645	James Brooks<br/>
+      646	Cory Powers<br/>
+      646	Woodrow Carter<br/>
+      647	Steven A. Allison<br/>
+      648	Shane Lewis<br/>
+      650	Eric Friedman<br/>
+      651	Scotty Smith<br/>
+      652	Brennon Mills<br/>
+      653	Kevin Mark Bowes<br/>
+      663	Christopher Amodeo<br/>
+      669	Lawrence Kovalcin<br/>
+      682	Brandon Hard<br/>
+      685	Henry Royal<br/>
+      688	Jackson B. Lever<br/>
+      692	Addison Moore<br/>
+      693	Charlie Hinkle<br/>
+      694	Charles Armentrout<br/>
+      696	Phillip Myers<br/>
+      698	Benjamin A. Combs<br/>
+      701	Joshua D. Bolick<br/>
+      702	Omar Frias<br/>
+      706	Kyle Taylor<br/>
+      707	Brody Littley<br/>
+      709	Hilton Wood<br/>
+      710	Michael Newell<br/>
+      712	Ross Krieg<br/>
+      713	Andrew Gibson<br/>
+      714	Tyler DeBusk<br/>
+      715	Jake Borower<br/>
+      717	Edward Copeland<br/>
+      718	Brandon J. Clement<br/>
+      719	Ryan Klinkicht<br/>
+      720	Alexander Cuthbertson<br/>
+      721	Sean Record<br/>
+      722	Nick Wrinn<br/>
+      723	Kerry Mylett<br/>
+      724	John Scott-Martin<br/>
+      725	Devon Ferguson<br/>
+      726	Christopher Waddell<br/>
+      727	Jake Burton<br/>
+      729	Ryan Winn<br/>
+      730	Kevin Cunningham<br/>
+      731	Taylor Pavlick<br/>
+      732	Bradley Scammon<br/>
+      734	Joshua Coffey<br/>
+      735	Charles F. Kiser<br/>
+      736	Forrest Howard<br/>
+      737	Angelo Acitelli<br/>
+      738	Joseph Colucci<br/>
+      739	Kenneth Grayson<br/>
+      740	Alexander Bounds<br/>
+      741	Joshua Mabellos<br/>
+      742	Johnnie Mattson<br/>
+      743	Jason Kirschner<br/>
+      744	Parker Haake<br/>
+      745	Andrew Hudson<br/>
+      746	Trey Lawson<br/>
+      747	Philip Williams<br/>
+      748	Michael Yonkovig<br/>
+      749	Nicholas Barnas<br/>
+      750	Bryan Hughes<br/>
+      751	Dax Benfield<br/>
+      752	Alex Ravan<br/>
+      753	Austin Morgan<br/>
+      754	Ronald Cox<br/>
+      755	Tucker Chason<br/>
+      756	Aaron Martschenko<br/>
+      757	Jordan Thomas<br/>
+      758	Jordan Roberts<br/>
+      759	Grey Curtis<br/>
+      760	Daniel Cooper<br/>
+      761	Austin Shaw<br/>
+      762	Brian Cade<br/>
+      763	Mitchell Tomlinson<br/>
+      764	Wiley Foil<br/>
+      765	William Pace<br/>
+      766	Nick Lavella<br/>
+      767	Christopher Dinh<br/>
+      768	Richard Runde<br/>
+      769	Willan Charles<br/>
+      770	Joshua Bazemore<br/>
+      771	Matt Stockton<br/>
+      772	Garrett Parsons<br/>
+      773	Garrison Wagoner<br/>
+      774	Luke Elliot<br/>
+      775	Charles Plummer<br/>
+      776	William Abee<br/>
+      777	Michael Sheaffer<br/>
+      778	Isaac White<br/>
+      778	Marshall Sizemore<br/>
+      0	Ian Mullins<br/>
+      0	Xavier Baez<br/>
+      0	Maxwell Reynolds<br/>
+      0	Cesar A Velando<br/>
+      0	Connor Holland<br/>
+      0	Gregory B. Smith<br/>
+      0	Harvey Degree<br/>
+      0	James Dionne<br/>
+      0	Joseph Church<br/>
+      0	Andrew Birdwell<br/>
+      0	Chad DeHartchuck<br/>
+      0	Mitchell Treaster<br/>
+      0	Kyle OHara<br/>
+      0	Kalan Pegg<br/>
+      0	Kevin Indenbaum<br/>
+      0	Jack Pridgen<br/>
+      0	Daniel Taylor<br/>
+      0	Edward Black<br/>
+      0	Matthew D. Pigg<br/>
+      0	David Monroe<br/>
+      0	Scott A. Rogers<br/>
+      0	Bryan Breidenbach<br/>
+      0	James R. Horton<br/>
+      0	Donald G. McLennan, Jr.<br/>
+      0	Spencer Price<br/>
+      0	Christopher Zaluski<br/>
+      0	Alexander Witten<br/>
+      0	Adam B. Adcock<br/>
+      0	Marshall Costner<br/>
+      0	Adam Whitehead<br/>
+      0	Sidney Cecil<br/>
+      0	Jamie Hannen<br/>
+      0	Michael Young<br/>
+      0	Adam Clayton<br/>
+      0	Daniel Sawyers<br/>
+      0	Josh Brittenham<br/>
+      0	Timothy Fitts<br/>
+      0	Joel Levi Altman<br/>
+      0	Charles Norton, Jr<br/>
+      0	Carlton Campbell<br/>
+      0	Chris McNeilus<br/>
+      0	Johnathan Raby<br/>
+      0	David Peace<br/>
+      0	Lee Stevens<br/>
+       	Kevin Turner<br/>
+       	Travis Benfield<br/>
+       	Destin Hall<br/>
+       	Mason C. Wagoner<br/>
+       	George Wasif<br/>
+       	Patrick Campbell<br/>
+       	Brian Starnes<br/>
+       	Evan Morse<br/>
+       	Daniel Mylett<br/>
+       	Patrick Mylett<br/>
+       	Jason Corday<br/>
+    </section>
+    </script>
+
+    <script src="text/template" id="activemember-template">
+    <header>
+      <img id="letters2" src="images/tke-letters.svg">
+      <img id="logo2" src="images/TKE-logo4.svg">
+      <nav>
+        <ul>
+          <li><a href="#/undergraduates">Home</a></li>
+          <li><a href="#/undergraduates/information">Information</a></li>
+          <li><a href="#/undergraduates/contact">Contact</a></li>
+          <li><a href="#/alumni">Alumni</a></li>
+          <li><a href="http://www.tkegear.com/">Shop</a></li>
+        </ul>
+      </nav>
+    </header>
+    <aside>
+      <h1>Information Directory</h1>
+      <nav>
+        <li><a href="#/undergraduates/information/scrolls">Scrolls</a></li>
+        <li><a href="#/undergraduates/information/active-member">Active Members</a></li>
+        <li><a href="#/undergraduates/information/awards">Awards</a></li>
+        <li><a href="#/undergraduates/information/history">History and Tradition</a></li>
+        <li><a href="#/undergraduates/information/photos">Photos</a></li>
+        <li><a href="#/undergraduates/information/officers">Officers</a></li>
+      </nav>
+    </aside>
+    <section class="scroll-div">
+      <h1>Active Members</h1>
+      <div id="thing">
+      Will Abee</br>
+      Angelo Acitelli</br>
+      Nicholas Barnas	Crysophylos (Treasurer)</br>
+      Duncan Bazemore</br>
+      Dax Benfield</br>
+      Brian Cade</br>
+      Pat Campbell</br>
+      James Charles</br>
+      Tucker Chason</br>
+      Danny Cooper</br>
+      Jason Corday</br>
+      Trey Cox</br>
+      Kevin Cunningham</br>
+      Chris Dinh</br>
+      Luke Elliot</br>
+      Wiley Foil</br>
+      Kenneth Grayson</br>
+      Parker Haake	Pylortes (Sergeant-at-arms)</br>
+      Forrest Howard</br>
+      Andrew Hudson</br>
+      Bryan Hughes</br>
+      Jason Kirschner</br>
+      Nick Lavella	Histor (Historian)</br>
+      Trey Lawson	Prytanis (President)</br>
+      Joshua Mabellos</br>
+      Aaron Martschenko</br>
+      Johnnie Mattson</br>
+      Austin Morgan	Hypophetes (Chaplain)</br>
+      Will Pace	Grammateus (Secret</br>
+      Alex Parsons	Rush Chairman</br>
+      Taylor Pavlick</br>
+      Charles Plummer</br>
+      Alex Ravan</br>
+      Jordan Roberts	Hegemon (Educator)</br>
+      Brandon Runde</br>
+      John Scott-Martin</br>
+      Austin Shaw</br>
+      Joey Sheaffer</br>
+      Marshall Sizemore</br>
+      Brian Starnes</br>
+      Matthew Stockton</br>
+      Jordan Thomas</br>
+      Mitch Tomlinson	Epiprytanis (Vice President)</br>
+      Christopher Waddell</br>
+      Garrison Wagoner</br>
+      Isaac White</br>
+      Philip Williams</br>
+      Nick Wrinn</br>
+      Michael Yonkovig	Philanthropy Chairman</br>
+      </div>
+    </section>
+    </script>
+
+    <script src="text/template" id="photos-template">
+    <header>
+      <img id="letters2" src="images/tke-letters.svg">
+      <img id="logo2" src="images/TKE-logo4.svg">
+      <nav>
+        <ul>
+          <li><a href="#/undergraduates">Home</a></li>
+          <li><a href="#/undergraduates/information">Information</a></li>
+          <li><a href="#/undergraduates/contact">Contact</a></li>
+          <li><a href="#/alumni">Alumni</a></li>
+          <li><a href="http://www.tkegear.com/">Shop</a></li>
+        </ul>
+      </nav>
+    </header>
+    <aside>
+      <h1>Information Directory</h1>
+      <nav>
+        <li><a href="#/undergraduates/information/scrolls">Scrolls</a></li>
+        <li><a href="#/undergraduates/information/active-member">Active Members</a></li>
+        <li><a href="#/undergraduates/information/awards">Awards</a></li>
+        <li><a href="#/undergraduates/information/history">History and Tradition</a></li>
+        <li><a href="#/undergraduates/information/photos">Photos</a></li>
+        <li><a href="#/undergraduates/information/officers">Officers</a></li>
+      </nav>
+    </aside>
+    </script>
+
+    <script src="text/template" id="awards-template">
+    <header>
+      <img id="letters2" src="images/tke-letters.svg">
+      <img id="logo2" src="images/TKE-logo4.svg">
+      <nav>
+        <ul>
+          <li><a href="#/undergraduates">Home</a></li>
+          <li><a href="#/undergraduates/information">Information</a></li>
+          <li><a href="#/undergraduates/contact">Contact</a></li>
+          <li><a href="#/alumni">Alumni</a></li>
+          <li><a href="http://www.tkegear.com/">Shop</a></li>
+        </ul>
+      </nav>
+    </header>
+    <aside>
+      <h1>Information Directory</h1>
+      <nav>
+        <li><a href="#/undergraduates/information/scrolls">Scrolls</a></li>
+        <li><a href="#/undergraduates/information/active-member">Active Members</a></li>
+        <li><a href="#/undergraduates/information/awards">Awards</a></li>
+        <li><a href="#/undergraduates/information/history">History and Tradition</a></li>
+        <li><a href="#/undergraduates/information/photos">Photos</a></li>
+        <li><a href="#/undergraduates/information/officers">Officers</a></li>
+      </nav>
+    </aside>
+    </script>
+
+    <script src="text/template" id="officer-template">
+    <header>
+      <img id="letters2" src="images/tke-letters.svg">
+      <img id="logo2" src="images/TKE-logo4.svg">
+      <nav>
+        <ul>
+          <li><a href="#/undergraduates">Home</a></li>
+          <li><a href="#/undergraduates/information">Information</a></li>
+          <li><a href="#/undergraduates/contact">Contact</a></li>
+          <li><a href="#/alumni">Alumni</a></li>
+          <li><a href="http://www.tkegear.com/">Shop</a></li>
+        </ul>
+      </nav>
+    </header>
+    <aside>
+      <h1>Information Directory</h1>
+      <nav>
+        <li><a href="#/undergraduates/information/scrolls">Scrolls</a></li>
+        <li><a href="#/undergraduates/information/active-member">Active Members</a></li>
+        <li><a href="#/undergraduates/information/awards">Awards</a></li>
+        <li><a href="#/undergraduates/information/history">History and Tradition</a></li>
+        <li><a href="#/undergraduates/information/photos">Photos</a></li>
+        <li><a href="#/undergraduates/information/officers">Officers</a></li>
+      </nav>
+    </aside>
+    <section class="scroll-div">
+      <h1>Current Officers</h1>
+      <div class="officer-block">
+        <h2>President - Trey Lawson</h2>
+        <img src="images/trey.png">
+        <div class="officer-contact">
+          <h3>Contact Information</h3>
+        </div>
+      </div>
+      <div class="officer-block">
+        <h2>Histor - Nick Lavella</h2>
+        <img src="images/nick.png">
+        <div class="officer-contact">
+          <h3>Contact Information</h3>
+        </div>
+      </div>
+      <div class="officer-block">
+        <h2>Grammateus - Nick Barnas</h2>
+      <div class="officer-contact">
+        <h3>Contact Information</h3>
+      </div>
+      </div>
+    </section>
+    </script>
+
+    <script src="text/template" id="history-template">
+    <header>
+      <img id="letters2" src="images/tke-letters.svg">
+      <img id="logo2" src="images/TKE-logo4.svg">
+      <nav>
+        <ul>
+          <li><a href="#/undergraduates">Home</a></li>
+          <li><a href="#/undergraduates/information">Information</a></li>
+          <li><a href="#/undergraduates/contact">Contact</a></li>
+          <li><a href="#/alumni">Alumni</a></li>
+          <li><a href="http://www.tkegear.com/">Shop</a></li>
+        </ul>
+      </nav>
+    </header>
+    <aside>
+      <h1>Information Directory</h1>
+      <nav>
+        <li><a href="#/undergraduates/information/scrolls">Scrolls</a></li>
+        <li><a href="#/undergraduates/information/active-member">Active Members</a></li>
+        <li><a href="#/undergraduates/information/awards">Awards</a></li>
+        <li><a href="#/undergraduates/information/history">History and Tradition</a></li>
+        <li><a href="#/undergraduates/information/photos">Photos</a></li>
+        <li><a href="#/undergraduates/information/officers">Officers</a></li>
+      </nav>
+    </aside>
+    </script>
 
 
     <!-- build:js scripts/vendor.js -->
@@ -39,6 +1076,7 @@
     <script src="../bower_components/underscore/underscore.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
+            <script src="//www.parsecdn.com/js/parse-1.2.19.min.js"></script>
 
         <!-- build:js scripts/main.js -->
         <script src="scripts/main.js"></script>
