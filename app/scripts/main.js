@@ -17,6 +17,18 @@ var StartupView = Parse.View.extend({
   }
 });
 
+var AlumniView = Parse.View.extend({
+  template: _.template($("#alumni-template").html()),
+  initialize: function(){
+    this.render();
+    $(".container").html(this.el);
+    $("body").css("background-image","url('../images/tke-beach.jpg')");
+  },
+  render: function(){
+    this.$el.html(this.template(this.model));
+  }
+});
+
 var UndergraduatesView = Parse.View.extend({
   template: _.template($("#undergraduates-template").html()),
   initialize: function(){

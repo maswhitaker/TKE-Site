@@ -155,3 +155,17 @@ aside{
     margin-right: 20px;
   }
 }
+#social{
+  position: absolute;
+    left: 10px;
+    top: 80px;
+  img{
+    height: 100px;
+    width: 100px;
+    margin-right: 20px;
+    &:hover{
+      background-color: white;
+      border-radius: 20px;
+    }
+  }
+}
