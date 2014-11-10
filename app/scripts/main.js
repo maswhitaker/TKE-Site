@@ -132,6 +132,95 @@ var HistoryView = Parse.View.extend({
   }
 });
 
+var ContactView = Parse.View.extend({
+  template: _.template($("#contact-template").html()),
+  initialize: function(){
+    this.render();
+    $(".container").html(this.el);
+    $("body").css("background-image","url('../images/tke-trophy.jpg')");
+    $("body").css("background-size","1100px 800px");
+    $("body").css("background-repeat", "no-repeat");
+    $("#mitch-block").mouseover(function(){
+      $("#mitch-contact").fadeIn("fast");
+    });
+    $("#mitch-block").mouseout(function(){
+      $("#mitch-contact").fadeOut("fast");
+    });
+    $("#john-block").mouseover(function(){
+      $("#john-contact").fadeIn("fast");
+    });
+    $("#john-block").mouseout(function(){
+      $("#john-contact").fadeOut("fast");
+    });
+    $("#trey-block").mouseover(function(){
+      $("#trey-contact").fadeIn("fast");
+    });
+    $("#trey-block").mouseout(function(){
+      $("#trey-contact").fadeOut("fast");
+    });
+    $("#nick-block").mouseover(function(){
+      $("#nick-contact").fadeIn("fast");
+    });
+    $("#nick-block").mouseout(function(){
+      $("#nick-contact").fadeOut("fast");
+    });
+    $("#will-block").mouseover(function(){
+      $("#will-contact").fadeIn("fast");
+    });
+    $("#will-block").mouseout(function(){
+      $("#will-contact").fadeOut("fast");
+    });
+    $("#james-block").mouseover(function(){
+      $("#james-contact").fadeIn("fast");
+    });
+    $("#james-block").mouseout(function(){
+      $("#james-contact").fadeOut("fast");
+    });
+    $("#jason-block").mouseover(function(){
+      $("#jason-contact").fadeIn("fast");
+    });
+    $("#jason-block").mouseout(function(){
+      $("#jason-contact").fadeOut("fast");
+    });
+  },
+  render: function(){
+    this.$el.html(this.template(this.model));
+  }
+});
+
+var LogInView = Parse.View.extend({
+  events:{
+    "click #pass": "submitpass"
+  },
+  template: _.template($("#login-template").html()),
+  initialize: function(){
+    this.render();
+    $(".container").html(this.el);
+  },
+  render: function(){
+    this.$el.html(this.template(this.model));
+  },
+  submitpass: function(){
+    if($("#frat-pass").val() === "willabeesucksdick"){
+      new ActiveView();
+    } else {
+      alert("Incorrect Password");
+    }
+  }
+});
+
+var ActiveView = Parse.View.extend({
+  template: _.template($("#active-template").html()),
+  initialize: function(){
+    this.render();
+    $(".container").html(this.el);
+  },
+  render: function(){
+    this.$el.html(this.template(this.model));
+  }
+});
+
+
 var Router = Parse.Router.extend({
   routes:{
       "": "startup",
@@ -143,7 +232,9 @@ var Router = Parse.Router.extend({
       "undergraduates/information/awards": "awards",
       "undergraduates/information/photos": "photos",
       "undergraduates/information/officers": "officers",
-      "undergraduates/information/history": "history"
+      "undergraduates/information/history": "history",
+      "undergraduates/contact": "contact",
+      "active": "login"
   },
   startup: function(){
       new StartupView();
@@ -174,6 +265,12 @@ var Router = Parse.Router.extend({
   },
   history: function(){
       new HistoryView();
+  },
+  contact: function(){
+      new ContactView();
+  },
+  login: function(){
+      new LogInView();
   }
 });
 

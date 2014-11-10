@@ -28,19 +28,38 @@
     <script src="text/template" id="startup-template">
     <header>
       <img id="letters" src="images/tke-letters.svg">
-      <img id="logo" src="images/TKE-Logo4.svg">
+      <img id="logo" src="images/TKE_2.png">
       <div id="startup-screen">
         <h1>Enter Site</h1>
         <a href="#/undergraduates"><button>Undergraduate</button></a>
         <a href="#/alumni"><button>Alumni</button></a>
+        <a href="#/active"><button>Active Member</button></a>
       </div>
     </header>
+    </script>
+
+    <script src="text/template" id="login-template">
+      <div id="password-login">
+        <h1>Please enter the Fraternity password</h1>
+        <input id="frat-pass" type="text" placeholder="Enter password"></input>
+        </br>
+        <button id="pass">Submit</button>
+      </div>
+    </script>
+
+    <script src="text/template" id="active-template">
+    <h1> Active Shit</h1>
+    <div id="active-div">
+      <div id="input-div">
+        <input type="text" placeholder="type your message"><button>Send</button>
+      </div>
+    </div>
     </script>
 
     <script src="text/template" id="undergraduates-template">
     <header>
       <img id="letters2" src="images/tke-letters.svg">
-      <img id="logo2" src="images/TKE-Logo4.svg">
+      <img id="logo2" src="images/TKE_2.png">
       <nav>
         <ul>
           <li><a href="#/undergraduates">Home</a></li>
@@ -63,7 +82,7 @@
     <script src="text/template" id="alumni-template">
     <header>
       <img id="letters2" src="images/tke-letters.svg">
-      <img id="logo2" src="images/TKE-Logo4.svg">
+      <img id="logo2" src="images/TKE_2.png">
       <nav>
         <ul>
           <li><a href="#/undergraduates">Home</a></li>
@@ -81,12 +100,29 @@
         <a href=""><img src="images/twitter14.svg"></a>
       </nav>
     </section>
+    <div id="alumni-reports">
+      <h1>Alumni Reports</h1>
+    </div>
+    <div id="alumni-donate">
+      <h1>Donate to Omicron Alpha</h1>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_donations">
+        <input type="hidden" name="business" value="lawsonfw@email.appstate.edu">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Tau Kappa Epsilon - Omicron Alpha">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+    </div>
     </script>
 
     <script src="text/template" id="information-template">
     <header>
       <img id="letters2" src="images/tke-letters.svg">
-      <img id="logo2" src="images/TKE-logo4.svg">
+      <img id="logo2" src="images/TKE_2.png">
       <nav>
         <ul>
           <li><a href="#/undergraduates">Home</a></li>
@@ -113,7 +149,7 @@
     <script src="text/template" id="scrolls-template">
     <header>
       <img id="letters2" src="images/tke-letters.svg">
-      <img id="logo2" src="images/TKE-logo4.svg">
+      <img id="logo2" src="images/TKE_2.png">
       <nav>
         <ul>
           <li><a href="#/undergraduates">Home</a></li>
@@ -890,7 +926,7 @@
     <script src="text/template" id="activemember-template">
     <header>
       <img id="letters2" src="images/tke-letters.svg">
-      <img id="logo2" src="images/TKE-logo4.svg">
+      <img id="logo2" src="images/TKE_2.png">
       <nav>
         <ul>
           <li><a href="#/undergraduates">Home</a></li>
@@ -971,7 +1007,7 @@
     <script src="text/template" id="photos-template">
     <header>
       <img id="letters2" src="images/tke-letters.svg">
-      <img id="logo2" src="images/TKE-logo4.svg">
+      <img id="logo2" src="images/TKE_2.png">
       <nav>
         <ul>
           <li><a href="#/undergraduates">Home</a></li>
@@ -998,7 +1034,7 @@
     <script src="text/template" id="awards-template">
     <header>
       <img id="letters2" src="images/tke-letters.svg">
-      <img id="logo2" src="images/TKE-logo4.svg">
+      <img id="logo2" src="images/TKE_2.png">
       <nav>
         <ul>
           <li><a href="#/undergraduates">Home</a></li>
@@ -1025,7 +1061,7 @@
     <script src="text/template" id="officer-template">
     <header>
       <img id="letters2" src="images/tke-letters.svg">
-      <img id="logo2" src="images/TKE-logo4.svg">
+      <img id="logo2" src="images/TKE_2.png">
       <nav>
         <ul>
           <li><a href="#/undergraduates">Home</a></li>
@@ -1051,23 +1087,59 @@
       <h1>Current Officers</h1>
       <div class="officer-block">
         <h2>President - Trey Lawson</h2>
-        <img src="images/trey.png">
         <div class="officer-contact">
           <h3>Contact Information</h3>
+          <p>(813)-924-3254</p>
         </div>
       </div>
       <div class="officer-block">
         <h2>Histor - Nick Lavella</h2>
-        <img src="images/nick.png">
         <div class="officer-contact">
           <h3>Contact Information</h3>
+          <p>(704)-439-6166</p>
         </div>
       </div>
       <div class="officer-block">
-        <h2>Grammateus - Nick Barnas</h2>
-      <div class="officer-contact">
-        <h3>Contact Information</h3>
+        <h2>Grammateus - Will Pace</h2>
+        <div class="officer-contact">
+          <h3>Contact Information</h3>
+          <p>(704)-651-6533</p>
+        </div>
       </div>
+      <div class="officer-block">
+        <h2>Crysopheles - Nick Barnas</h2>
+        <div class="officer-contact">
+          <h3>Contact Information</h3>
+          <p>(704)-609-5959</p>
+        </div>
+      </div>
+      <div class="officer-block">
+        <h2>Hegemon - Jordan Roberts</h2>
+        <div class="officer-contact">
+          <h3>Contact Information</h3>
+          <p>(704)-661-4721</p>
+        </div>
+      </div>
+      <div class="officer-block">
+        <h2>Pylortes - Parker Haake</h2>
+        <div class="officer-contact">
+          <h3>Contact Information</h3>
+          <p>(828)-989-5527</p>
+        </div>
+      </div>
+      <div class="officer-block">
+        <h2>Epiprytanis - Mitch Tomlinson</h2>
+        <div class="officer-contact">
+          <h3>Contact Information</h3>
+          <p>(336)-816-1170</p>
+        </div>
+      </div>
+      <div class="officer-block">
+        <h2>Hypophetes - Austin Morgan</h2>
+        <div class="officer-contact">
+          <h3>Contact Information</h3>
+          <p>(704)-340-2059</p>
+        </div>
       </div>
     </section>
     </script>
@@ -1075,7 +1147,7 @@
     <script src="text/template" id="history-template">
     <header>
       <img id="letters2" src="images/tke-letters.svg">
-      <img id="logo2" src="images/TKE-logo4.svg">
+      <img id="logo2" src="images/TKE_2.png">
       <nav>
         <ul>
           <li><a href="#/undergraduates">Home</a></li>
@@ -1097,8 +1169,409 @@
         <li><a href="#/undergraduates/information/officers">Officers</a></li>
       </nav>
     </aside>
+    <div class="scroll-div">
+      <p><h1>Our Beginning, Growth, and Development</h1>
+On the cold night of January 10, 1899, students of Illinois Wesleyan University, in the small Midwestern town of Bloomington, had just returned from the Christmas holidays when Joseph L. Settles went to the room occupied by James C. McNutt and Clarence A. Mayer at 504 East Locust Street to discuss the organization of a new society on campus. Joined immediately by Owen I. Truitt and C. Roy Atkinson, these five students created the first set of regulations for the Knights of Classic Lore, a society whose avowed purpose was "to aid college men in mental, moral, and social development."
+
+Because of his late arrival for this meeting, James J. Love was made the first new member. Love, along with Edwin A. Palmer and George H. Thorpe became the first initiates of this new organization. Although Settles was the leader in organizing the society, Atkinson was elected President and McNutt was chosen as Secretary.
+
+There were two fraternities already in existence at Illinois Wesleyan in 1899, both with more than 50 chapters nationally. Phi Gamma Delta had been established in 1866, while Sigma Chi had begun there in 1883. In addition, two other national fraternities, Phi Delta Theta and Delta Tau Delta, had inactive chapters at Illinois Wesleyan. The Phi Delts existed from 1878-1897 and the Delts from 1877-1880.
+</br>
+<h2>A Different Organization</h2>
+The Founders of the Knights of Classic Lore desired an organization different from those represented by the existing fraternities. Their desire was to establish a fraternity in which the primary requisites for membership would be the personal worth and character of the individual rather than the wealth he possessed, the honors or titles he could display, or the rank he maintained on the social ladder. The Founders of the KCL had little regard for many of the common characteristics of fraternities at that time, including their usual snobbery and disdain for persons outside of a fraternity.
+
+It was not long after their recognition on campus that the Knights of Classic Lore were approached by some alumni of the Illinois Epsilon chapter of Phi Delta Theta, whose charter had been surrendered in 1897. The Phi Delt alumni saw in this new group an opportunity for the restoration of its charter, and interested themselves in converting it into a strong local fraternity. Through the persuasion and effort of Richard Henry Little, for columnist on the Chicago Tribune and one of the most prominent Phi Delt alumni, the Knights presented a petition to the Phi Delta Theta national organization at its convention in New York in 1902. The petition was rejected.
+
+In hopes that their organization might be more attractive to Phi Delta Theta, it was decided that a Greek-letter name should be adopted. The name "Knights of Classic Lore" was therefore abandoned and the Greek letters Tau Kappa Epsilon selected. As a further step, a fraternity house was rented. This was the first fraternity house at Illinois Wesleyan, although Phi Gamma Delta and Sigma Chi had both been in existence on campus for many years. The Wilder Mansion, former home of President Wilder of the University, became the first TKE house.
+
+In the ensuing years, the Phi Delt alumni and some of the undergraduate members continued to press for affiliation with Phi Delta Theta by promoting petitions at the 1904 and 1906 Phi Delt national conventions. In each instance the petition was either withdrawn or postponed. It is reported that one of the petitions came within one vote of being accepted.
+
+The Great Decision
+Late in 1907, several undergraduate members of Tau Kappa Epsilon were again preparing a petition to be presented to the Phi Delta Theta national convention in 1908. The wisdom of petitioning, however, was being questioned with increasing frequency. To increase enthusiasm for this fourth attempt, a banquet was held on October 19, 1907, at which speeches were made both advocating and questioning the proposal. One of the most notable and influential speeches given was a blistering address by Wallace G. McCauley, titled "Opportunity Out of Defeat," in which he advocated the abandonment of the petitioning process and the substitution of a campaign for TKE to become its own national fraternity.
+
+At the banquet, Frater McCauley said, "Someone has said that most victories are defeats. As to the truth of that statement, numerous instances can be cited tending to establish it. But just as true is the converse of that proposition that most defeats are victories, and I truly believe an instance of this was our failure to have reinstated the Phi Delta Theta charter of Illinois Epsilon. I believe this in spite of the fact that no one labored more zealously to that end during the first two campaigns than myself. And, too, no one felt the defeats at the time more bitterly than myself; but now, after an absence of a year or so, I am brought to the conviction that Tau Kappa Epsilon was indeed fortunate in her defeats, because thereby there was reserved for us a large opportunity..."
+
+Interwoven about the sentiments of our name and our pin, and engrained in the fiber of every member is the Teke spirit - a spirit typical of our fraternity - a spirit that does not shrink from sacrifice, that knows no defeat, a spirit indomitable. A spirit which if breathed into a national Tau Kappa Epsilon would spread our organization throughout the schools of our country..."
+
+"But if we keep Tau Kappa Epsilon intact, the Teke spirit…will flow on forever... Let us not lack faith in this project. Remember faith as a grain of mustard will overcome mountains of difficulty. The history of other organizations lends us encouragement. Phi Delta Theta was born a few years before the Civil War in a student's room in a building of Miami University, less pretentious than the preparatory building on the Wesleyan campus, and today Phi Delta Theta is the fourth largest fraternity in existence..."
+
+"Fellow brothers, Tau Kappa Epsilon was conceived in the early struggles of our existence. Time is now right to start in on a national career, and we, its godfathers here tonight, when it is grown to be a strong and lusty organization, touching student life everywhere with the beneficence of its principles, will obtain a satisfaction inexpressible in the part we had in its inception."
+
+Although arousing bitter opposition at the time, this speech ultimately reduced the fourth petition to a bare formality and became one of the significant turning points in the history of the Fraternity.
+
+One of the measures advocated by McCauley in his address was the publication of a quarterly magazine called The Teke. This proposal met with immediate approval and the first issue was published in January 1908, with Clyde M. Leach as the editor.
+
+The First Conclave
+Under the new constitution, the Prytanis and Grammateus of the undergraduate chapters were ex-officio delegates to the Conclave of the Grand Chapter. Accordingly, on February 17, 1909, Clyde M. Leach as Prytanis and Orrie Reeser as Grammateus of the Alpha chapter, met in Leach's room in the chapter house at 801 North Main Street and held the first Conclave of the Grand Chapter, electing a full slate of national officers and appointing a committee to revise the ritual.
+</br>
+<h1>The first Grand Officers were:</h1>
+
+Grand Prytanis: Lester H. Martin
+Grand Epiprytanis: William Wilson
+Grand Grammateus: Clyde E. Leighty
+Grand Histor: L.W. Tuesburg
+Grand Crysophylos: James J. Love
+Grand Hypophetes: Arthur A. Heinlein
+Grand Pylortes: Clyde H. Meyers
+Note: The office of Grand Hegemon was not created until the 1951 Conclave.
+Growth Begins
+As has been typical of Tau Kappa Epsilon throughout its history, the leaders of the Fraternity did not waver, but rather pressed forward with their goal of building TKE into a strong national fraternity. Approximately two months after the national constitution was ratified, the second chapter, Beta, was installed.
+
+On April 6, 1909, Lester H. Martin, Arthur Heinlein, L.W. Tuesburg, and a delegation of actives from Alpha chapter paid a visit to Chi Rho Sigma, a local fraternity at Millikin University, in Decatur, Illinois. The Grand Prytanis appointed a committee to further investigate the local. When the committee reported favorably, the first petition was written with pen and ink on a piece of Decatur YMCA stationery, and was unanimously approved by the Grand Council.
+
+Beta Chapter was installed on Saturday, April 17, 1909, at Decatur, Illinois. A banquet was held that evening at the Decatur Hotel attended by members of Alpha chapter and TKE alumni. It is interesting to note that from the beginning, petitioning groups were thoroughly investigated and that an installation banquet was held. These policies have been followed without exception through today.
+</br>
+The Second Conclave
+The 2nd Conclave was also held in the Alpha chapter house at 801 North Main in Bloomington. On February 11-12, 1910, the seven Grand Officers, plus two delegates each from Alpha and Beta chapters, were in attendance. Alpha chapter staged a banquet on Friday evening, February 11, for those attending and a smoker was held on Saturday evening at the close of the Conclave. Business was transacted with all the seriousness of a large meeting, and Lester H. Martin was again elected Grand Prytanis.
+
+In the spring of 1910 it was announced that Alpha Chapter, after living 11 years in a rented house, had purchased the home of a Wesleyan professor at a cost of $8,500. This, the first house ever owned by a fraternity at Illinois Wesleyan, was located at 406 East Walnut Street, and served as the home of the chapter until the fall of 1924.
+
+On February 10-11, 1911, the 3rd Conclave convened at Decatur, Illinois, with the Grand Officers and delegates from Alpha and Beta again in attendance. William Wilson was elected Grand Prytanis.
+
+The Triangle is Formed
+The issues of The Teke Magazine during 1910-1911 were filled with articles urging further expansion of the Fraternity and predicting the bright future of this infant National Fraternity. Wallace G. McCauley, in the January 1910 issue stated: "TKE is bound to become the fraternity. It is written in the stars that way and all powers of established Hellenism cannot stop the onward destiny of Tau Kappa Epsilon. I don't believe in limiting its extension. Let us plant a chapter where there is a proper membership to promote its principles."
+
+Early in 1912 three alumni of Alpha chapter, Henry A. Burd, Wilbur R. Leighty, and Ward H. Sachs, were graduate students at the University of Illinois. Mainly through their efforts, a local fraternity known as the Campus Club petitioned Tau Kappa Epsilon for a charter on January 22, 1912. The charter was granted and installation followed on February 3, 1912, not at Champaign, but at the Alpha chapter house in Bloomington.
+
+The significance of the location of these first three chapters, closely approximating an equilateral triangle on the map, was at once realized and has been symbolized ever since by the traditional position and shape of the badge. Because of the geographical significance of these three chapters, consideration was given to cutting off any further growth.
+
+The 5th Conclave, held in Decatur, Illinois, on February 14-15, 1913, saw the election of L.W. Tuesburg as Grand Prytanis. Frater Tuesburg, a loyal servant throughout the history of TKE, was re-elected Grand Prytanis at the 6th Conclave on April 17-18, 1914, held in Champaign, Illinois. At this Conclave, the first complete code of fraternity laws was enacted under his leadership.
+</br>
+Out of Illinois
+When the Knights of Classic Lore was founded in 1899 there were no thoughts of ever leaving the bounds of Illinois. This feeling was still present during the initial expansion among several of the alumni and active members of the Fraternity. As a result, following the installation of Delta chapter in 1912, no new chapters were chartered for more than two-and-one-half years.
+
+Voluminous correspondence was carried on with numerous prospects during this time, however, and a group at Iowa State College in Ames was determined, as early as 1913, to petition TKE for a charter as soon as faculty permission could be secured.
+
+One of the first acts of the new Grand Prytanis, Lyle F. Straight, elected at the 7th Conclave in Galesburg, Illinois, April 16-17, 1915, was to receive a petition from this group, known as the Seminoles. The Seminoles were installed as Epsilon chapter on May 28, 1915, as the leadership of the fraternity overcame any desire for provincialism.
+
+With this event, Tau Kappa Epsilon may be said to have acquired a truly national scope. With five chapters, TKE was eligible for membership in the National Interfraternity Council and was admitted as a senior member on November 27, 1915. Tau Kappa Epsilon had, for the first time, crossed the borders of Illinois, had been admitted into the councils of national fraternities, and had completed a period of slow development.
+
+From 1909-1915, TKE had added just four chapters. In the next two years, however, five additional chapters were admitted into the fraternity. The chapters chartered were: Zeta at Coe College, Cedar Rapids, Iowa, May 12, 1916; Eta at the University of Chicago, February 17, 1917; Theta at the University of Minnesota, March 10, 1917; Iota at Eureka College, Eureka, Illinois, April 21, 1917; and Kappa at Beloit College, Beloit, Wisconsin, May 12, 1917.
+
+The 8th Conclave convened at Bloomington, April 28-29, 1916, and Frater Straight was re-elected as Grand Prytanis. On April 27-28, 1917, the month of America's entry into World War I, the 9th Conclave was held at Ames, Iowa. Oscar G. Hoose was chosen as Grand Prytanis. The minutes of the Conclave gave no mention of the approaching conflict other than a single resolution, "embodying the spirit of the fraternity with respect to the war situation."
+
+World War I
+Up to this time, the history of the fraternity had been a somewhat routine record of slow, steady growth in numbers, chapter rolls, and fraternity consciousness. This period, marked only by its annual Conclaves and the chartering of new chapters, also brought about the formation of a body of laws and traditions, the development of a ritual, and a general welding together of its membership into a homogenous fellowship.
+
+With the entry of the United States into World War I and its accompanying transformation of the colleges into the Student's Army Training Corps, fraternity activities on every campus were essentially suspended for more than a year. The enactment of emergency war legislation, most of which became permanent, began a trend toward a strong centralized national organization.
+</br>
+Tex Flint Elected
+If the 1917 Conclave was not war conscious, the 10th Conclave, held in Chicago, April 26-27, 1918, concerned itself with little more than the war and its campus problems. Frater Hoose declined re-election because he expected to enter the service, and Harrold P. "Tex" Flint was elected to the first of three terms as Grand Prytanis. Much emergency legislation was enacted such as: the creation of Regions, Regional Officers, Chapter Advisors, and the definition of their duties; the suspension of second-semester initiations; and the granting to the alumni the right of active participation in chapter affairs whenever the number of undergraduate members fell below ten.
+
+The record of Tau Kappa Epsilon in World War I was most creditable. Many men saw active service both at home and in Europe, while scores were enrolled in the S.A.T.C. At the tenth Conclave in Chicago, April 26-27, 1918, it was revealed that Tau Kappa Epsilon had a total membership of 702 (173 active members and 529 alumni). Of the alumni, 204 (38.5%), were directly involved in the war effort.
+
+The Akela Club, at the University of Wisconsin, had become Lambda chapter in 1918, the only wartime acquisition. Mu chapter originated from Sigma Alpha Phi, a local at Carroll College in Waukesha, Wisconsin in 1919. The years 1919 and 1920 witnessed two rather uneventful Conclaves; the 11th Conclave was held in Beloit, Wisconsin during 1919 and the 12th Conclave was held in Minneapolis, Minnesota in 1920.
+
+To The West Coast
+The installation of Nu chapter at the University of California marked a significant step in the history of Tau Kappa Epsilon, a step that was taken only after considerable discussion and misgiving. The Sequoyah Club at the University of California had presented two earlier petitions that were turned down because of the distance from the 12 chapters that were then concentrated in Illinois, Iowa, Minnesota, and Wisconsin. The third petition, however, proved successful and TKE took a long leap geographically, obtaining a foothold on the shores of the Pacific.
+
+Phi Omega, a local fraternity at Washington University in St. Louis, was granted a charter as Xi chapter at the Minneapolis Conclave.
+
+Tau Kappa Epsilon passed through the war crisis and restored all of its chapters to complete activity, a remarkable achievement for such a young struggling fraternity. As the first decade of its existence as a national fraternity closed in 1919, plans were being mapped for a new era in the history of Tau Kappa Epsilon.
+
+At the 13th Conclave in Madison, Wisconsin, William D. Reeve was elected Grand Prytanis. Frater Reeve was the first Grand Prytanis who was not an alumnus of Alpha chapter.
+</br>
+A Headquarters is Created
+The advantage of a central office had for some time been apparent, and now, with 14 chapters and the prospects of comparatively rapid growth, its need was even more obvious.
+
+During the 13th Conclave in 1921, the desirability of a headquarters was mentioned by several of the Grand Officers in their annual reports. It was Grand Grammateus Lloyd V. Ballard who presented the matter so forcefully that the office of Grand Grammateus was expanded into a national Executive Secretary and a central office was created. Tex Flint, then retiring as Grand Prytanis, was elected to this position and became the first Executive Secretary. The central office was established in Frater Flint's home in Lombard, Illinois.
+
+With this change the affairs of the Fraternity became better coordinated, and a new national consciousness evolved with the development of a centralized administration. Tau Kappa Epsilon began to assume an importance, and secure recognition in the fraternity world.
+
+Frater Reeve presided over the 14th Conclave in Cedar Rapids, Iowa. It was during this Conclave, in 1922, that hazing in fraternity initiation and pledging activities was soundly condemned.
+
+The 15th Conclave was held in St. Louis from October 24-25, 1923. Phillip H. McGrath was elected Grand Prytanis.
+
+The Silver Anniversary
+The 16th Conclave in 1924 was set apart as the "Silver Jubilee Conclave," celebrating the twenty-fifth anniversary of the founding of the Fraternity. It was appropriately held in Bloomington and was marked by the presence of all five Founders who prepared a joint address. This Conclave also unveiled a tablet in the Chapel at Illinois Wesleyan University commemorating the founding of TKE. Life membership in the Grand Chapter was conferred upon the Founders.
+
+This Conclave selected Leland F. Leland as Grand Histor, a position he was able to hold for 25 continuous years. Frater Leland, who was later chosen as President of the College Fraternity Editor's Association, served as editor of The Teke, building it to a position as one of the finest magazines in the fraternity world.
+</br>
+The Upward Climb
+The period 1921-26 saw 10 new chapters installed, completing the first alphabet from Alpha to Omega. TKE was spreading from coast to coast, as evidenced by the chapters installed - Omicron at Ohio State, Pi at Penn State, Rho at West Virginia, Sigma at Cornell, Tau at Oregon State, Upsilon at Michigan, Phi at Nebraska, Chi at the University of Washington, Psi at Gettysburg, and Omega at Albion.
+
+The years from 1926-30 were ones of steady growth, expanding both east and west, under the leadership of Grand Prytanis Miles Gray in 1926-28 and Milton Olander in 1928-30. Eight new chapters had been installed by the 19th Conclave in San Francisco, September 3-5, 1930, bringing the total chapter roll up to 32. This Conclave saw the election of Eugene C. Beach as the eleventh Grand Prytanis.
+
+These years were also years of grief, as the entire Fraternity mourned the passing of Founders Owen I. Truitt and C. Roy Atkinson. Both Founders died in auto accidents - Truitt on July 13, 1929, and Atkinson on September 14, 1930.
+</br>
+The Depression Years
+The period from 1930-35 was one of challenges for the Fraternity, just as it was for people and organizations throughout the United States. It was a struggle to keep the national organization functioning smoothly, and keep the chapter rolls intact, under the financial conditions that constantly brought shrinking financial support from all sources. National fraternities were folding because of insufficient support, but under the strong leadership of Grand Prytanis Beach and other devoted men, TKE weathered the storm and even progressed during this period.
+
+Eight new chapters were added and many chapters pledged larger numbers of men each year. Only two chapters - the University of Chicago and the University of Nebraska - were not active following the Great Depression. Tau Kappa Epsilon also absorbed the membership of a small national fraternity, Sigma Mu Sigma, in 1934, but this resulted in only one new chapter, Alpha-Pi at George Washington University in Washington, D.C.
+
+The 20th Conclave was held in 1935 at the Hotel Baker in St. Charles, Illinois. This Conclave, which was originally postponed for financial reasons and eventually held in 1935, instituted for the first time a program of addresses during the Conclave sessions, lunches, and dinners. However, the most significant measure adopted at this Conclave was the recognition of Lester H. Martin, L.W. Tuesburg, William Wilson, and Wallace G. McCauley for their dedicated and untiring efforts in the building of Tau Kappa Epsilon. These four men were named National Founders for their work in making TKE truly a "national" fraternity.
+</br>
+The Pre-War Years
+The years preceding the entry of the United States into the World War II have been described as the "quiet interlude." The main emphasis of the Fraternity was placed on balancing the budget and strengthening undergraduate chapters. Don A. Fisher served as Grand Prytanis from 1935-37 and was followed by Clarence E. Smith in 1937-39. Only three new chapters were installed during this period, although much progress was made in the internal organization of the Fraternity.
+
+With war clouds on the horizon in 1939, Herbert Helble was elected Grand Prytanis. However, because of the pressure of other activities in this time of turmoil, Frater Helble resigned in 1941 and L.W. Tuesburg, then Grand Epiprytanis, was elevated to the presidency and served until June 21, 1942. Frater Tuesburg had previously been elected Grand Prytanis during both the fifth and sixth conclaves (1913 and 1914).
+
+In 1941, Grand Grammateus Tex Flint resigned his office after twenty years of service. Although Frater Flint first housed the central office at his home, he had moved the office into a new building in Lombard, Illinois, in 1927 and maintained it there until 1941. After Frater Flint's resignation, Past Grand Prytanis Lyle Straight was elected Grand Grammateus and the National Office was moved to Bloomington, Illinois.
+
+Three new chapters were installed during this period, with Alpha-Chi chapter at the University of Louisville being the last pre-war charter.
+</br>
+The Second World War
+Tau Kappa Epsilon spent most of the war years under the leadership of Grand Prytanis Charles E. Nieman. During the early years of the United States' involvement in the military conflict, TKE did not suffer greatly. In October 1942, for example, TKE pledged 568 men as opposed to 475 men the preceding October. Also during the year, a record 628 men were initiated into TKE and the Fraternity's income was $26,505.47, an all-time high.
+
+The severe manpower drain hit the colleges and the fraternity system in 1943, causing many chapters to go inactive and nearly all to abandon their houses. In September 1943, only 19 of TKE's chapters were still active and only two - Alpha-Zeta at Purdue and Alpha-Phi at Kansas - still had houses. All the other chapter houses had been relinquished for the duration of the war.
+
+In conformity with governmental orders and to conserve Fraternity funds, no Conclaves were held during the war period. While the Fraternity continued to function and provide essential services to both chapters and Fraters, all expenses were cut to the bone.
+
+The Teke magazine was suspended during the war in favor of a less expensive newspaper called Teke Life. This paper was sent out to every Teke on record, regardless of subscription status, in order to help maintain the interest of Tekes everywhere during this period when many of their undergraduate chapters were dormant.
+
+For the first time, the office of Grand Grammateus was separated from the duties of Executive Secretary and a part-time Executive Secretary was hired. Dr. E.L. Theiss, Professor of Accounting at the University of Illinois assumed this position, hired a full-time secretary, and set up the National Office in Champaign, Illinois. In 1945 Frater Theiss tendered his resignation, and V.J. Hampton, Assistant Dean of Men at the University of Illinois, was hired as Executive Secretary.
+</br>
+The Big Decision
+At the beginning of the hostilities, the Grand Council of the Fraternity faced a major policy decision - whether our limited financial resources should be exhausted in an attempt to keep all chapters active throughout the War, or whether the Fraternity should recognize the impossibility of that objective and concentrate on preparing an aggressive and effective rehabilitation and expansion program after the War. Luckily, the latter course of action was chosen. Subsequent events demonstrated the wisdom of that choice, although it was not so apparent when the choice was made.
+
+With so few chapters functioning during 1943-45, the income that the Fraternity needed to operate was drastically limited. To provide TKE with some security to prevent financial failure, and to provide some funds upon which to operate, alumni were asked to contribute to the Teke Loyalty Fund. For the first time in its history, TKE alumni were asked to support the Fraternity by contributing the small sum of $3 annually. Loyal TKE alumni contributed nearly $30,000 into this fund, without which the Fraternity could not have surmounted the tremendous hurdles ahead.
+</br>
+Tekes in Uniform
+Tekes too numerous to mention were actively involved in the war effort. It was estimated that 54% of the total membership of Tau Kappa Epsilon wore the uniform of one of the services. Some of the more noteworthy military leaders included:
+</br>
+Dr. Irvin P. Krick, one of the world's leading meteorologists who set the date for Eisenhower's Normandy invasion
+Major General Dan C. Ogle, Surgeon General of the Air Force
+Rear Admiral R.C. Williams, Assistant Surgeon General of the U.S. Public Health Service
+Brig. General Glen C. McBridge
+Brig. General John C. P. Bartholf
+Brig. General Loyal M. Haynes
+Brig. General W.E. Chambers
+Brig. General Hugh M. Milton
+According to the best available data, 196 Tekes gave their lives for their country and 30 received decorations exceeding that of the Bronze Star during World War II.
+
+Several changes in the composition of the Grand Council occurred during these war years. Grand Epiprytanis Charles R. Walgreen, Jr. was required to resign in 1943 because of business pressures when he assumed the presidency of the Walgreen Drug Store chain, so Grand Pylortes R.C. Williams was elevated to Grand Epiprytanis. When Grand Prytanis Nieman was forced to resign because of professional and business activities in 1944, Frater Williams ascended. To this aggressive, dedicated TKE leader fell the massive task of leading the rehabilitation after the War.
+</br>
+Dr. Williams Takes Office
+When Dr. Williams assumed the office of Grand Prytanis in 1944, the United States was in the midst of its greatest military conflict. Tau Kappa Epsilon had only 11 active chapters - many with less than 10 members, and there was general unrest among many Tekes as to the future of the Fraternity.
+
+Some TKE leaders felt that the Fraternity had neither the resources nor the knowledge to survive, and advocated its dissolution or merger with another national. In fact, a merger was discussed with Kappa Delta Rho, another small national with 17 chapters, but the merger failed for lack of agreement on behalf of both parties.
+
+Frater Williams, however, held steadfastly to the belief that Tau Kappa Epsilon was constructed of a fiber that would not only survive the crisis, but would be the leader in the fraternity world in the years to come.
+
+By the end of hostilities in 1945, the rehabilitation was already underway. Several chapters had been revived, bringing the total active chapter roll back up to 19. This year also saw the adoption of a plan made possible by the Teke Loyalty Fund of hiring Traveling Supervisors on a full-time basis. This plan, used successfully by Phi Gamma Delta, Sigma Chi, Lambda Chi Alpha, and a few other nationals, had been used on a very limited scale by TKE before the War. This year, however, marked the first real utilization of the program. These Traveling Supervisors, competent young men and recent graduates, were of inestimable value in reactivating dormant chapters, in training and indoctrinating the Fraters of the active chapters, and in promoting the program of expansion that was to follow. The first post-war Traveling Supervisor, Robert Nelson, was actually working in the field less than a month after V-J Day.
+</br>
+Completed in Grand Fashion
+With as many as five Field Supervisors on the road at a time, and with Dr. Williams and other Grand Officers working incessantly in planning and organizing the work to be done, the extensive task of rehabilitation was completed in grand fashion - true to the belief of Frater Williams and to the amazement of some TKE leaders and the whole fraternity system. By September 1949, all but four TKE chapters had been reactivated. And in addition, 28 new chapters had been installed, bringing TKE's active chapter roll to 70 chapters, undergraduate members to over 3,000, and total initiates to nearly 16,000.
+
+Tau Kappa Epsilon had also, for the first time, penetrated the South. This move was made possible in the fall of 1946 when Alpha Lambda Tau, a small predominantly Southern national fraternity, announced its dissolution. Five of the then eight active chapters of Alpha Lambda Tau affiliated with TKE, giving Tau Kappa Epsilon chapters at the University of Maryland, North Carolina State, Auburn, Louisiana Tech, and Tri-State College in Indiana.
+
+On September 4-7, 1947, the 24th Conclave was held in Champaign, Illinois. This was the first Conclave since 1942. Dr. Williams was again elected, an endorsement of his program of growth and rehabilitation.
+
+In September 1949, Frater Williams stepped down as Grand Prytanis after five years of service in that office, and Grand Histor Leland F. Leland was elected to replace him. With rapidly expanding college enrollments and with the Fraternity's feet planted firmly on the ground, the future for TKE looked bright indeed.
+</br>
+The Fabulous Fifties
+The Golden Jubilee Conclave in Chicago, September 1-3, 1949, celebrated the fiftieth anniversary of the founding of the Fraternity and marked the publication of The Golden Book of Tau Kappa Epsilon, a detailed history of the first fifty years of the Fraternity, compiled by Leland F. Leland.
+
+Founders James C. McNutt and Clarence A. Mayer attended this, our 25th Conclave. They were the only two founders still alive as, sadly, Joseph L. Settles had passed away on February 15, 1943.
+
+To 160 Chapters
+Tau Kappa Epsilon began its rise to power by experiencing dynamic growth unlike any other fraternity in the history of the Greek community during the 1950s. Specifically, at the close of 1949, fifty years after the founding of the Fraternity, Tau Kappa Epsilon had granted a total of 79 charters, 75 of which were active, and had initiated a total of 15,954 men. But ten years later, in 1959, TKE's charter grants totaled 168, of which 160 were active and functioning, and the total initiates numbered 39,065. In just ten years, Tau Kappa Epsilon had more than doubled its size and had risen from a very insignificant position in the fraternity world to that of a leader in all aspects.
+
+From 1949-1951, during Frater Leland's term of office, 20 new chapters were installed and Tau chapter at Oregon State, one of the four chapters to become dormant during the depression and war years, was reactivated. The Fraternity also conducted an extensive review of the national constitution and bylaws, and Frater Leland appointed Howard L. Hibbs, then a regional officer, to head the first national leadership conference.
+</br>
+Leadership Conferences
+Starting at the 26th Conclave, a national leadership conference was held the day before the formal opening of Conclave. This "school" for undergraduate chapter officers started the precedent for leadership training conferences held in conjunction with each Conclave.
+
+In 1951, Sophus C. Goth was selected as Grand Prytanis at the 26th Conclave held in Roanoke, Virginia. The long-needed overhaul of the basic laws of the Fraternity was officially approved and adopted by the passage of over a hundred separate amendments. One of the significant changes made at this Conclave was the establishment of the office of Grand Hegemon.
+</br>
+The Korean War
+College enrollments took a nosedive with the outbreak of hostilities in Korea and TKE's growth, as a result, was greatly curtailed. In spite of this fraternity recession, however, Tau Kappa Epsilon granted its 100th charter to an undergraduate chapter on February 28, 1953, when Delta Delta Tau, a local fraternity at Colorado State College, Greeley, was installed as Delta-Delta chapter.
+
+This important milestone in TKE history was commemorated by the publication of a special issue of The Teke, reviewing the history of TKE growth and development from that day in 1909 when Tau Kappa Epsilon was launched forth on its national career.
+</br>
+Housing Fund Established
+James C. Logan, a Kansas City attorney, was elected Grand Prytanis at the 27th Conclave held during September 1953, at the Hotel Savery, Des Moines, Iowa. During Frater Logan's two-terms in this office 44 new chapters were installed, and a national housing fund was established to provide loans to undergraduate chapters for the construction and purchase of fraternity houses. During the 28th Conclave at the Hotel President and Municipal Auditorium in Kansas City, Missouri, Frater Logan was re-elected Grand Prytanis, and the corporate seal used on charters and certificates was officially adopted.
+
+In 1956, Richard R. Hall became Executive Secretary and the National Office was moved to Kansas City, Missouri. The office of Executive Secretary became a full-time administrative position at this time.
+
+In March of 1957, Frater Bruce B. Melchert helped establish the Canadian Alpha Affiliate at the University of Manitoba, Winnipeg. For his work in establishing this colony, Grand Prytanis Logan named Frater Melchert as TKE's International Founder.
+
+The 29th Conclave was held in Bedford Springs, Pennsylvania, during August 1957. Frank B. Scott was chosen as Grand Prytanis. During Frater Scott's administration, twenty-one new chapters were installed.
+
+On March 15, 1958, TKE truly became an international fraternity when a charter was presented to Canadian Alpha colony, at the University of Manitoba, establishing it as Zeta-Iota Chapter. On April 4, 1959, Zeta-Omicron chapter was installed at Western Carolina College, Cullowhee, North Carolina. This event was a landmark in that it made Tau Kappa Epsilon the largest social fraternity in the world. Both of these chapter milestones occurred during Frater Scott's administration.
+</br>
+Expansion Leaders Recognized
+Much of the growth of the Fraternity during the 1950s was made possible through the dynamic leadership of a succession of Grand Prytani and National Officers dedicated to the principle that strength emanates from growth, aided by an increasingly efficient national organization, and by the detailed planning and devoted service of TKE leaders obsessed with the desire to make Tau Kappa Epsilon the number one fraternity in the country.
+
+For their efforts and devoted service during the growth period of the fraternity following World War II, Fraters Williams, Leland, Logan, and Scott were named Expansion Leaders.
+</br>
+The Solid Sixties
+As Tau Kappa Epsilon entered the decade of the 1960s, it had assumed a position of vital importance in the fraternity world. TKE was now the largest fraternity with more than 160 chapters and was a leader in all aspects of interfraternity competition. This decade was to bring about continued growth along with a solidification of fraternity policies, procedures, and operations.
+
+Under the leadership of Frater Kaser, Tau Kappa Epsilon achieved a position of solid financial stability, dedicated its first permanent International Headquarters building, and formulated and instigated new programs becoming that of the largest and most progressive fraternity.
+
+The 31st Conclave at the Roney Plaza in Miami Beach, Florida, September 1961, greatly aided the Fraternity's fiscal operations by eliminating the monthly dues procedure and adopting the single initiation fee. Increased operating efficiency, plus sound financial management, enabled the fraternity to repay all reserve funds in full by 1962 - operating on an annual budget in excess of $300,000.
+
+In 1960 Bruce B. Melchert became Executive Director, and the fraternity office, or International Headquarters as it is appropriately known, was moved to Indianapolis, Indiana, the following year. The International Headquarters building in Indianapolis contains the offices of the Executive Director, the administrative staff, and the files, records, and equipment of the Fraternity.
+
+Among the many new dimensional goals formulated was the establishment of a TKE placement service to aid Fraters in obtaining employment.
+
+McNutt and Mayer Die
+The 1960s marked the passing of the final two Founders of Tau Kappa Epsilon. Clarence A. Mayer succumbed to a heart attack in Los Angeles on August 8, 1960, and Dr. James C. McNutt closed a brilliant page in history when he passed away on May 18, 1962, in Bloomington, Illinois at the age of 83. Both men, like all five of the Founders, were active in the Fraternity until their death.
+
+The 32nd Conclave, held in August 1963 at the Marrot Hotel in Indianapolis, marked the election of J. Russel Salsbury as Grand Prytanis, and the dedication of the International Headquarters building.
+
+The Teke Scholarship Fund, Inc., a not-for-profit, tax-exempt 501(c)(3) public foundation merged with TKE to form an educational foundation.
+</br>
+Salsbury Re-Elected
+Frater Salsbury was re-elected Grand Prytanis at the 33rd Conclave held in Toronto, Ontario during 1965. This was the first Conclave held outside the United States. During his terms in office, TKE began to realize the benefits of its size and rank. The Offices of the Grand Chapter staff was enlarged to include a Chapter Services Director, an Alumni Director, and a Publications Director. The largest staff of traveling supervisors in the fraternity world was on the road, and several resident supervisors were hired for full-time work in problem chapters.
+
+The name of the Teke Scholarship Fund, Inc. was changed to the Teke Educational Foundation, Inc. in 1967 and incorporated as an Indiana corporation. Also, a housing fund was incorporated as the TKE House Fund, Inc. and an alumni dues program was implemented to supplement the Fraternity's income.
+
+Tau Kappa Epsilon began to take steps to preserve its history when a very active history committee, composed mainly of Fraters Tuesburg, Leland, and Flint, began to write down their memories. Their work resulted in "The Reminiscences of L. W. Tuesburg" published in 1963, and a written history of the 1899 to 1915 period, published in 1966.
+
+The most important legislation of the 33rd Conclave was the Board of Directors concept, the result of four years of study by the Administrative Survey Commission. Under this concept, many of the routine duties traditionally done by a Grand Officer were assigned to the International Headquarters staff. Although the Grand Prytanis, Grand Grammateus, and Grand Crysophylos retained their basic duties as officers of the Fraternity, the other Grand Officers were to do special projects as assigned by the Grand Prytanis.
+
+In order to handle many of the routine tasks that the International Headquarters assumed, TKE became the second fraternity to convert to an electronic data processing system. Most of the financial and membership records were converted to what was then a state-of-the-art high-speed data processing format.
+</br>
+The Fraternity For Life Film
+The TKE public relations and rush film premiered at the Toronto Conclave. It was the first fraternity film produced by Hollywood professionals, and featured undergraduates from Kansas, Missouri, and California, with alumni Ronald Reagan and Stan Kenton, in a 15-minute color and sound film. Chairman of the Public Relations Commission, George Woolery, and Executive Director Bruce B. Melchert planned the film.
+
+In another effort to improve the image of TKE and the fraternity system, the Fraternity planned its first Public Service Week in 1966. The week was a great success, with more participation and good publicity than its creators ever imagined. It was adopted as an annual project.
+</br>
+A Sorrowful Year
+TKE leaders passed away in 1966. Past Grand Prytanis Tex Flint died February 21, Past Grand Prytanis L.W. Tuesburg died June 10, and incumbent Grand Prytanis J. Russel Salsbury died June 3. Frater Salsbury was the first Grand Prytanis to die during his term.
+
+Donald H. Becker assumed the office of Grand Prytanis after Frater Salsbury's death, and pledged himself to continue the policies and fulfill the goals of his predecessor.
+</br>
+A Solidification
+The 1960s also brought about solidification in the number and quality of fraternity houses owned by TKE chapters. The 1963 NIC Yearbook listed Tau Kappa Epsilon as owning 165 houses, far more than any other national fraternity. In 1969 it was revealed that the TKE House Fund, Inc., created in 1953, had loaned money to over 134 chapters to buy, build, or improve their physical facilities and had a total worth of over $1,000,000.
+</br>
+Into The Seventies
+At the 1967 Conclave, Grand Prytanis Becker was elected to the first of his two terms. In his "State of the Fraternity" address at the Grand Bahamas Conclave, Frater Becker talked about continued growth for the Fraternity tied to a growth in services to support these additional chapters.
+
+At a time when there was a good deal of talk about the impending death of national fraternities, Tau Kappa Epsilon was still growing fast. In the 1967-68 academic year fourteen new chapters were installed. This tied the previous one-year record that TKE had established. Then, in the 1968-69 school year, 22 new chapters were installed and two dormant chapters were reactivated - an accomplishment many believed impossible.
+
+During this period, in-depth evaluations were taking place as Fraternity leaders sought new and better programs to meet the needs of students in a changing world. The "Chapter Retreat" concept was born during this period, with members encouraged to plan for the future of their chapter through pre-established goals.
+
+Chapter Advisor Conferences came into being in 1969 to give more information to Fraternity advisors. Believing that the Chapter Advisor is a "key man for success," a number of services were directed toward preparing the Chapter Advisor for his responsibilities with the chapter.
+
+In 1970 TKE reached another significant milestone with the installation of our 300th chapter (Nu-Mu) at the University of South Alabama.
+
+At the 36th Conclave held in Asheville, North Carolina during 1971, Lenwood S. Cochran was installed as Grand Prytanis of our Fraternity. The ritual of the Fraternity was updated at this Conclave. The new ritual kept the spirit and meaning of the original, but arranged it in a more usable form with modern language.
+</br>
+New Headquarters Opened
+A major goal was reached in January 1972, with the opening of the new TKE Headquarters at 8645 Founders Road in Indianapolis, Indiana. The new headquarters was the first built by the Fraternity, and was the culmination of years of dreams and plans. In 1973, T.J. Schmitz from Iota-Omicron chapter at the University of Wisconsin - Whitewater was confirmed as the new Executive Vice President, succeeding Bruce B. Melchert who left the professional staff after 15 years of service.
+
+At the 1973 Conclave in Indianapolis, William A. Quallich was elected as Grand Prytanis. At this Conclave, our 37th, TKE adopted an "associate member" program to replace the traditional pledge education or pledge training. This Conclave marked the beginning of our 75th anniversary year, which was highlighted by a Diamond Anniversary celebration and banquet on January 12, 1974, in Bloomington, Illinois, the site of our founding. Bronze markers were placed on each of the graves of the five Founders who began the Knights of Classic Lore.
+
+The Lake Geneva Playboy Club hosted the 1975 Conclave with the theme of "TKE Together," and William H. Wisdom became Grand Prytanis. Events surrounding the 38th Conclave included the purchase of a computer for the International Headquarters and the increased support of the Teke Educational Foundation. The TKE ritual was also further expanded, and 1976 saw the return of TKE to the National Interfraternity Conference. TKE also began to plan for the future with the development of a Long Range Planning Committee, charged with the responsibility of developing policy recommendations for ensuring the continued success of the Fraternity.
+
+One of the largest and most exciting Conclaves in the Fraternity's history was held in 1977 at the Fairmont Hotel in the French Quarter of historic New Orleans. The 39th Conclave was the first time that chartered alumni associations were eligible to participate in the affairs of the Grand Chapter. At this Conclave, Frater Robert H. Nelson delivered a report by the Long Range Planning Committee, and the Grand Chapter adopted a new structure for associate and initiation fees. TKE also discussed and evaluated the Policy on Chapter Standards. Dr. William V. Muse became Grand Prytanis, and announced that during his term the Fraternity would actively pursue the development of "Tau Kappa Excellence," a quality assurance program for all aspects of chapter and Fraternity programming. A new rush slide show "My Brother, My Friend" was premiered at this Conclave.
+
+Tau Kappa Epsilon held its 40th Conclave in 1979 at the Sheraton Hotel and Country Club in French Lick, Indiana. With a Conclave theme "The Teke Pace," undergraduate and alumni delegates participated in a variety of athletic events similar to the Olympics. Conclave began with an inspiring keynote address delivered by Notre Dame basketball coach and Frater Richard "Digger" Phelps. The Grand Chapter took action on a number of legislative items including the establishment of an annual membership fee for undergraduate members, and Rodney Williams, Jr. was elected as Grand Prytanis. Long-time Chapter Advisor of Delta-Xi Chapter at Miami University, Dr. T.J. Cobbe, joined the Grand Council as Grand Hegemon. One of the highlights of the 1979 Conclave was the trip to Louisville, Kentucky, and the ride on the riverboat, the "Belle of Louisville."
+
+The 80's - A Decade Full of Changes
+The 41st Conclave was held at the Hotel Roanoke in Roanoke, Virginia during 1981. This Conclave saw the election of John A. Courson to the office of Grand Prytanis. The theme of "Reach Out..." was emphasized as a challenge to all members of Tau Kappa Epsilon to build on the great traditions of the Fraternity.
+
+Tau Kappa Epsilon unveiled a number of new programs and concepts in 1982. A special program of Regional Leadership Conferences was added to the already existing schedule of District Conferences. A greater focus on alumni involvement and volunteers was introduced as part of the new Regional Servicing Program. Full-color recruitment posters, buttons, brochures and special slide presentations were introduced as part of a comprehensive national marketing theme, "TKE...The Winning Tradition."
+
+In 1983, the 42nd Conclave was held at the Fairmont Hotel in New Orleans, Louisiana. The theme for this Conclave was "Tradition of Excellence." Dwayne R. Woerpel was installed as TKEs 30th Grand Prytanis. An exciting highlight of this Conclave was the conclusion of TKE Keg Roll V during a special celebration in the New Orleans Superdome. In addition, the first Ronald Reagan Leadership Award was presented to Frater Rex Davis.
+</br>
+A Presidential Reception
+One of the most historic TKE events took place on March 23, 1984, when an impressive group of TKE leaders gathered for a special fraternal celebration at the White House in Washington, D.C. Frater Ronald Reagan, a lifelong TKE supporter, was awarded the NIC Gold Medal, the highest award among fraternities, for his lifelong efforts to support and promote college fraternities. In addition, Grand Prytanis Woerpel presented Frater Reagan with the Order of the Golden Eagle, the highest award in Tau Kappa Epsilon, for his exemplary lifelong commitment to our Fraternity and for his many efforts to assist and promote TKE.
+
+Our 43rd Conclave was held in Orlando, Florida, where many Fraters enjoyed "TKE Day" at Walt Disney World. Joel E. Johnson was installed as Grand Prytanis and the "America's Fraternity" theme campaign was introduced. The Order of the Golden Eagle was given posthumously to Frater Harry J. Donnelly, who is generally considered a founder of the TKE Educational Foundation.
+
+In 1985, Past Grand Prytanis Rodney Williams, Jr. was elected president of the National Interfraternity Conference. Frater Williams was the first Teke to hold that position.
+
+The 44th Conclave was held at the Grand Hyatt on August 19-22, 1987 in Washington, D.C. The new Fraternity theme "For Winners Only" was unveiled and Fraters enjoyed the sights and sounds of our nation's capital. Past Executive Director Bruce B. Melchert was elected as Grand Prytanis. One significant accomplishment of Frater Melchert's term was the completion of an extensive Long Range Plan that included a study of hazing and its affects on the Fraternity.
+</br>
+TKE Feels Pressure from Society
+By the late 80s, the increasingly litigious environment in the United States required changes in fraternal operations. Resources were constantly allocated to risk management, and membership growth had begun to steadily decline in all national fraternities. The Fraternity needed to make significant changes to its operations.
+
+The 45th Conclave was held at the Indianapolis Hyatt Regency Hotel in 1989, and James S. Margolin was elected Grand Prytanis. During the Conclave, the Grand Chapter adopted legislation to eliminate traditional pledging. The Membership Development Program included a structured candidate education program as well as continuing education that included levels of achievement, membership standards, and the Membership Quality Board. The program also included a prompt initiation requirement, requiring the initiation of new members within 14-days after bid acceptance. The fraternity also required all TKE chapters to maintain comprehensive liability insurance.
+</br>
+Responding to Changes in the Nineties
+Fraternity membership continued to decline despite the new Membership Development Program, and the loss of revenue resulting from lower initiate counts was becoming a burden for the Fraternity. The 46th Conclave was held at the Fairmont Hotel in New Orleans, Louisiana in 1991, and Robert J. Borel was elected Grand Prytanis. TKE reaffirmed its prompt initiation requirement and mandated that all chapters convert to the Membership Development Program. TKE adopted a new theme "The Choice to Belong, the Challenge to Become" to help overcome objections to the Membership Development Program. The Grand Chapter also acted to abolish female auxiliary organizations, known as "little sister" groups.
+
+New and formidable challenges continued to arise during the decade as TKE dealt with membership decline and loss of revenue, and increased costs associated with risk management. The Fraternity adopted another long-range plan in 1992, reacting to many of these financial and membership pressures.
+
+The 47th Conclave was held at the Hyatt Burlingame in San Francisco, California. During this Conclave, TKE elected its first "legacy" Grand Prytanis, Rear Admiral John R. Fisher. His father, Donald A. Fisher, served as Grand Prytanis from 1935-1937, and Frater Fisher proudly wore his father's Past Grand Prytanis medallion during his own installation ceremony.
+</br>
+Leaving A Legacy
+Like his father, Frater Fisher set out to realign and strengthen the Fraternity's finances and membership. In December of 1993, Executive Vice President T.J. Schmitz retired after 25 years of service to the Fraternity. Frater Schmitz had been the TKE Chief Executive Officer since 1973, and a nationwide search was held to select his replacement. William J. Metzger, Jr., an initiate of Epsilon-Nu chapter at the University of Wisconsin-Stevens Point, who had served a long and distinguished career in the U.S. Navy including six years as a prisoner of war in North Vietnam, became the new Executive Vice President/CEO.
+
+The 48th Conclave, held at the Grand Hyatt Hotel in Washington, D.C. in 1995, saw Thomas M. Castner elected as Grand Prytanis. The Grand Chapter also modified the prompt initiation period, increasing the amount of time between bid acceptance and initiation from 2 weeks to 6 weeks. Also, TKE found itself on the cutting edge of innovation with the development of the TKE website, one of the first in the fraternity world.
+
+By this time Fraternity finances and membership had become more stable and in 1996, Grand Council member Timothy J. Murphy, CFC, was selected to follow Frater Metzger as Executive Vice President. TKE also launched its first official website.
+
+In 1997, TKE held its 49th Conclave at the Westin Innisbrook Resort in Tarpon Springs, Florida, and Gary A. LaBranche was installed as Grand Prytanis. Frater LaBranche began a campaign to increase volunteerism in TKE, and the District President program was dissolved for a more comprehensive Province system. A significant moment at this Conclave was the naming of Bruce B. Melchert as an Expansion Leader. The Fraternity also began planning for its Centennial Celebration.
+</br>
+Centennial
+The Centennial Celebration took place in seven cities across North America on January 9, 1999, counting down to midnight on January 10th. Each of the sites was linked via satellite to Bloomington, Illinois, where the Knights of Classic Lore had begun 100 years ago.
+
+In 1999, our 50th Conclave, known as the Centennial Conclave, was held in Indianapolis, Indiana. The Indianapolis Scottish Rite Cathedral was the opening site of the Conclave that saw Lon G. Justice elected as Grand Prytanis.
+
+Our Second Century
+The Fraternity prepared for its second century with a change in professional leadership. Kevin M. Mayeux, an initiate of Gamma-Theta Chapter at the University of Florida, was selected as Executive Vice President/CEO on July 1, 2000 following an international search.
+
+For the first time in more than a decade, the Fraternity was in a position to address the fraternal experience and focus its efforts on enhancing the experience for all members. TKE invested considerable resources upgrading its infrastructure, with a strong emphasis on communications. The TKE website was fully expanded for easy access by undergraduates and alumni, and TKE became the first fraternity in the world to offer an on-line registration system for its new members. In order to provide better chapter service, TKE was divided into regions and the professional staff was reorganized to support this servicing concept.
+
+The 51st Conclave was held at the Fairmont Hotel in New Orleans, Louisiana. Robert D. Planck was elected Grand Prytanis and TKE released material to solidify the Fraternitys identity with a "Redefining Fraternity" public awareness campaign and a focus on scholarship, character, leadership, teamwork, service, and brotherhood. Regional Leadership Conferences, a springtime weekend leadership and training program started in 1984 and suspended prior to Centennial, were reinstated in cities across North America in 2002. The regional servicing concept was further enhanced during the biennium as Province volunteers became an integral part of the chapter service team. For the first time in more than a decade, TKE began to experience growth in our average chapter size and in our total number of collegiate members.
+
+In 2003, TKE held its 52nd Conclave at the Omni Mandalay Hotel at Las Colinas in Irving, Texas and Mark C. Romig was elected Grand Prytanis. Life Loyal Teke was unveiled as the newest Fraternity program.
+
+The 53rd Conclave returned to The Fairmont Hotel in New Orleans, Louisiana, just weeks before Hurricane Katrina made landfall in the summer of 2005. Mark A. Fite was elected Grand Prytanis, and the TKE staff was reorganized to place further emphasis on volunteer chapter servicing, as the focus of the biennium was declared to be involvement, recruitment, and achievement. This Conclave made TKE history, as The Fairmont has now hosted more Conclaves than any other property, including the original Alpha Chapter house.
+
+In 2007, TKE ventured back to the west coast for the 54th Conclave, held at the historic Riviera Hotel and Casino on the Las Vegas strip. This was the first time in Fraternity history that TKE held an off-site event at a casino/hotel owned by Fraters, as the owners of the Hooters Casino hosted an off-site celebration. The next morning, hundreds of Tekes traveled to the Boys and Girls Club of Las Vegas for Kids Day, a TKE service project. Another first was the induction of members into the TKE Circle of Excellence, the newest Fraternity recognition for lifetime achievement.
+      </p>
+    </div>
     </script>
 
+    <script src="text/template" id="contact-template">
+    <header>
+      <img id="letters2" src="images/tke-letters.svg">
+      <img id="logo2" src="images/TKE_2.png">
+      <nav>
+        <ul>
+          <li><a href="#/undergraduates">Home</a></li>
+          <li><a href="#/undergraduates/information">Information</a></li>
+          <li><a href="#/undergraduates/contact">Contact</a></li>
+          <li><a href="#/alumni">Alumni</a></li>
+          <li><a href="http://www.tkegear.com/">Shop</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="mitch-block"></div>
+    <div id="mitch-contact">
+      <h1>Mitchell Tomlinson</h1>
+      <h2>Position: Epi-Prytanis</h2>
+      <a href="">336-816-1170</a>
+    </div>
+    <div id="john-block"></div>
+    <div id="john-contact">
+      <h1>John Scott Martin</h1>
+      <a href="">919-357-8836</a>
+    </div>
+    <div id="trey-block"></div>
+    <div id="trey-contact">
+      <h1>Trey Lawson</h1>
+      <h2>Position: Prytanis</h2>
+      <a href="">813-924-3254</a>
+    </div>
+    <div id="nick-block"></div>
+    <div id="nick-contact">
+      <h1>Nick Lavella</h1>
+      <h2>Position: Histor</h2>
+      <a href="">704-439-6166</a>
+    </div>
+    <div id="will-block"></div>
+    <div id="will-contact">
+      <h1>Will Abee</h1>
+      <a href="">336-240-2132</a>
+    </div>
+    <div id="james-block"></div>
+    <div id="james-contact">
+      <h1>James Charles</h1>
+      <a href="">910-554-7638</a>
+    </div>
+    <div id="jason-block"></div>
+    <div id="jason-contact">
+      <h1>Jason Kirschner</h1>
+      <a href="">336-813-1850</a>
+    </div>
+    </script>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
