@@ -1,0 +1,1573 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display|Play' rel='stylesheet' type='text/css'>
+    <title>TKE site</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="styles/vendor.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="scripts/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    <div class="container"></div>
+
+    <script src="text/template" id="startup-template">
+    <header>
+      <img id="letters" src="images/tke-letters.svg">
+      <img id="logo" src="images/TKE_2.png">
+      <div id="startup-screen">
+        <h1>Enter Site</h1>
+        <a href="#/undergraduates"><button>Undergraduate</button></a>
+        <a href="#/alumni"><button>Alumni</button></a>
+        <a href="#/active"><button>Active Member</button></a>
+      </div>
+    </header>
+    </script>
+
+    <script src="text/template" id="login-template">
+      <div id="password-login">
+        <h1>Please enter the Fraternity password</h1>
+        <input id="frat-pass" type="text" placeholder="Enter password"></input>
+        </br>
+        <button id="pass">Submit</button>
+      </div>
+    </script>
+
+    <script src="text/template" id="active-template">
+    <h1> Active Shit</h1>
+    <div id="active-div">
+      <div id="input-div">
+        <input type="text" placeholder="type your message"><button>Send</button>
+      </div>
+    </div>
+    </script>
+
+    <script src="text/template" id="undergraduates-template">
+    <header>
+      <img id="letters2" src="images/tke-letters.svg">
+      <img id="logo2" src="images/TKE_2.png">
+      <nav>
+        <ul>
+          <li><a href="#/undergraduates">Home</a></li>
+          <li><a href="#/undergraduates/information">Information</a></li>
+          <li><a href="#/undergraduates/contact">Contact</a></li>
+          <li><a href="alumni">Alumni</a></li>
+          <li><a href="http://www.tkegear.com/">Shop</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <nav id="social">
+        <a href=""><img src="images/facebook11.svg"></a>
+        <a href=""><img src="images/vintage2.svg"></a>
+        <a href=""><img src="images/twitter14.svg"></a>
+      </nav>
+    </section>
+    </script>
+
+    <script src="text/template" id="alumni-template">
+    <header>
+      <img id="letters2" src="images/tke-letters.svg">
+      <img id="logo2" src="images/TKE_2.png">
+      <nav>
+        <ul>
+          <li><a href="#/undergraduates">Home</a></li>
+          <li><a href="#/undergraduates/information">Information</a></li>
+          <li><a href="#/undergraduates/contact">Contact</a></li>
+          <li><a href="alumni">Alumni</a></li>
+          <li><a href="http://www.tkegear.com/">Shop</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <nav id="social">
+        <a href=""><img src="images/facebook11.svg"></a>
+        <a href=""><img src="images/vintage2.svg"></a>
+        <a href=""><img src="images/twitter14.svg"></a>
+      </nav>
+    </section>
+    <div id="alumni-reports">
+      <h1>Alumni Reports</h1>
+    </div>
+    <div id="alumni-donate">
+      <h1>Donate to Omicron Alpha</h1>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_donations">
+        <input type="hidden" name="business" value="lawsonfw@email.appstate.edu">
+        <input type="hidden" name="lc" value="US">
+        <input type="hidden" name="item_name" value="Tau Kappa Epsilon - Omicron Alpha">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+    </div>
+    </script>
+
+    <script src="text/template" id="information-template">
+    <header>
+      <img id="letters2" src="images/tke-letters.svg">
+      <img id="logo2" src="images/TKE_2.png">
+      <nav>
+        <ul>
+          <li><a href="#/undergraduates">Home</a></li>
+          <li><a href="#/undergraduates/information">Information</a></li>
+          <li><a href="#/undergraduates/contact">Contact</a></li>
+          <li><a href="#/alumni">Alumni</a></li>
+          <li><a href="http://www.tkegear.com/">Shop</a></li>
+        </ul>
+      </nav>
+    </header>
+    <aside>
+      <h1>Information Directory</h1>
+      <nav>
+        <li><a href="#/undergraduates/information/scrolls">Scrolls</a></li>
+        <li><a href="#/undergraduates/information/active-member">Active Members</a></li>
+        <li><a href="#/undergraduates/information/awards">Awards</a></li>
+        <li><a href="#/undergraduates/information/history">History and Tradition</a></li>
+        <li><a href="#/undergraduates/information/photos">Photos</a></li>
+        <li><a href="#/undergraduates/information/officers">Officers</a></li>
+      </nav>
+    </aside>
+    </script>
+
+    <script src="text/template" id="scrolls-template">
+    <header>
+      <img id="letters2" src="images/tke-letters.svg">
+      <img id="logo2" src="images/TKE_2.png">
+      <nav>
+        <ul>
+          <li><a href="#/undergraduates">Home</a></li>
+          <li><a href="#/undergraduates/information">Information</a></li>
+          <li><a href="#/undergraduates/contact">Contact</a></li>
+          <li><a href="#/alumni">Alumni</a></li>
+          <li><a href="http://www.tkegear.com/">Shop</a></li>
+        </ul>
+      </nav>
+    </header>
+    <aside>
+      <h1>Information Directory</h1>
+      <nav>
+        <li><a href="#/undergraduates/information/scrolls">Scrolls</a></li>
+        <li><a href="#/undergraduates/information/active-member">Active Members</a></li>
+        <li><a href="#/undergraduates/information/awards">Awards</a></li>
+        <li><a href="#/undergraduates/information/history">History and Tradition</a></li>
+        <li><a href="#/undergraduates/information/photos">Photos</a></li>
+        <li><a href="#/undergraduates/information/officers">Officers</a></li>
+      </nav>
+    </aside>
+    <section class="scroll-div">
+      <h1>Scroll Information</h1>
+      1	James H. Dobbins<br/>
+      2	Kenneth G. Reece<br/>
+      3	Buell F. Bailey<br/>
+      4	John G. Long<br/>
+      5	William R. Sain<br/>
+      6	Raymond W. Browning, Jr.<br/>
+      7	Robert H. Stowe, III<br/>
+      8	Arnold B. Lovell<br/>
+      9	Fred H. Bumgardner, Jr.<br/>
+      10	Stokes M. Craver<br/>
+      11	Ricky O. Harvey<br/>
+      12	Roy L. Huffstetler, Jr.<br/>
+      13	Gerry B. Lookabill<br/>
+      14	Michael C. Pickett<br/>
+      15	Allen P. Speer, III<br/>
+      16	Larry W. Austell<br/>
+      17	Robert E. Bush, Jr.<br/>
+      18	Paul R. Callanan<br/>
+      19	Randall K. Duncan<br/>
+      20	B. Michael Penn<br/>
+      21	Jimmy S. Sappenfield<br/>
+      22	John E. Bovender<br/>
+      23	William D. Revelle, Jr.<br/>
+      24	Carl E. Sessoms, Jr.<br/>
+      25	Phillip P. Hawkins<br/>
+      26	L. Scott Qualls<br/>
+      27	Michael P. Snell<br/>
+      28	James S. Boggs<br/>
+      29	Christopher L. Yow<br/>
+      30	Barry L. Bryant<br/>
+      31	Steven C. Corell<br/>
+      32	Timothy A. Cox<br/>
+      33	Arthur J. Hedden<br/>
+      34	Lawrence A. Laughridge<br/>
+      35	Timothy A. Wolfe<br/>
+      36	Roy L. Moore<br/>
+      37	Richard H. Wilson<br/>
+      38	Malcolm W. Carroll<br/>
+      39	Archie D. Gregory<br/>
+      40	Robert D. Twitchell<br/>
+      41	Deberry H. Blackwelder<br/>
+      42	David M. Boone<br/>
+      43	David W. Bryant<br/>
+      44	Mark A. Bumgarner<br/>
+      45	Nick P. Cline<br/>
+      46	Roger W. Davis<br/>
+      47	William H. Freeze<br/>
+      48	C. Bart Lassiter<br/>
+      49	Frank E. Roofe, III<br/>
+      50	David H. Smith<br/>
+      51	Samuel E. Swain<br/>
+      52	Kenneth G. Welborn<br/>
+      53	William G. Fisher<br/>
+      54	Tommy V. McMahan<br/>
+      55	Ronald G. McGinn<br/>
+      56	Joseph B. Craver<br/>
+      57	Robert H. West<br/>
+      58	Tod G. Allen<br/>
+      59	Fred O. Dellinger, Jr.<br/>
+      60	Richard W. Fanning<br/>
+      61	James N. Tate<br/>
+      62	James B. Allen<br/>
+      63	James C. Harris<br/>
+      64	William H. Ingram<br/>
+      65	D. Kenneth Saine<br/>
+      66	William D. Boggs<br/>
+      67	Alan H. Carter<br/>
+      68	Hugh T. Beaver<br/>
+      69	Dennis C. Hill<br/>
+      70	Timothy W. Stout<br/>
+      71	David A. Womble, Jr.<br/>
+      72	Gregory J. Hughlett<br/>
+      73	Gerald L. Jenkins<br/>
+      74	Julian F. Lamm, Jr.<br/>
+      75	Robert P. Smyre<br/>
+      76	William D. Todd, Jr.<br/>
+      77	Ray M. Farrell, Jr.<br/>
+      78	Stanley C. Bracey<br/>
+      79	Raleigh W. Hartman, Jr.<br/>
+      80	Dennis G. Hefner<br/>
+      81	Larry R. Moore<br/>
+      82	Kevin L. Culler<br/>
+      83	Reginald E. Gabriel, Jr.<br/>
+      84	Alfred L. Klingenschmidt<br/>
+      85	Gary E. Scott<br/>
+      86	Matthew P. Turner<br/>
+      87	Kenneth A. Gatlin<br/>
+      88	Randy L. Gillespie<br/>
+      89	Robert R. Harkrader, III<br/>
+      90	Richard K. Paisley<br/>
+      91	William L. Reece<br/>
+      92	Michael G. Johnson<br/>
+      93	William A. Cameron, Jr.<br/>
+      94	Charles A. McDougal, Jr.<br/>
+      95	Joseph M. Glovier<br/>
+      96	Dale R. Hubbard<br/>
+      97	Albert W. Owen, Jr.<br/>
+      98	Ed Adams<br/>
+      99	Randell E. McCaslin<br/>
+      100	Dan T. Davis<br/>
+      101	Michael R. Inman<br/>
+      102	Ronald H. Poe<br/>
+      103	Thomas C. McDade<br/>
+      104	Mark P. Frye<br/>
+      105	Jerry L. Ihme<br/>
+      106	Mark R. Johnson<br/>
+      107	W. Michael Thomas<br/>
+      108	H. Leon Hill, Jr.<br/>
+      109	Tony W. McKinnon<br/>
+      110	Hal W. Rogers<br/>
+      111	Michael T. Spain<br/>
+      112	Steven D. Abernathy<br/>
+      113	Scott S. Dallas<br/>
+      114	Lewis W. Freeze<br/>
+      115	Stephen C. Knupp<br/>
+      116	Charles M. Mishoe<br/>
+      117	Carl E. Powell, Jr.<br/>
+      118	Robert L. Query<br/>
+      119	Fred L. Brown<br/>
+      120	Christopher L. Christopher<br/>
+      121	Steven T. McCarn<br/>
+      122	David K. Everett<br/>
+      123	J. Lynn Silver<br/>
+      124	Tony L. Abernathy<br/>
+      125	Michael L. Deese<br/>
+      126	Joseph L. Hobson<br/>
+      127	Scott Lassiter<br/>
+      128	Steven L. Archer<br/>
+      129	Robert L. Dayton, Jr.<br/>
+      130	Jeffrey L. Bradley<br/>
+      131	John C. Johnston<br/>
+      132	William M. Buckner<br/>
+      133	Douglas L. Frye<br/>
+      134	Dennis B. Lyons<br/>
+      135	Thomas E. Fanning<br/>
+      136	Gary D. Israel<br/>
+      137	Robby M. Lamb<br/>
+      138	James A. Lybrand, III<br/>
+      139	Edward H. Owen<br/>
+      140	James W. Ferrell<br/>
+      141	Michael J. Greene<br/>
+      142	John Wilson Howerton<br/>
+      143	Bruce S. Solomon<br/>
+      144	Jackie R. Wilkerson, Jr.<br/>
+      145	John D. Allison<br/>
+      146	Hilton K. Eades, Jr.<br/>
+      147	Victor L. Horne<br/>
+      148	Mark C. Montgomery<br/>
+      149	Carlton R. Parker, III<br/>
+      150	Lincoln B. Scott<br/>
+      151	Ronald N. Warren<br/>
+      152	Morris D. Davis, Jr.<br/>
+      153	Frank V. Hill<br/>
+      154	James D. Perry<br/>
+      155	Richard M. Spell, Jr.<br/>
+      156	Dale M. Abernathy<br/>
+      157	Steven H. Pate<br/>
+      158	Robert K. Triplett<br/>
+      159	Edward Ford, Jr.<br/>
+      160	James B. Smith<br/>
+      161	Robert E. Yarber<br/>
+      162	Bobby K. Kerley<br/>
+      163	Rusty Nordahl<br/>
+      164	John W. Parsons<br/>
+      165	Ronald C. Lassiter<br/>
+      166	Gary G. Womack<br/>
+      167	Robert E. Barber<br/>
+      168	Patrick W. Campbell<br/>
+      169	Richard B. Slaten<br/>
+      170	David D. Smith<br/>
+      171	Roy R. Throneburg<br/>
+      172	Allan M. Berry<br/>
+      173	Richard R. Campbell, II<br/>
+      174	William J. Young, Jr.<br/>
+      175	Bradley C. Wilkinson<br/>
+      176	Keith L. Boone<br/>
+      177	Gordon A. Solomon<br/>
+      178	Derek Stafford<br/>
+      179	Brett Hayes<br/>
+      180	Harry J. King, Jr.<br/>
+      181	Dion B. Ousley<br/>
+      182	Michael J. Smith<br/>
+      183	Tod S. Harris<br/>
+      184	Jeffrey A. Heybrock<br/>
+      185	Craig Jonkers<br/>
+      186	Richard R. King<br/>
+      187	Anthony S. Loftin<br/>
+      188	J. Corby Johnson, Jr.<br/>
+      189	David K. Dollar<br/>
+      190	Kerry A. Rice<br/>
+      191	Jeffrey E. Trull<br/>
+      192	Eric D. Collins<br/>
+      193	Moody L. Chisholm, Jr<br/>
+      194	Gregory E. Eldridge<br/>
+      195	William B. West<br/>
+      196	James W. Bridges, II<br/>
+      197	Victor Lee McCaskill<br/>
+      198	Alan F. Burke<br/>
+      199	Ross M. Lewis<br/>
+      200	Parker Mills<br/>
+      201	Jonathan W. Phillips<br/>
+      202	Warren L. Ross<br/>
+      203	Dennis E. Sink<br/>
+      204	Marc D. Watson<br/>
+      205	Thomas R. White<br/>
+      206	Jackie B. Yates, Jr.<br/>
+      207	Bryan K. Ensley<br/>
+      208	Jeff Hawthorne<br/>
+      209	Bryan R. Hoots<br/>
+      210	Mitch Laney<br/>
+      211	Timothy P. Brown<br/>
+      212	Henry J. Bryant, Jr.<br/>
+      213	Franklin M. Carter, III<br/>
+      214	Michael G. Myers<br/>
+      215	Timothy R. Lassiter<br/>
+      216	James A. Deese<br/>
+      217	Max H. Garner, Jr.<br/>
+      218	Douglas C. Walker<br/>
+      219	Gary Barber<br/>
+      220	Kenneth B. Leach<br/>
+      221	Peter B. Nachand<br/>
+      222	Mark P. Severa<br/>
+      223	Robert K. Smith<br/>
+      224	Alan K. Wood<br/>
+      225	Scott B. Clay<br/>
+      226	Kenneth E. Furr<br/>
+      227	Mason C. Venable<br/>
+      228	Kelly B. Welch<br/>
+      229	Frederick P. Spach, Jr.<br/>
+      230	David A. Stone<br/>
+      231	Richard D. Fowler<br/>
+      232	Charles H. Arnett, Jr.<br/>
+      233	Carl N. Blue<br/>
+      234	Graham L. Peters<br/>
+      235	Franklin H. Brown<br/>
+      236	Mark D. Beckham<br/>
+      237	Vander G. Chilton<br/>
+      238	Robert E. Alford<br/>
+      239	Keith G. Van-Asch<br/>
+      240	Brian A. Smith<br/>
+      241	Robert M. Moore<br/>
+      242	Jeffrey H. Holden<br/>
+      243	Scott M. Simpson<br/>
+      244	Lane Bailey<br/>
+      245	Mark C. Hall<br/>
+      246	Keith U. Morhard<br/>
+      247	David W. Carleton<br/>
+      248	William M. Spake, III<br/>
+      249	Gary L. Crumpler<br/>
+      250	Gerry L. Martin<br/>
+      251	Kevin O. Mulholland<br/>
+      252	James O. Sizemore, III<br/>
+      253	Jose R. Olivas<br/>
+      254	Woody Y. Cain<br/>
+      255	John E. Zimmerman, III<br/>
+      256	Vincent C. Barnes<br/>
+      257	Jonathan T. Batchelor<br/>
+      258	Derek Alan Hooper<br/>
+      259	Philip M. Henderson<br/>
+      260	Robert M. Cheves, Jr.<br/>
+      261	Robert T. Young, II<br/>
+      262	Robert B. Stroud<br/>
+      263	Steve Henley<br/>
+      264	Matt Farel<br/>
+      265	Craig P. Coe<br/>
+      266	Robert T. Isaacson<br/>
+      267	Richard T. Biddy<br/>
+      268	Robert G. Nesbit<br/>
+      269	William G. Parsons<br/>
+      270	Michael P. Sollecito<br/>
+      271	J. Kirk Matheson<br/>
+      272	Jeffrey S. Hodge<br/>
+      273	Brett J. Dowling<br/>
+      274	John A. Ambrose<br/>
+      275	Jonathan A. Walker<br/>
+      276	Gordon L. Goodman<br/>
+      277	George G. Carras, Jr.<br/>
+      278	David W. Linthicum<br/>
+      279	Arnold B. Christie<br/>
+      280	E. Rhyne Cannon, III<br/>
+      281	Jeff L. Rollins<br/>
+      282	Michael Moncure<br/>
+      283	David L. Lamm<br/>
+      284	Paul R. Beezley<br/>
+      285	L. Wendell Collins<br/>
+      286	Martin R. Teems<br/>
+      287	Thomas A. Dawson<br/>
+      288	Michael C. Baker<br/>
+      289	Wayne F. Saraphis<br/>
+      290	Sean D. Moore<br/>
+      291	Wade H. Ison, IV<br/>
+      292	Warren Zweig<br/>
+      293	Wade M. Hobson, Jr.<br/>
+      294	Eric G. Dishman<br/>
+      295	Richard J. Cunane<br/>
+      296	Terry M. Peterson<br/>
+      297	Michael J. Rook<br/>
+      298	Gregory A. Jones<br/>
+      299	John J. Taylor<br/>
+      300	Bradley W. Durrett<br/>
+      301	Alan B. Ross<br/>
+      303	Gerald S. Jonkers<br/>
+      304	John R. Folger<br/>
+      305	Christopher W. Howell<br/>
+      306	John J. Driscoll<br/>
+      307	Richard D. Buter<br/>
+      308	Ken C. Hammond<br/>
+      309	Robert O. Mock<br/>
+      310	Ed O. Jones<br/>
+      311	Scott D. Smith<br/>
+      312	William F. Barrineau, III<br/>
+      313	R. Steve Shiver<br/>
+      314	John D. Matheson<br/>
+      315	Michael K. Phillips<br/>
+      316	David Clements<br/>
+      317	Greg Scott Gentry<br/>
+      318	Matthew Loucks<br/>
+      319	Timothy W. Goetchius<br/>
+      320	Armin R. Brach<br/>
+      321	Jeffrey T. Weber<br/>
+      322	Steven L. Fain<br/>
+      324	David L. McInnis<br/>
+      325	David J. Murphy<br/>
+      327	Michael J. Miller<br/>
+      328	Thomas D. McBrayer, Jr.<br/>
+      329	Marvin Hockaday<br/>
+      330	Randy P. Wulff<br/>
+      331	Mark M. Moser<br/>
+      332	Joseph C. Parkhurst<br/>
+      333	L. Kent Rhoney, Jr.<br/>
+      334	James M. Bradford, Jr.<br/>
+      335	Neal K. Wright<br/>
+      336	Charles J. Fletcher<br/>
+      337	Patrick D. Rook<br/>
+      339	Gregory S. McLamb<br/>
+      340	Robert U. McManus<br/>
+      341	Caleb Smith<br/>
+      342	Mark R. Ledford<br/>
+      343	Samuel D. Mizelle, II<br/>
+      344	Robert L. Chew, IV<br/>
+      346	John C. Petrey<br/>
+      347	David R. Blackburn<br/>
+      348	David L. Phillips<br/>
+      350	David J. Perry<br/>
+      351	Jeffrey T. Triplett<br/>
+      353	Milton B. Villemagne, III<br/>
+      355	Michael J. Brandsma<br/>
+      356	Michael J. Ruggles<br/>
+      357	Christopher M. Supple<br/>
+      360	Matthew D. Salters<br/>
+      361	Robert E. Bostic, Jr.<br/>
+      362	Jason S. Triplett<br/>
+      363	S. Craig McCallister, CFC<br/>
+      364	Steven E. Henson, Jr.<br/>
+      365	James R. Matthews, Jr.<br/>
+      366	Ryan L. Kelley<br/>
+      369	John L. Jacob<br/>
+      371	Amos F. Dean<br/>
+      373	Henry A. Siler<br/>
+      374	Christopher C. Herbst<br/>
+      375	Michael B. Fuller<br/>
+      376	Tom A. Thompson<br/>
+      377	Mark E. Courtney<br/>
+      378	John J. OConnor<br/>
+      379	Norman D. Herold<br/>
+      380	Cline R. Pyatt<br/>
+      381	Jonathan N. Griner<br/>
+      382	Marvin E. Collins, III<br/>
+      383	Christopher L. Coble<br/>
+      384	Dallis A. Tucker<br/>
+      385	Kevin K. Lynch<br/>
+      386	Steven T. McReynolds<br/>
+      387	Daniel J. Dudek<br/>
+      388	Marshall G. Bockoven<br/>
+      389	Larry P. Bytnar<br/>
+      390	Ronald A. Seils<br/>
+      391	Christopher S. Eller<br/>
+      392	Ronald D. Jester, Jr.<br/>
+      393	Brian J. Philips<br/>
+      394	Kirk W. Page<br/>
+      395	Robert D. Ransom<br/>
+      396	Mark A. Pucylowski<br/>
+      397	John E. Shore<br/>
+      398	Matthew D. Hemphill<br/>
+      399	Alexander R. Perry<br/>
+      400	Randall S. Marin<br/>
+      401	Jason L. Leonhardt<br/>
+      402	Stephan J. Hightower<br/>
+      403	John V. Bays<br/>
+      404	John R. McCray<br/>
+      405	Phillip B. Hunter<br/>
+      406	Khan E. Schwanhausser<br/>
+      407	Michael W. Crutchfield<br/>
+      408	John W. Stone, IV<br/>
+      409	Michael J. Ellington<br/>
+      410	William R. Adams<br/>
+      411	Robert T. Lamb<br/>
+      412	Terry M. Hernon<br/>
+      413	Christopher T. Greene<br/>
+      414	Richard S. Blackwelder<br/>
+      415	Wesley S. Madison, Jr.<br/>
+      416	Darin D. Sloop<br/>
+      417	Eric I. Burke<br/>
+      418	Christopher A. Gill<br/>
+      419	Kevin W. Zeller<br/>
+      420	Jason C. Newman<br/>
+      421	Peter Brennan<br/>
+      422	Glenn T. Blackman<br/>
+      423	Jason C. Moore<br/>
+      424	Jason J. Shell<br/>
+      425	Raymond J. Perry, Jr.<br/>
+      426	Christopher M. Woodward<br/>
+      427	Jeffrey W. Hall, Jr.<br/>
+      428	Vernon B. Koonts<br/>
+      429	Leonard R. Williams<br/>
+      430	Kirk L. Schultz<br/>
+      431	David S. Davenport<br/>
+      432	Oliver B. Johnson<br/>
+      433	Lance T. Lovins<br/>
+      434	Brannon S. Raines<br/>
+      435	Jeffrey A. Newcomer<br/>
+      436	James R. Price, Jr.<br/>
+      437	Peter P. Watkins<br/>
+      438	David T. Powers<br/>
+      439	Christopher T. Caggiano<br/>
+      440	Justin C. Cort<br/>
+      441	James D. Goodrich<br/>
+      442	Philip T. Elmore, USNR<br/>
+      443	Thomas S. Riley<br/>
+      444	Gregory G. Marks<br/>
+      445	Brian E. Wilkins<br/>
+      446	David E. Beirne<br/>
+      447	Jeffrey R. Eissinger<br/>
+      448	David E. Bounds<br/>
+      449	Robert C. T. Childs<br/>
+      450	J.Todd Gilley<br/>
+      451	David B. Reese<br/>
+      452	Kelvin N. Owen<br/>
+      453	William E. Bridges<br/>
+      454	Joshua D. Mead<br/>
+      455	Mason L. Reuter<br/>
+      456	John N. Kepple, IV<br/>
+      457	Brad C. Boughton<br/>
+      458	Jens D. Lyndrup<br/>
+      459	William Reuter, Sr.<br/>
+      461	Donald W. Knop, II<br/>
+      462	Christopher D. Glasgow<br/>
+      464	Joshua W. Eaton<br/>
+      465	Anthony R. Abeyounis<br/>
+      466	Matthew J. Oljeski<br/>
+      467	Matthew D. McNay<br/>
+      468	Robert E. Drury<br/>
+      469	Reuben J. Moretz<br/>
+      470	Kenneth D. Lisenbe<br/>
+      471	Christopher L. Wiltshire<br/>
+      472	Jason R. Stone<br/>
+      473	Erik K. Tavcar<br/>
+      474	Ryan D. Hansing<br/>
+      475	Ryan P. Beede<br/>
+      476	Richard R. Rodriguez<br/>
+      477	Ian L. Thieme<br/>
+      478	Daniel L. Stewart<br/>
+      480	Michael D. Proies<br/>
+      481	Mark F. Proies<br/>
+      482	Scott H. Mieras<br/>
+      483	Henry D. Stephens<br/>
+      484	David E. Morris<br/>
+      485	Grant D. Campbell<br/>
+      486	Robert A. Steele<br/>
+      487	James F. Baker, III<br/>
+      488	Leo McKenzie, III<br/>
+      489	Ernest B. Blaskey<br/>
+      490	Edward B. Harrell<br/>
+      491	Toby L. Chappell<br/>
+      492	Robert E. Linquist, II<br/>
+      493	Brian M. Hefner<br/>
+      494	Kazimere G. Romanczyk, Jr.<br/>
+      496	Andrew J. Chance<br/>
+      497	David W. Cornwell<br/>
+      498	Ryan T. Elrod<br/>
+      500	Michael A. Faurote<br/>
+      501	Raymond A. Smith, III<br/>
+      502	Michael P. Shumake<br/>
+      503	Derrick W. Cline<br/>
+      504	Benjamin P. Barnes<br/>
+      505	Scott P. Howard<br/>
+      506	Mark E. Jones<br/>
+      507	Stephen B. Cole<br/>
+      508	John A. Broome<br/>
+      509	Joseph S. Hourigan<br/>
+      510	William E. Boda<br/>
+      511	Owen G. Huff<br/>
+      512	Brett M. Livengood<br/>
+      513	Jay D. Carothers<br/>
+      515	Michael R. Kelley<br/>
+      516	Clifton D. Gauldin<br/>
+      517	Justin B. Bunting<br/>
+      520	Collin R. McCloy<br/>
+      521	Jason D. Riggs<br/>
+      522	Donovan D. Dockrill<br/>
+      523	Jeremy D. Hinton<br/>
+      524	Spencer R. Hutton<br/>
+      529	Brian A. Gaertner<br/>
+      530	Robert S. Martin, Jr.<br/>
+      531	Jed A. Woodcock<br/>
+      533	Christopher G. Neilson<br/>
+      534	David J. Woodle<br/>
+      535	Joshua T. Collins<br/>
+      536	Jonathan A. Hussey<br/>
+      537	Kim D. Adams, Jr.<br/>
+      538	Steven C. Wright<br/>
+      539	Michael Vetr,o Jr.<br/>
+      541	Casey Pope<br/>
+      542	Jayson J. Whiteside<br/>
+      543	Jeffrey A. Kresha<br/>
+      544	Jody C. Corum<br/>
+      545	Jason M. Hemphill<br/>
+      546	Jeffrey A. Brown<br/>
+      547	Steven M. Vincent, Jr.<br/>
+      548	Robert L. Watson, III<br/>
+      549	Michael B. Fiebernitz<br/>
+      550	Jonathan H. Phillips<br/>
+      551	Robert Z. Hubbard<br/>
+      552	Joseph W. Cullom, Jr.<br/>
+      554	Robert J. White, Jr.<br/>
+      555	Karl S. Hermann<br/>
+      556	David R. Phillips<br/>
+      558	Darius U. Duong<br/>
+      560	Matthew J. Lindsay<br/>
+      561	Phillip Parsons<br/>
+      562	Timothy J. Maness<br/>
+      563	Kurt W. Woodlief<br/>
+      564	William E. Huck<br/>
+      565	Jonathan L. Revill<br/>
+      566	Matthew G. Daigle<br/>
+      567	Scott W. Keller<br/>
+      568	Ryan G. Berliner<br/>
+      569	Thomas A. Harless<br/>
+      570	Joseph A. Kline<br/>
+      571	Andrew A. Weinkle<br/>
+      572	Craig R. Herlong<br/>
+      573	Matthew R. Brooks<br/>
+      574	Jamey Messick<br/>
+      575	Ryan K. Wagner<br/>
+      576	Brandon E. Plyler<br/>
+      577	James A. LaCroix<br/>
+      579	Matt Bethel<br/>
+      580	Nicholas Wadkins<br/>
+      581	Joey Fortner<br/>
+      582	David Brooks<br/>
+      583	Josh Snell<br/>
+      585	Carroll R. Smith, III<br/>
+      585	Jason Moore<br/>
+      586	Charles Foxx<br/>
+      587	Jimmy Pendergraph<br/>
+      588	James Carter<br/>
+      589	Justin Black<br/>
+      590	Joseph L. Clemmer<br/>
+      591	Patrick Hannon<br/>
+      592	Hunt Willis<br/>
+      593	Zack Gilmore<br/>
+      594	Adam Wiley<br/>
+      595	Lee Boswell<br/>
+      596	Erik Sommers<br/>
+      597	Ryan Eller<br/>
+      598	Josh Smith<br/>
+      599	David Peck<br/>
+      600	Dario Icardi<br/>
+      601	Nicholas McCoy<br/>
+      602	Tracy Keller<br/>
+      603	Daniel Baum<br/>
+      604	Jonathan Rodda<br/>
+      605	Jeff Earles<br/>
+      606	Greg Keys<br/>
+      608	Ross Yates<br/>
+      609	J. Daniel Lawson<br/>
+      610	Nick Farmer<br/>
+      611	Matthew Carter<br/>
+      612	Sean Ostmann<br/>
+      617	John Michael Moore<br/>
+      619	Christopher Goff<br/>
+      620	Christopher McLennan<br/>
+      621	Darren Caputo<br/>
+      622	Christopher Burke<br/>
+      623	Anthony DeRiso, III<br/>
+      626	William Miller<br/>
+      627	Jonathan Parent<br/>
+      628	John Liberto<br/>
+      629	Jacob Rutherford<br/>
+      630	Matt Brown<br/>
+      631	David Tate<br/>
+      632	Zach McCarter<br/>
+      633	Alex Newton<br/>
+      634	Joseph Moran<br/>
+      635	Douglass Herre<br/>
+      637	Jared D. Masker<br/>
+      638	Chris Ollenburg<br/>
+      639	Jason Mills<br/>
+      640	Jimmy Ingold<br/>
+      641	Christopher Franklin<br/>
+      642	Justin Horton<br/>
+      644	Shawn Dowdee<br/>
+      645	James Brooks<br/>
+      646	Cory Powers<br/>
+      646	Woodrow Carter<br/>
+      647	Steven A. Allison<br/>
+      648	Shane Lewis<br/>
+      650	Eric Friedman<br/>
+      651	Scotty Smith<br/>
+      652	Brennon Mills<br/>
+      653	Kevin Mark Bowes<br/>
+      663	Christopher Amodeo<br/>
+      669	Lawrence Kovalcin<br/>
+      682	Brandon Hard<br/>
+      685	Henry Royal<br/>
+      688	Jackson B. Lever<br/>
+      692	Addison Moore<br/>
+      693	Charlie Hinkle<br/>
+      694	Charles Armentrout<br/>
+      696	Phillip Myers<br/>
+      698	Benjamin A. Combs<br/>
+      701	Joshua D. Bolick<br/>
+      702	Omar Frias<br/>
+      706	Kyle Taylor<br/>
+      707	Brody Littley<br/>
+      709	Hilton Wood<br/>
+      710	Michael Newell<br/>
+      712	Ross Krieg<br/>
+      713	Andrew Gibson<br/>
+      714	Tyler DeBusk<br/>
+      715	Jake Borower<br/>
+      717	Edward Copeland<br/>
+      718	Brandon J. Clement<br/>
+      719	Ryan Klinkicht<br/>
+      720	Alexander Cuthbertson<br/>
+      721	Sean Record<br/>
+      722	Nick Wrinn<br/>
+      723	Kerry Mylett<br/>
+      724	John Scott-Martin<br/>
+      725	Devon Ferguson<br/>
+      726	Christopher Waddell<br/>
+      727	Jake Burton<br/>
+      729	Ryan Winn<br/>
+      730	Kevin Cunningham<br/>
+      731	Taylor Pavlick<br/>
+      732	Bradley Scammon<br/>
+      734	Joshua Coffey<br/>
+      735	Charles F. Kiser<br/>
+      736	Forrest Howard<br/>
+      737	Angelo Acitelli<br/>
+      738	Joseph Colucci<br/>
+      739	Kenneth Grayson<br/>
+      740	Alexander Bounds<br/>
+      741	Joshua Mabellos<br/>
+      742	Johnnie Mattson<br/>
+      743	Jason Kirschner<br/>
+      744	Parker Haake<br/>
+      745	Andrew Hudson<br/>
+      746	Trey Lawson<br/>
+      747	Philip Williams<br/>
+      748	Michael Yonkovig<br/>
+      749	Nicholas Barnas<br/>
+      750	Bryan Hughes<br/>
+      751	Dax Benfield<br/>
+      752	Alex Ravan<br/>
+      753	Austin Morgan<br/>
+      754	Ronald Cox<br/>
+      755	Tucker Chason<br/>
+      756	Aaron Martschenko<br/>
+      757	Jordan Thomas<br/>
+      758	Jordan Roberts<br/>
+      759	Grey Curtis<br/>
+      760	Daniel Cooper<br/>
+      761	Austin Shaw<br/>
+      762	Brian Cade<br/>
+      763	Mitchell Tomlinson<br/>
+      764	Wiley Foil<br/>
+      765	William Pace<br/>
+      766	Nick Lavella<br/>
+      767	Christopher Dinh<br/>
+      768	Richard Runde<br/>
+      769	Willan Charles<br/>
+      770	Joshua Bazemore<br/>
+      771	Matt Stockton<br/>
+      772	Garrett Parsons<br/>
+      773	Garrison Wagoner<br/>
+      774	Luke Elliot<br/>
+      775	Charles Plummer<br/>
+      776	William Abee<br/>
+      777	Michael Sheaffer<br/>
+      778	Isaac White<br/>
+      778	Marshall Sizemore<br/>
+      0	Ian Mullins<br/>
+      0	Xavier Baez<br/>
+      0	Maxwell Reynolds<br/>
+      0	Cesar A Velando<br/>
+      0	Connor Holland<br/>
+      0	Gregory B. Smith<br/>
+      0	Harvey Degree<br/>
+      0	James Dionne<br/>
+      0	Joseph Church<br/>
+      0	Andrew Birdwell<br/>
+      0	Chad DeHartchuck<br/>
+      0	Mitchell Treaster<br/>
+      0	Kyle OHara<br/>
+      0	Kalan Pegg<br/>
+      0	Kevin Indenbaum<br/>
+      0	Jack Pridgen<br/>
+      0	Daniel Taylor<br/>
+      0	Edward Black<br/>
+      0	Matthew D. Pigg<br/>
+      0	David Monroe<br/>
+      0	Scott A. Rogers<br/>
+      0	Bryan Breidenbach<br/>
+      0	James R. Horton<br/>
+      0	Donald G. McLennan, Jr.<br/>
+      0	Spencer Price<br/>
+      0	Christopher Zaluski<br/>
+      0	Alexander Witten<br/>
+      0	Adam B. Adcock<br/>
+      0	Marshall Costner<br/>
+      0	Adam Whitehead<br/>
+      0	Sidney Cecil<br/>
+      0	Jamie Hannen<br/>
+      0	Michael Young<br/>
+      0	Adam Clayton<br/>
+      0	Daniel Sawyers<br/>
+      0	Josh Brittenham<br/>
+      0	Timothy Fitts<br/>
+      0	Joel Levi Altman<br/>
+      0	Charles Norton, Jr<br/>
+      0	Carlton Campbell<br/>
+      0	Chris McNeilus<br/>
+      0	Johnathan Raby<br/>
+      0	David Peace<br/>
+      0	Lee Stevens<br/>
+       	Kevin Turner<br/>
+       	Travis Benfield<br/>
+       	Destin Hall<br/>
+       	Mason C. Wagoner<br/>
+       	George Wasif<br/>
+       	Patrick Campbell<br/>
+       	Brian Starnes<br/>
+       	Evan Morse<br/>
+       	Daniel Mylett<br/>
+       	Patrick Mylett<br/>
+       	Jason Corday<br/>
+    </section>
+    </script>
+
+    <script src="text/template" id="activemember-template">
+    <header>
+      <img id="letters2" src="images/tke-letters.svg">
+      <img id="logo2" src="images/TKE_2.png">
+      <nav>
+        <ul>
+          <li><a href="#/undergraduates">Home</a></li>
+          <li><a href="#/undergraduates/information">Information</a></li>
+          <li><a href="#/undergraduates/contact">Contact</a></li>
+          <li><a href="#/alumni">Alumni</a></li>
+          <li><a href="http://www.tkegear.com/">Shop</a></li>
+        </ul>
+      </nav>
+    </header>
+    <aside>
+      <h1>Information Directory</h1>
+      <nav>
+        <li><a href="#/undergraduates/information/scrolls">Scrolls</a></li>
+        <li><a href="#/undergraduates/information/active-member">Active Members</a></li>
+        <li><a href="#/undergraduates/information/awards">Awards</a></li>
+        <li><a href="#/undergraduates/information/history">History and Tradition</a></li>
+        <li><a href="#/undergraduates/information/photos">Photos</a></li>
+        <li><a href="#/undergraduates/information/officers">Officers</a></li>
+      </nav>
+    </aside>
+    <section class="scroll-div">
+      <h1>Active Members</h1>
+      <div id="thing">
+      Will Abee</br>
+      Angelo Acitelli</br>
+      Nicholas Barnas	Crysophylos (Treasurer)</br>
+      Duncan Bazemore</br>
+      Dax Benfield</br>
+      Brian Cade</br>
+      Pat Campbell</br>
+      James Charles</br>
+      Tucker Chason</br>
+      Danny Cooper</br>
+      Jason Corday</br>
+      Trey Cox</br>
+      Kevin Cunningham</br>
+      Chris Dinh</br>
+      Luke Elliot</br>
+      Wiley Foil</br>
+      Kenneth Grayson</br>
+      Parker Haake	Pylortes (Sergeant-at-arms)</br>
+      Forrest Howard</br>
+      Andrew Hudson</br>
+      Bryan Hughes</br>
+      Jason Kirschner</br>
+      Nick Lavella	Histor (Historian)</br>
+      Trey Lawson	Prytanis (President)</br>
+      Joshua Mabellos</br>
+      Aaron Martschenko</br>
+      Johnnie Mattson</br>
+      Austin Morgan	Hypophetes (Chaplain)</br>
+      Will Pace	Grammateus (Secret</br>
+      Alex Parsons	Rush Chairman</br>
+      Taylor Pavlick</br>
+      Charles Plummer</br>
+      Alex Ravan</br>
+      Jordan Roberts	Hegemon (Educator)</br>
+      Brandon Runde</br>
+      John Scott-Martin</br>
+      Austin Shaw</br>
+      Joey Sheaffer</br>
+      Marshall Sizemore</br>
+      Brian Starnes</br>
+      Matthew Stockton</br>
+      Jordan Thomas</br>
+      Mitch Tomlinson	Epiprytanis (Vice President)</br>
+      Christopher Waddell</br>
+      Garrison Wagoner</br>
+      Isaac White</br>
+      Philip Williams</br>
+      Nick Wrinn</br>
+      Michael Yonkovig	Philanthropy Chairman</br>
+      </div>
+    </section>
+    </script>
+
+    <script src="text/template" id="photos-template">
+    <header>
+      <img id="letters2" src="images/tke-letters.svg">
+      <img id="logo2" src="images/TKE_2.png">
+      <nav>
+        <ul>
+          <li><a href="#/undergraduates">Home</a></li>
+          <li><a href="#/undergraduates/information">Information</a></li>
+          <li><a href="#/undergraduates/contact">Contact</a></li>
+          <li><a href="#/alumni">Alumni</a></li>
+          <li><a href="http://www.tkegear.com/">Shop</a></li>
+        </ul>
+      </nav>
+    </header>
+    <aside>
+      <h1>Information Directory</h1>
+      <nav>
+        <li><a href="#/undergraduates/information/scrolls">Scrolls</a></li>
+        <li><a href="#/undergraduates/information/active-member">Active Members</a></li>
+        <li><a href="#/undergraduates/information/awards">Awards</a></li>
+        <li><a href="#/undergraduates/information/history">History and Tradition</a></li>
+        <li><a href="#/undergraduates/information/photos">Photos</a></li>
+        <li><a href="#/undergraduates/information/officers">Officers</a></li>
+      </nav>
+    </aside>
+    </script>
+
+    <script src="text/template" id="awards-template">
+    <header>
+      <img id="letters2" src="images/tke-letters.svg">
+      <img id="logo2" src="images/TKE_2.png">
+      <nav>
+        <ul>
+          <li><a href="#/undergraduates">Home</a></li>
+          <li><a href="#/undergraduates/information">Information</a></li>
+          <li><a href="#/undergraduates/contact">Contact</a></li>
+          <li><a href="#/alumni">Alumni</a></li>
+          <li><a href="http://www.tkegear.com/">Shop</a></li>
+        </ul>
+      </nav>
+    </header>
+    <aside>
+      <h1>Information Directory</h1>
+      <nav>
+        <li><a href="#/undergraduates/information/scrolls">Scrolls</a></li>
+        <li><a href="#/undergraduates/information/active-member">Active Members</a></li>
+        <li><a href="#/undergraduates/information/awards">Awards</a></li>
+        <li><a href="#/undergraduates/information/history">History and Tradition</a></li>
+        <li><a href="#/undergraduates/information/photos">Photos</a></li>
+        <li><a href="#/undergraduates/information/officers">Officers</a></li>
+      </nav>
+    </aside>
+    </script>
+
+    <script src="text/template" id="officer-template">
+    <header>
+      <img id="letters2" src="images/tke-letters.svg">
+      <img id="logo2" src="images/TKE_2.png">
+      <nav>
+        <ul>
+          <li><a href="#/undergraduates">Home</a></li>
+          <li><a href="#/undergraduates/information">Information</a></li>
+          <li><a href="#/undergraduates/contact">Contact</a></li>
+          <li><a href="#/alumni">Alumni</a></li>
+          <li><a href="http://www.tkegear.com/">Shop</a></li>
+        </ul>
+      </nav>
+    </header>
+    <aside>
+      <h1>Information Directory</h1>
+      <nav>
+        <li><a href="#/undergraduates/information/scrolls">Scrolls</a></li>
+        <li><a href="#/undergraduates/information/active-member">Active Members</a></li>
+        <li><a href="#/undergraduates/information/awards">Awards</a></li>
+        <li><a href="#/undergraduates/information/history">History and Tradition</a></li>
+        <li><a href="#/undergraduates/information/photos">Photos</a></li>
+        <li><a href="#/undergraduates/information/officers">Officers</a></li>
+      </nav>
+    </aside>
+    <section class="scroll-div">
+      <h1>Current Officers</h1>
+      <div class="officer-block">
+        <h2>President - Trey Lawson</h2>
+        <div class="officer-contact">
+          <h3>Contact Information</h3>
+          <p>(813)-924-3254</p>
+        </div>
+      </div>
+      <div class="officer-block">
+        <h2>Histor - Nick Lavella</h2>
+        <div class="officer-contact">
+          <h3>Contact Information</h3>
+          <p>(704)-439-6166</p>
+        </div>
+      </div>
+      <div class="officer-block">
+        <h2>Grammateus - Will Pace</h2>
+        <div class="officer-contact">
+          <h3>Contact Information</h3>
+          <p>(704)-651-6533</p>
+        </div>
+      </div>
+      <div class="officer-block">
+        <h2>Crysopheles - Nick Barnas</h2>
+        <div class="officer-contact">
+          <h3>Contact Information</h3>
+          <p>(704)-609-5959</p>
+        </div>
+      </div>
+      <div class="officer-block">
+        <h2>Hegemon - Jordan Roberts</h2>
+        <div class="officer-contact">
+          <h3>Contact Information</h3>
+          <p>(704)-661-4721</p>
+        </div>
+      </div>
+      <div class="officer-block">
+        <h2>Pylortes - Parker Haake</h2>
+        <div class="officer-contact">
+          <h3>Contact Information</h3>
+          <p>(828)-989-5527</p>
+        </div>
+      </div>
+      <div class="officer-block">
+        <h2>Epiprytanis - Mitch Tomlinson</h2>
+        <div class="officer-contact">
+          <h3>Contact Information</h3>
+          <p>(336)-816-1170</p>
+        </div>
+      </div>
+      <div class="officer-block">
+        <h2>Hypophetes - Austin Morgan</h2>
+        <div class="officer-contact">
+          <h3>Contact Information</h3>
+          <p>(704)-340-2059</p>
+        </div>
+      </div>
+    </section>
+    </script>
+
+    <script src="text/template" id="history-template">
+    <header>
+      <img id="letters2" src="images/tke-letters.svg">
+      <img id="logo2" src="images/TKE_2.png">
+      <nav>
+        <ul>
+          <li><a href="#/undergraduates">Home</a></li>
+          <li><a href="#/undergraduates/information">Information</a></li>
+          <li><a href="#/undergraduates/contact">Contact</a></li>
+          <li><a href="#/alumni">Alumni</a></li>
+          <li><a href="http://www.tkegear.com/">Shop</a></li>
+        </ul>
+      </nav>
+    </header>
+    <aside>
+      <h1>Information Directory</h1>
+      <nav>
+        <li><a href="#/undergraduates/information/scrolls">Scrolls</a></li>
+        <li><a href="#/undergraduates/information/active-member">Active Members</a></li>
+        <li><a href="#/undergraduates/information/awards">Awards</a></li>
+        <li><a href="#/undergraduates/information/history">History and Tradition</a></li>
+        <li><a href="#/undergraduates/information/photos">Photos</a></li>
+        <li><a href="#/undergraduates/information/officers">Officers</a></li>
+      </nav>
+    </aside>
+    <div class="scroll-div">
+      <p><h1>Our Beginning, Growth, and Development</h1>
+On the cold night of January 10, 1899, students of Illinois Wesleyan University, in the small Midwestern town of Bloomington, had just returned from the Christmas holidays when Joseph L. Settles went to the room occupied by James C. McNutt and Clarence A. Mayer at 504 East Locust Street to discuss the organization of a new society on campus. Joined immediately by Owen I. Truitt and C. Roy Atkinson, these five students created the first set of regulations for the Knights of Classic Lore, a society whose avowed purpose was "to aid college men in mental, moral, and social development."
+
+Because of his late arrival for this meeting, James J. Love was made the first new member. Love, along with Edwin A. Palmer and George H. Thorpe became the first initiates of this new organization. Although Settles was the leader in organizing the society, Atkinson was elected President and McNutt was chosen as Secretary.
+
+There were two fraternities already in existence at Illinois Wesleyan in 1899, both with more than 50 chapters nationally. Phi Gamma Delta had been established in 1866, while Sigma Chi had begun there in 1883. In addition, two other national fraternities, Phi Delta Theta and Delta Tau Delta, had inactive chapters at Illinois Wesleyan. The Phi Delts existed from 1878-1897 and the Delts from 1877-1880.
+</br>
+<h2>A Different Organization</h2>
+The Founders of the Knights of Classic Lore desired an organization different from those represented by the existing fraternities. Their desire was to establish a fraternity in which the primary requisites for membership would be the personal worth and character of the individual rather than the wealth he possessed, the honors or titles he could display, or the rank he maintained on the social ladder. The Founders of the KCL had little regard for many of the common characteristics of fraternities at that time, including their usual snobbery and disdain for persons outside of a fraternity.
+
+It was not long after their recognition on campus that the Knights of Classic Lore were approached by some alumni of the Illinois Epsilon chapter of Phi Delta Theta, whose charter had been surrendered in 1897. The Phi Delt alumni saw in this new group an opportunity for the restoration of its charter, and interested themselves in converting it into a strong local fraternity. Through the persuasion and effort of Richard Henry Little, for columnist on the Chicago Tribune and one of the most prominent Phi Delt alumni, the Knights presented a petition to the Phi Delta Theta national organization at its convention in New York in 1902. The petition was rejected.
+
+In hopes that their organization might be more attractive to Phi Delta Theta, it was decided that a Greek-letter name should be adopted. The name "Knights of Classic Lore" was therefore abandoned and the Greek letters Tau Kappa Epsilon selected. As a further step, a fraternity house was rented. This was the first fraternity house at Illinois Wesleyan, although Phi Gamma Delta and Sigma Chi had both been in existence on campus for many years. The Wilder Mansion, former home of President Wilder of the University, became the first TKE house.
+
+In the ensuing years, the Phi Delt alumni and some of the undergraduate members continued to press for affiliation with Phi Delta Theta by promoting petitions at the 1904 and 1906 Phi Delt national conventions. In each instance the petition was either withdrawn or postponed. It is reported that one of the petitions came within one vote of being accepted.
+
+The Great Decision
+Late in 1907, several undergraduate members of Tau Kappa Epsilon were again preparing a petition to be presented to the Phi Delta Theta national convention in 1908. The wisdom of petitioning, however, was being questioned with increasing frequency. To increase enthusiasm for this fourth attempt, a banquet was held on October 19, 1907, at which speeches were made both advocating and questioning the proposal. One of the most notable and influential speeches given was a blistering address by Wallace G. McCauley, titled "Opportunity Out of Defeat," in which he advocated the abandonment of the petitioning process and the substitution of a campaign for TKE to become its own national fraternity.
+
+At the banquet, Frater McCauley said, "Someone has said that most victories are defeats. As to the truth of that statement, numerous instances can be cited tending to establish it. But just as true is the converse of that proposition that most defeats are victories, and I truly believe an instance of this was our failure to have reinstated the Phi Delta Theta charter of Illinois Epsilon. I believe this in spite of the fact that no one labored more zealously to that end during the first two campaigns than myself. And, too, no one felt the defeats at the time more bitterly than myself; but now, after an absence of a year or so, I am brought to the conviction that Tau Kappa Epsilon was indeed fortunate in her defeats, because thereby there was reserved for us a large opportunity..."
+
+Interwoven about the sentiments of our name and our pin, and engrained in the fiber of every member is the Teke spirit - a spirit typical of our fraternity - a spirit that does not shrink from sacrifice, that knows no defeat, a spirit indomitable. A spirit which if breathed into a national Tau Kappa Epsilon would spread our organization throughout the schools of our country..."
+
+"But if we keep Tau Kappa Epsilon intact, the Teke spirit…will flow on forever... Let us not lack faith in this project. Remember faith as a grain of mustard will overcome mountains of difficulty. The history of other organizations lends us encouragement. Phi Delta Theta was born a few years before the Civil War in a student's room in a building of Miami University, less pretentious than the preparatory building on the Wesleyan campus, and today Phi Delta Theta is the fourth largest fraternity in existence..."
+
+"Fellow brothers, Tau Kappa Epsilon was conceived in the early struggles of our existence. Time is now right to start in on a national career, and we, its godfathers here tonight, when it is grown to be a strong and lusty organization, touching student life everywhere with the beneficence of its principles, will obtain a satisfaction inexpressible in the part we had in its inception."
+
+Although arousing bitter opposition at the time, this speech ultimately reduced the fourth petition to a bare formality and became one of the significant turning points in the history of the Fraternity.
+
+One of the measures advocated by McCauley in his address was the publication of a quarterly magazine called The Teke. This proposal met with immediate approval and the first issue was published in January 1908, with Clyde M. Leach as the editor.
+
+The First Conclave
+Under the new constitution, the Prytanis and Grammateus of the undergraduate chapters were ex-officio delegates to the Conclave of the Grand Chapter. Accordingly, on February 17, 1909, Clyde M. Leach as Prytanis and Orrie Reeser as Grammateus of the Alpha chapter, met in Leach's room in the chapter house at 801 North Main Street and held the first Conclave of the Grand Chapter, electing a full slate of national officers and appointing a committee to revise the ritual.
+</br>
+<h1>The first Grand Officers were:</h1>
+
+Grand Prytanis: Lester H. Martin
+Grand Epiprytanis: William Wilson
+Grand Grammateus: Clyde E. Leighty
+Grand Histor: L.W. Tuesburg
+Grand Crysophylos: James J. Love
+Grand Hypophetes: Arthur A. Heinlein
+Grand Pylortes: Clyde H. Meyers
+Note: The office of Grand Hegemon was not created until the 1951 Conclave.
+Growth Begins
+As has been typical of Tau Kappa Epsilon throughout its history, the leaders of the Fraternity did not waver, but rather pressed forward with their goal of building TKE into a strong national fraternity. Approximately two months after the national constitution was ratified, the second chapter, Beta, was installed.
+
+On April 6, 1909, Lester H. Martin, Arthur Heinlein, L.W. Tuesburg, and a delegation of actives from Alpha chapter paid a visit to Chi Rho Sigma, a local fraternity at Millikin University, in Decatur, Illinois. The Grand Prytanis appointed a committee to further investigate the local. When the committee reported favorably, the first petition was written with pen and ink on a piece of Decatur YMCA stationery, and was unanimously approved by the Grand Council.
+
+Beta Chapter was installed on Saturday, April 17, 1909, at Decatur, Illinois. A banquet was held that evening at the Decatur Hotel attended by members of Alpha chapter and TKE alumni. It is interesting to note that from the beginning, petitioning groups were thoroughly investigated and that an installation banquet was held. These policies have been followed without exception through today.
+</br>
+The Second Conclave
+The 2nd Conclave was also held in the Alpha chapter house at 801 North Main in Bloomington. On February 11-12, 1910, the seven Grand Officers, plus two delegates each from Alpha and Beta chapters, were in attendance. Alpha chapter staged a banquet on Friday evening, February 11, for those attending and a smoker was held on Saturday evening at the close of the Conclave. Business was transacted with all the seriousness of a large meeting, and Lester H. Martin was again elected Grand Prytanis.
+
+In the spring of 1910 it was announced that Alpha Chapter, after living 11 years in a rented house, had purchased the home of a Wesleyan professor at a cost of $8,500. This, the first house ever owned by a fraternity at Illinois Wesleyan, was located at 406 East Walnut Street, and served as the home of the chapter until the fall of 1924.
+
+On February 10-11, 1911, the 3rd Conclave convened at Decatur, Illinois, with the Grand Officers and delegates from Alpha and Beta again in attendance. William Wilson was elected Grand Prytanis.
+
+The Triangle is Formed
+The issues of The Teke Magazine during 1910-1911 were filled with articles urging further expansion of the Fraternity and predicting the bright future of this infant National Fraternity. Wallace G. McCauley, in the January 1910 issue stated: "TKE is bound to become the fraternity. It is written in the stars that way and all powers of established Hellenism cannot stop the onward destiny of Tau Kappa Epsilon. I don't believe in limiting its extension. Let us plant a chapter where there is a proper membership to promote its principles."
+
+Early in 1912 three alumni of Alpha chapter, Henry A. Burd, Wilbur R. Leighty, and Ward H. Sachs, were graduate students at the University of Illinois. Mainly through their efforts, a local fraternity known as the Campus Club petitioned Tau Kappa Epsilon for a charter on January 22, 1912. The charter was granted and installation followed on February 3, 1912, not at Champaign, but at the Alpha chapter house in Bloomington.
+
+The significance of the location of these first three chapters, closely approximating an equilateral triangle on the map, was at once realized and has been symbolized ever since by the traditional position and shape of the badge. Because of the geographical significance of these three chapters, consideration was given to cutting off any further growth.
+
+The 5th Conclave, held in Decatur, Illinois, on February 14-15, 1913, saw the election of L.W. Tuesburg as Grand Prytanis. Frater Tuesburg, a loyal servant throughout the history of TKE, was re-elected Grand Prytanis at the 6th Conclave on April 17-18, 1914, held in Champaign, Illinois. At this Conclave, the first complete code of fraternity laws was enacted under his leadership.
+</br>
+Out of Illinois
+When the Knights of Classic Lore was founded in 1899 there were no thoughts of ever leaving the bounds of Illinois. This feeling was still present during the initial expansion among several of the alumni and active members of the Fraternity. As a result, following the installation of Delta chapter in 1912, no new chapters were chartered for more than two-and-one-half years.
+
+Voluminous correspondence was carried on with numerous prospects during this time, however, and a group at Iowa State College in Ames was determined, as early as 1913, to petition TKE for a charter as soon as faculty permission could be secured.
+
+One of the first acts of the new Grand Prytanis, Lyle F. Straight, elected at the 7th Conclave in Galesburg, Illinois, April 16-17, 1915, was to receive a petition from this group, known as the Seminoles. The Seminoles were installed as Epsilon chapter on May 28, 1915, as the leadership of the fraternity overcame any desire for provincialism.
+
+With this event, Tau Kappa Epsilon may be said to have acquired a truly national scope. With five chapters, TKE was eligible for membership in the National Interfraternity Council and was admitted as a senior member on November 27, 1915. Tau Kappa Epsilon had, for the first time, crossed the borders of Illinois, had been admitted into the councils of national fraternities, and had completed a period of slow development.
+
+From 1909-1915, TKE had added just four chapters. In the next two years, however, five additional chapters were admitted into the fraternity. The chapters chartered were: Zeta at Coe College, Cedar Rapids, Iowa, May 12, 1916; Eta at the University of Chicago, February 17, 1917; Theta at the University of Minnesota, March 10, 1917; Iota at Eureka College, Eureka, Illinois, April 21, 1917; and Kappa at Beloit College, Beloit, Wisconsin, May 12, 1917.
+
+The 8th Conclave convened at Bloomington, April 28-29, 1916, and Frater Straight was re-elected as Grand Prytanis. On April 27-28, 1917, the month of America's entry into World War I, the 9th Conclave was held at Ames, Iowa. Oscar G. Hoose was chosen as Grand Prytanis. The minutes of the Conclave gave no mention of the approaching conflict other than a single resolution, "embodying the spirit of the fraternity with respect to the war situation."
+
+World War I
+Up to this time, the history of the fraternity had been a somewhat routine record of slow, steady growth in numbers, chapter rolls, and fraternity consciousness. This period, marked only by its annual Conclaves and the chartering of new chapters, also brought about the formation of a body of laws and traditions, the development of a ritual, and a general welding together of its membership into a homogenous fellowship.
+
+With the entry of the United States into World War I and its accompanying transformation of the colleges into the Student's Army Training Corps, fraternity activities on every campus were essentially suspended for more than a year. The enactment of emergency war legislation, most of which became permanent, began a trend toward a strong centralized national organization.
+</br>
+Tex Flint Elected
+If the 1917 Conclave was not war conscious, the 10th Conclave, held in Chicago, April 26-27, 1918, concerned itself with little more than the war and its campus problems. Frater Hoose declined re-election because he expected to enter the service, and Harrold P. "Tex" Flint was elected to the first of three terms as Grand Prytanis. Much emergency legislation was enacted such as: the creation of Regions, Regional Officers, Chapter Advisors, and the definition of their duties; the suspension of second-semester initiations; and the granting to the alumni the right of active participation in chapter affairs whenever the number of undergraduate members fell below ten.
+
+The record of Tau Kappa Epsilon in World War I was most creditable. Many men saw active service both at home and in Europe, while scores were enrolled in the S.A.T.C. At the tenth Conclave in Chicago, April 26-27, 1918, it was revealed that Tau Kappa Epsilon had a total membership of 702 (173 active members and 529 alumni). Of the alumni, 204 (38.5%), were directly involved in the war effort.
+
+The Akela Club, at the University of Wisconsin, had become Lambda chapter in 1918, the only wartime acquisition. Mu chapter originated from Sigma Alpha Phi, a local at Carroll College in Waukesha, Wisconsin in 1919. The years 1919 and 1920 witnessed two rather uneventful Conclaves; the 11th Conclave was held in Beloit, Wisconsin during 1919 and the 12th Conclave was held in Minneapolis, Minnesota in 1920.
+
+To The West Coast
+The installation of Nu chapter at the University of California marked a significant step in the history of Tau Kappa Epsilon, a step that was taken only after considerable discussion and misgiving. The Sequoyah Club at the University of California had presented two earlier petitions that were turned down because of the distance from the 12 chapters that were then concentrated in Illinois, Iowa, Minnesota, and Wisconsin. The third petition, however, proved successful and TKE took a long leap geographically, obtaining a foothold on the shores of the Pacific.
+
+Phi Omega, a local fraternity at Washington University in St. Louis, was granted a charter as Xi chapter at the Minneapolis Conclave.
+
+Tau Kappa Epsilon passed through the war crisis and restored all of its chapters to complete activity, a remarkable achievement for such a young struggling fraternity. As the first decade of its existence as a national fraternity closed in 1919, plans were being mapped for a new era in the history of Tau Kappa Epsilon.
+
+At the 13th Conclave in Madison, Wisconsin, William D. Reeve was elected Grand Prytanis. Frater Reeve was the first Grand Prytanis who was not an alumnus of Alpha chapter.
+</br>
+A Headquarters is Created
+The advantage of a central office had for some time been apparent, and now, with 14 chapters and the prospects of comparatively rapid growth, its need was even more obvious.
+
+During the 13th Conclave in 1921, the desirability of a headquarters was mentioned by several of the Grand Officers in their annual reports. It was Grand Grammateus Lloyd V. Ballard who presented the matter so forcefully that the office of Grand Grammateus was expanded into a national Executive Secretary and a central office was created. Tex Flint, then retiring as Grand Prytanis, was elected to this position and became the first Executive Secretary. The central office was established in Frater Flint's home in Lombard, Illinois.
+
+With this change the affairs of the Fraternity became better coordinated, and a new national consciousness evolved with the development of a centralized administration. Tau Kappa Epsilon began to assume an importance, and secure recognition in the fraternity world.
+
+Frater Reeve presided over the 14th Conclave in Cedar Rapids, Iowa. It was during this Conclave, in 1922, that hazing in fraternity initiation and pledging activities was soundly condemned.
+
+The 15th Conclave was held in St. Louis from October 24-25, 1923. Phillip H. McGrath was elected Grand Prytanis.
+
+The Silver Anniversary
+The 16th Conclave in 1924 was set apart as the "Silver Jubilee Conclave," celebrating the twenty-fifth anniversary of the founding of the Fraternity. It was appropriately held in Bloomington and was marked by the presence of all five Founders who prepared a joint address. This Conclave also unveiled a tablet in the Chapel at Illinois Wesleyan University commemorating the founding of TKE. Life membership in the Grand Chapter was conferred upon the Founders.
+
+This Conclave selected Leland F. Leland as Grand Histor, a position he was able to hold for 25 continuous years. Frater Leland, who was later chosen as President of the College Fraternity Editor's Association, served as editor of The Teke, building it to a position as one of the finest magazines in the fraternity world.
+</br>
+The Upward Climb
+The period 1921-26 saw 10 new chapters installed, completing the first alphabet from Alpha to Omega. TKE was spreading from coast to coast, as evidenced by the chapters installed - Omicron at Ohio State, Pi at Penn State, Rho at West Virginia, Sigma at Cornell, Tau at Oregon State, Upsilon at Michigan, Phi at Nebraska, Chi at the University of Washington, Psi at Gettysburg, and Omega at Albion.
+
+The years from 1926-30 were ones of steady growth, expanding both east and west, under the leadership of Grand Prytanis Miles Gray in 1926-28 and Milton Olander in 1928-30. Eight new chapters had been installed by the 19th Conclave in San Francisco, September 3-5, 1930, bringing the total chapter roll up to 32. This Conclave saw the election of Eugene C. Beach as the eleventh Grand Prytanis.
+
+These years were also years of grief, as the entire Fraternity mourned the passing of Founders Owen I. Truitt and C. Roy Atkinson. Both Founders died in auto accidents - Truitt on July 13, 1929, and Atkinson on September 14, 1930.
+</br>
+The Depression Years
+The period from 1930-35 was one of challenges for the Fraternity, just as it was for people and organizations throughout the United States. It was a struggle to keep the national organization functioning smoothly, and keep the chapter rolls intact, under the financial conditions that constantly brought shrinking financial support from all sources. National fraternities were folding because of insufficient support, but under the strong leadership of Grand Prytanis Beach and other devoted men, TKE weathered the storm and even progressed during this period.
+
+Eight new chapters were added and many chapters pledged larger numbers of men each year. Only two chapters - the University of Chicago and the University of Nebraska - were not active following the Great Depression. Tau Kappa Epsilon also absorbed the membership of a small national fraternity, Sigma Mu Sigma, in 1934, but this resulted in only one new chapter, Alpha-Pi at George Washington University in Washington, D.C.
+
+The 20th Conclave was held in 1935 at the Hotel Baker in St. Charles, Illinois. This Conclave, which was originally postponed for financial reasons and eventually held in 1935, instituted for the first time a program of addresses during the Conclave sessions, lunches, and dinners. However, the most significant measure adopted at this Conclave was the recognition of Lester H. Martin, L.W. Tuesburg, William Wilson, and Wallace G. McCauley for their dedicated and untiring efforts in the building of Tau Kappa Epsilon. These four men were named National Founders for their work in making TKE truly a "national" fraternity.
+</br>
+The Pre-War Years
+The years preceding the entry of the United States into the World War II have been described as the "quiet interlude." The main emphasis of the Fraternity was placed on balancing the budget and strengthening undergraduate chapters. Don A. Fisher served as Grand Prytanis from 1935-37 and was followed by Clarence E. Smith in 1937-39. Only three new chapters were installed during this period, although much progress was made in the internal organization of the Fraternity.
+
+With war clouds on the horizon in 1939, Herbert Helble was elected Grand Prytanis. However, because of the pressure of other activities in this time of turmoil, Frater Helble resigned in 1941 and L.W. Tuesburg, then Grand Epiprytanis, was elevated to the presidency and served until June 21, 1942. Frater Tuesburg had previously been elected Grand Prytanis during both the fifth and sixth conclaves (1913 and 1914).
+
+In 1941, Grand Grammateus Tex Flint resigned his office after twenty years of service. Although Frater Flint first housed the central office at his home, he had moved the office into a new building in Lombard, Illinois, in 1927 and maintained it there until 1941. After Frater Flint's resignation, Past Grand Prytanis Lyle Straight was elected Grand Grammateus and the National Office was moved to Bloomington, Illinois.
+
+Three new chapters were installed during this period, with Alpha-Chi chapter at the University of Louisville being the last pre-war charter.
+</br>
+The Second World War
+Tau Kappa Epsilon spent most of the war years under the leadership of Grand Prytanis Charles E. Nieman. During the early years of the United States' involvement in the military conflict, TKE did not suffer greatly. In October 1942, for example, TKE pledged 568 men as opposed to 475 men the preceding October. Also during the year, a record 628 men were initiated into TKE and the Fraternity's income was $26,505.47, an all-time high.
+
+The severe manpower drain hit the colleges and the fraternity system in 1943, causing many chapters to go inactive and nearly all to abandon their houses. In September 1943, only 19 of TKE's chapters were still active and only two - Alpha-Zeta at Purdue and Alpha-Phi at Kansas - still had houses. All the other chapter houses had been relinquished for the duration of the war.
+
+In conformity with governmental orders and to conserve Fraternity funds, no Conclaves were held during the war period. While the Fraternity continued to function and provide essential services to both chapters and Fraters, all expenses were cut to the bone.
+
+The Teke magazine was suspended during the war in favor of a less expensive newspaper called Teke Life. This paper was sent out to every Teke on record, regardless of subscription status, in order to help maintain the interest of Tekes everywhere during this period when many of their undergraduate chapters were dormant.
+
+For the first time, the office of Grand Grammateus was separated from the duties of Executive Secretary and a part-time Executive Secretary was hired. Dr. E.L. Theiss, Professor of Accounting at the University of Illinois assumed this position, hired a full-time secretary, and set up the National Office in Champaign, Illinois. In 1945 Frater Theiss tendered his resignation, and V.J. Hampton, Assistant Dean of Men at the University of Illinois, was hired as Executive Secretary.
+</br>
+The Big Decision
+At the beginning of the hostilities, the Grand Council of the Fraternity faced a major policy decision - whether our limited financial resources should be exhausted in an attempt to keep all chapters active throughout the War, or whether the Fraternity should recognize the impossibility of that objective and concentrate on preparing an aggressive and effective rehabilitation and expansion program after the War. Luckily, the latter course of action was chosen. Subsequent events demonstrated the wisdom of that choice, although it was not so apparent when the choice was made.
+
+With so few chapters functioning during 1943-45, the income that the Fraternity needed to operate was drastically limited. To provide TKE with some security to prevent financial failure, and to provide some funds upon which to operate, alumni were asked to contribute to the Teke Loyalty Fund. For the first time in its history, TKE alumni were asked to support the Fraternity by contributing the small sum of $3 annually. Loyal TKE alumni contributed nearly $30,000 into this fund, without which the Fraternity could not have surmounted the tremendous hurdles ahead.
+</br>
+Tekes in Uniform
+Tekes too numerous to mention were actively involved in the war effort. It was estimated that 54% of the total membership of Tau Kappa Epsilon wore the uniform of one of the services. Some of the more noteworthy military leaders included:
+</br>
+Dr. Irvin P. Krick, one of the world's leading meteorologists who set the date for Eisenhower's Normandy invasion
+Major General Dan C. Ogle, Surgeon General of the Air Force
+Rear Admiral R.C. Williams, Assistant Surgeon General of the U.S. Public Health Service
+Brig. General Glen C. McBridge
+Brig. General John C. P. Bartholf
+Brig. General Loyal M. Haynes
+Brig. General W.E. Chambers
+Brig. General Hugh M. Milton
+According to the best available data, 196 Tekes gave their lives for their country and 30 received decorations exceeding that of the Bronze Star during World War II.
+
+Several changes in the composition of the Grand Council occurred during these war years. Grand Epiprytanis Charles R. Walgreen, Jr. was required to resign in 1943 because of business pressures when he assumed the presidency of the Walgreen Drug Store chain, so Grand Pylortes R.C. Williams was elevated to Grand Epiprytanis. When Grand Prytanis Nieman was forced to resign because of professional and business activities in 1944, Frater Williams ascended. To this aggressive, dedicated TKE leader fell the massive task of leading the rehabilitation after the War.
+</br>
+Dr. Williams Takes Office
+When Dr. Williams assumed the office of Grand Prytanis in 1944, the United States was in the midst of its greatest military conflict. Tau Kappa Epsilon had only 11 active chapters - many with less than 10 members, and there was general unrest among many Tekes as to the future of the Fraternity.
+
+Some TKE leaders felt that the Fraternity had neither the resources nor the knowledge to survive, and advocated its dissolution or merger with another national. In fact, a merger was discussed with Kappa Delta Rho, another small national with 17 chapters, but the merger failed for lack of agreement on behalf of both parties.
+
+Frater Williams, however, held steadfastly to the belief that Tau Kappa Epsilon was constructed of a fiber that would not only survive the crisis, but would be the leader in the fraternity world in the years to come.
+
+By the end of hostilities in 1945, the rehabilitation was already underway. Several chapters had been revived, bringing the total active chapter roll back up to 19. This year also saw the adoption of a plan made possible by the Teke Loyalty Fund of hiring Traveling Supervisors on a full-time basis. This plan, used successfully by Phi Gamma Delta, Sigma Chi, Lambda Chi Alpha, and a few other nationals, had been used on a very limited scale by TKE before the War. This year, however, marked the first real utilization of the program. These Traveling Supervisors, competent young men and recent graduates, were of inestimable value in reactivating dormant chapters, in training and indoctrinating the Fraters of the active chapters, and in promoting the program of expansion that was to follow. The first post-war Traveling Supervisor, Robert Nelson, was actually working in the field less than a month after V-J Day.
+</br>
+Completed in Grand Fashion
+With as many as five Field Supervisors on the road at a time, and with Dr. Williams and other Grand Officers working incessantly in planning and organizing the work to be done, the extensive task of rehabilitation was completed in grand fashion - true to the belief of Frater Williams and to the amazement of some TKE leaders and the whole fraternity system. By September 1949, all but four TKE chapters had been reactivated. And in addition, 28 new chapters had been installed, bringing TKE's active chapter roll to 70 chapters, undergraduate members to over 3,000, and total initiates to nearly 16,000.
+
+Tau Kappa Epsilon had also, for the first time, penetrated the South. This move was made possible in the fall of 1946 when Alpha Lambda Tau, a small predominantly Southern national fraternity, announced its dissolution. Five of the then eight active chapters of Alpha Lambda Tau affiliated with TKE, giving Tau Kappa Epsilon chapters at the University of Maryland, North Carolina State, Auburn, Louisiana Tech, and Tri-State College in Indiana.
+
+On September 4-7, 1947, the 24th Conclave was held in Champaign, Illinois. This was the first Conclave since 1942. Dr. Williams was again elected, an endorsement of his program of growth and rehabilitation.
+
+In September 1949, Frater Williams stepped down as Grand Prytanis after five years of service in that office, and Grand Histor Leland F. Leland was elected to replace him. With rapidly expanding college enrollments and with the Fraternity's feet planted firmly on the ground, the future for TKE looked bright indeed.
+</br>
+The Fabulous Fifties
+The Golden Jubilee Conclave in Chicago, September 1-3, 1949, celebrated the fiftieth anniversary of the founding of the Fraternity and marked the publication of The Golden Book of Tau Kappa Epsilon, a detailed history of the first fifty years of the Fraternity, compiled by Leland F. Leland.
+
+Founders James C. McNutt and Clarence A. Mayer attended this, our 25th Conclave. They were the only two founders still alive as, sadly, Joseph L. Settles had passed away on February 15, 1943.
+
+To 160 Chapters
+Tau Kappa Epsilon began its rise to power by experiencing dynamic growth unlike any other fraternity in the history of the Greek community during the 1950s. Specifically, at the close of 1949, fifty years after the founding of the Fraternity, Tau Kappa Epsilon had granted a total of 79 charters, 75 of which were active, and had initiated a total of 15,954 men. But ten years later, in 1959, TKE's charter grants totaled 168, of which 160 were active and functioning, and the total initiates numbered 39,065. In just ten years, Tau Kappa Epsilon had more than doubled its size and had risen from a very insignificant position in the fraternity world to that of a leader in all aspects.
+
+From 1949-1951, during Frater Leland's term of office, 20 new chapters were installed and Tau chapter at Oregon State, one of the four chapters to become dormant during the depression and war years, was reactivated. The Fraternity also conducted an extensive review of the national constitution and bylaws, and Frater Leland appointed Howard L. Hibbs, then a regional officer, to head the first national leadership conference.
+</br>
+Leadership Conferences
+Starting at the 26th Conclave, a national leadership conference was held the day before the formal opening of Conclave. This "school" for undergraduate chapter officers started the precedent for leadership training conferences held in conjunction with each Conclave.
+
+In 1951, Sophus C. Goth was selected as Grand Prytanis at the 26th Conclave held in Roanoke, Virginia. The long-needed overhaul of the basic laws of the Fraternity was officially approved and adopted by the passage of over a hundred separate amendments. One of the significant changes made at this Conclave was the establishment of the office of Grand Hegemon.
+</br>
+The Korean War
+College enrollments took a nosedive with the outbreak of hostilities in Korea and TKE's growth, as a result, was greatly curtailed. In spite of this fraternity recession, however, Tau Kappa Epsilon granted its 100th charter to an undergraduate chapter on February 28, 1953, when Delta Delta Tau, a local fraternity at Colorado State College, Greeley, was installed as Delta-Delta chapter.
+
+This important milestone in TKE history was commemorated by the publication of a special issue of The Teke, reviewing the history of TKE growth and development from that day in 1909 when Tau Kappa Epsilon was launched forth on its national career.
+</br>
+Housing Fund Established
+James C. Logan, a Kansas City attorney, was elected Grand Prytanis at the 27th Conclave held during September 1953, at the Hotel Savery, Des Moines, Iowa. During Frater Logan's two-terms in this office 44 new chapters were installed, and a national housing fund was established to provide loans to undergraduate chapters for the construction and purchase of fraternity houses. During the 28th Conclave at the Hotel President and Municipal Auditorium in Kansas City, Missouri, Frater Logan was re-elected Grand Prytanis, and the corporate seal used on charters and certificates was officially adopted.
+
+In 1956, Richard R. Hall became Executive Secretary and the National Office was moved to Kansas City, Missouri. The office of Executive Secretary became a full-time administrative position at this time.
+
+In March of 1957, Frater Bruce B. Melchert helped establish the Canadian Alpha Affiliate at the University of Manitoba, Winnipeg. For his work in establishing this colony, Grand Prytanis Logan named Frater Melchert as TKE's International Founder.
+
+The 29th Conclave was held in Bedford Springs, Pennsylvania, during August 1957. Frank B. Scott was chosen as Grand Prytanis. During Frater Scott's administration, twenty-one new chapters were installed.
+
+On March 15, 1958, TKE truly became an international fraternity when a charter was presented to Canadian Alpha colony, at the University of Manitoba, establishing it as Zeta-Iota Chapter. On April 4, 1959, Zeta-Omicron chapter was installed at Western Carolina College, Cullowhee, North Carolina. This event was a landmark in that it made Tau Kappa Epsilon the largest social fraternity in the world. Both of these chapter milestones occurred during Frater Scott's administration.
+</br>
+Expansion Leaders Recognized
+Much of the growth of the Fraternity during the 1950s was made possible through the dynamic leadership of a succession of Grand Prytani and National Officers dedicated to the principle that strength emanates from growth, aided by an increasingly efficient national organization, and by the detailed planning and devoted service of TKE leaders obsessed with the desire to make Tau Kappa Epsilon the number one fraternity in the country.
+
+For their efforts and devoted service during the growth period of the fraternity following World War II, Fraters Williams, Leland, Logan, and Scott were named Expansion Leaders.
+</br>
+The Solid Sixties
+As Tau Kappa Epsilon entered the decade of the 1960s, it had assumed a position of vital importance in the fraternity world. TKE was now the largest fraternity with more than 160 chapters and was a leader in all aspects of interfraternity competition. This decade was to bring about continued growth along with a solidification of fraternity policies, procedures, and operations.
+
+Under the leadership of Frater Kaser, Tau Kappa Epsilon achieved a position of solid financial stability, dedicated its first permanent International Headquarters building, and formulated and instigated new programs becoming that of the largest and most progressive fraternity.
+
+The 31st Conclave at the Roney Plaza in Miami Beach, Florida, September 1961, greatly aided the Fraternity's fiscal operations by eliminating the monthly dues procedure and adopting the single initiation fee. Increased operating efficiency, plus sound financial management, enabled the fraternity to repay all reserve funds in full by 1962 - operating on an annual budget in excess of $300,000.
+
+In 1960 Bruce B. Melchert became Executive Director, and the fraternity office, or International Headquarters as it is appropriately known, was moved to Indianapolis, Indiana, the following year. The International Headquarters building in Indianapolis contains the offices of the Executive Director, the administrative staff, and the files, records, and equipment of the Fraternity.
+
+Among the many new dimensional goals formulated was the establishment of a TKE placement service to aid Fraters in obtaining employment.
+
+McNutt and Mayer Die
+The 1960s marked the passing of the final two Founders of Tau Kappa Epsilon. Clarence A. Mayer succumbed to a heart attack in Los Angeles on August 8, 1960, and Dr. James C. McNutt closed a brilliant page in history when he passed away on May 18, 1962, in Bloomington, Illinois at the age of 83. Both men, like all five of the Founders, were active in the Fraternity until their death.
+
+The 32nd Conclave, held in August 1963 at the Marrot Hotel in Indianapolis, marked the election of J. Russel Salsbury as Grand Prytanis, and the dedication of the International Headquarters building.
+
+The Teke Scholarship Fund, Inc., a not-for-profit, tax-exempt 501(c)(3) public foundation merged with TKE to form an educational foundation.
+</br>
+Salsbury Re-Elected
+Frater Salsbury was re-elected Grand Prytanis at the 33rd Conclave held in Toronto, Ontario during 1965. This was the first Conclave held outside the United States. During his terms in office, TKE began to realize the benefits of its size and rank. The Offices of the Grand Chapter staff was enlarged to include a Chapter Services Director, an Alumni Director, and a Publications Director. The largest staff of traveling supervisors in the fraternity world was on the road, and several resident supervisors were hired for full-time work in problem chapters.
+
+The name of the Teke Scholarship Fund, Inc. was changed to the Teke Educational Foundation, Inc. in 1967 and incorporated as an Indiana corporation. Also, a housing fund was incorporated as the TKE House Fund, Inc. and an alumni dues program was implemented to supplement the Fraternity's income.
+
+Tau Kappa Epsilon began to take steps to preserve its history when a very active history committee, composed mainly of Fraters Tuesburg, Leland, and Flint, began to write down their memories. Their work resulted in "The Reminiscences of L. W. Tuesburg" published in 1963, and a written history of the 1899 to 1915 period, published in 1966.
+
+The most important legislation of the 33rd Conclave was the Board of Directors concept, the result of four years of study by the Administrative Survey Commission. Under this concept, many of the routine duties traditionally done by a Grand Officer were assigned to the International Headquarters staff. Although the Grand Prytanis, Grand Grammateus, and Grand Crysophylos retained their basic duties as officers of the Fraternity, the other Grand Officers were to do special projects as assigned by the Grand Prytanis.
+
+In order to handle many of the routine tasks that the International Headquarters assumed, TKE became the second fraternity to convert to an electronic data processing system. Most of the financial and membership records were converted to what was then a state-of-the-art high-speed data processing format.
+</br>
+The Fraternity For Life Film
+The TKE public relations and rush film premiered at the Toronto Conclave. It was the first fraternity film produced by Hollywood professionals, and featured undergraduates from Kansas, Missouri, and California, with alumni Ronald Reagan and Stan Kenton, in a 15-minute color and sound film. Chairman of the Public Relations Commission, George Woolery, and Executive Director Bruce B. Melchert planned the film.
+
+In another effort to improve the image of TKE and the fraternity system, the Fraternity planned its first Public Service Week in 1966. The week was a great success, with more participation and good publicity than its creators ever imagined. It was adopted as an annual project.
+</br>
+A Sorrowful Year
+TKE leaders passed away in 1966. Past Grand Prytanis Tex Flint died February 21, Past Grand Prytanis L.W. Tuesburg died June 10, and incumbent Grand Prytanis J. Russel Salsbury died June 3. Frater Salsbury was the first Grand Prytanis to die during his term.
+
+Donald H. Becker assumed the office of Grand Prytanis after Frater Salsbury's death, and pledged himself to continue the policies and fulfill the goals of his predecessor.
+</br>
+A Solidification
+The 1960s also brought about solidification in the number and quality of fraternity houses owned by TKE chapters. The 1963 NIC Yearbook listed Tau Kappa Epsilon as owning 165 houses, far more than any other national fraternity. In 1969 it was revealed that the TKE House Fund, Inc., created in 1953, had loaned money to over 134 chapters to buy, build, or improve their physical facilities and had a total worth of over $1,000,000.
+</br>
+Into The Seventies
+At the 1967 Conclave, Grand Prytanis Becker was elected to the first of his two terms. In his "State of the Fraternity" address at the Grand Bahamas Conclave, Frater Becker talked about continued growth for the Fraternity tied to a growth in services to support these additional chapters.
+
+At a time when there was a good deal of talk about the impending death of national fraternities, Tau Kappa Epsilon was still growing fast. In the 1967-68 academic year fourteen new chapters were installed. This tied the previous one-year record that TKE had established. Then, in the 1968-69 school year, 22 new chapters were installed and two dormant chapters were reactivated - an accomplishment many believed impossible.
+
+During this period, in-depth evaluations were taking place as Fraternity leaders sought new and better programs to meet the needs of students in a changing world. The "Chapter Retreat" concept was born during this period, with members encouraged to plan for the future of their chapter through pre-established goals.
+
+Chapter Advisor Conferences came into being in 1969 to give more information to Fraternity advisors. Believing that the Chapter Advisor is a "key man for success," a number of services were directed toward preparing the Chapter Advisor for his responsibilities with the chapter.
+
+In 1970 TKE reached another significant milestone with the installation of our 300th chapter (Nu-Mu) at the University of South Alabama.
+
+At the 36th Conclave held in Asheville, North Carolina during 1971, Lenwood S. Cochran was installed as Grand Prytanis of our Fraternity. The ritual of the Fraternity was updated at this Conclave. The new ritual kept the spirit and meaning of the original, but arranged it in a more usable form with modern language.
+</br>
+New Headquarters Opened
+A major goal was reached in January 1972, with the opening of the new TKE Headquarters at 8645 Founders Road in Indianapolis, Indiana. The new headquarters was the first built by the Fraternity, and was the culmination of years of dreams and plans. In 1973, T.J. Schmitz from Iota-Omicron chapter at the University of Wisconsin - Whitewater was confirmed as the new Executive Vice President, succeeding Bruce B. Melchert who left the professional staff after 15 years of service.
+
+At the 1973 Conclave in Indianapolis, William A. Quallich was elected as Grand Prytanis. At this Conclave, our 37th, TKE adopted an "associate member" program to replace the traditional pledge education or pledge training. This Conclave marked the beginning of our 75th anniversary year, which was highlighted by a Diamond Anniversary celebration and banquet on January 12, 1974, in Bloomington, Illinois, the site of our founding. Bronze markers were placed on each of the graves of the five Founders who began the Knights of Classic Lore.
+
+The Lake Geneva Playboy Club hosted the 1975 Conclave with the theme of "TKE Together," and William H. Wisdom became Grand Prytanis. Events surrounding the 38th Conclave included the purchase of a computer for the International Headquarters and the increased support of the Teke Educational Foundation. The TKE ritual was also further expanded, and 1976 saw the return of TKE to the National Interfraternity Conference. TKE also began to plan for the future with the development of a Long Range Planning Committee, charged with the responsibility of developing policy recommendations for ensuring the continued success of the Fraternity.
+
+One of the largest and most exciting Conclaves in the Fraternity's history was held in 1977 at the Fairmont Hotel in the French Quarter of historic New Orleans. The 39th Conclave was the first time that chartered alumni associations were eligible to participate in the affairs of the Grand Chapter. At this Conclave, Frater Robert H. Nelson delivered a report by the Long Range Planning Committee, and the Grand Chapter adopted a new structure for associate and initiation fees. TKE also discussed and evaluated the Policy on Chapter Standards. Dr. William V. Muse became Grand Prytanis, and announced that during his term the Fraternity would actively pursue the development of "Tau Kappa Excellence," a quality assurance program for all aspects of chapter and Fraternity programming. A new rush slide show "My Brother, My Friend" was premiered at this Conclave.
+
+Tau Kappa Epsilon held its 40th Conclave in 1979 at the Sheraton Hotel and Country Club in French Lick, Indiana. With a Conclave theme "The Teke Pace," undergraduate and alumni delegates participated in a variety of athletic events similar to the Olympics. Conclave began with an inspiring keynote address delivered by Notre Dame basketball coach and Frater Richard "Digger" Phelps. The Grand Chapter took action on a number of legislative items including the establishment of an annual membership fee for undergraduate members, and Rodney Williams, Jr. was elected as Grand Prytanis. Long-time Chapter Advisor of Delta-Xi Chapter at Miami University, Dr. T.J. Cobbe, joined the Grand Council as Grand Hegemon. One of the highlights of the 1979 Conclave was the trip to Louisville, Kentucky, and the ride on the riverboat, the "Belle of Louisville."
+
+The 80's - A Decade Full of Changes
+The 41st Conclave was held at the Hotel Roanoke in Roanoke, Virginia during 1981. This Conclave saw the election of John A. Courson to the office of Grand Prytanis. The theme of "Reach Out..." was emphasized as a challenge to all members of Tau Kappa Epsilon to build on the great traditions of the Fraternity.
+
+Tau Kappa Epsilon unveiled a number of new programs and concepts in 1982. A special program of Regional Leadership Conferences was added to the already existing schedule of District Conferences. A greater focus on alumni involvement and volunteers was introduced as part of the new Regional Servicing Program. Full-color recruitment posters, buttons, brochures and special slide presentations were introduced as part of a comprehensive national marketing theme, "TKE...The Winning Tradition."
+
+In 1983, the 42nd Conclave was held at the Fairmont Hotel in New Orleans, Louisiana. The theme for this Conclave was "Tradition of Excellence." Dwayne R. Woerpel was installed as TKEs 30th Grand Prytanis. An exciting highlight of this Conclave was the conclusion of TKE Keg Roll V during a special celebration in the New Orleans Superdome. In addition, the first Ronald Reagan Leadership Award was presented to Frater Rex Davis.
+</br>
+A Presidential Reception
+One of the most historic TKE events took place on March 23, 1984, when an impressive group of TKE leaders gathered for a special fraternal celebration at the White House in Washington, D.C. Frater Ronald Reagan, a lifelong TKE supporter, was awarded the NIC Gold Medal, the highest award among fraternities, for his lifelong efforts to support and promote college fraternities. In addition, Grand Prytanis Woerpel presented Frater Reagan with the Order of the Golden Eagle, the highest award in Tau Kappa Epsilon, for his exemplary lifelong commitment to our Fraternity and for his many efforts to assist and promote TKE.
+
+Our 43rd Conclave was held in Orlando, Florida, where many Fraters enjoyed "TKE Day" at Walt Disney World. Joel E. Johnson was installed as Grand Prytanis and the "America's Fraternity" theme campaign was introduced. The Order of the Golden Eagle was given posthumously to Frater Harry J. Donnelly, who is generally considered a founder of the TKE Educational Foundation.
+
+In 1985, Past Grand Prytanis Rodney Williams, Jr. was elected president of the National Interfraternity Conference. Frater Williams was the first Teke to hold that position.
+
+The 44th Conclave was held at the Grand Hyatt on August 19-22, 1987 in Washington, D.C. The new Fraternity theme "For Winners Only" was unveiled and Fraters enjoyed the sights and sounds of our nation's capital. Past Executive Director Bruce B. Melchert was elected as Grand Prytanis. One significant accomplishment of Frater Melchert's term was the completion of an extensive Long Range Plan that included a study of hazing and its affects on the Fraternity.
+</br>
+TKE Feels Pressure from Society
+By the late 80s, the increasingly litigious environment in the United States required changes in fraternal operations. Resources were constantly allocated to risk management, and membership growth had begun to steadily decline in all national fraternities. The Fraternity needed to make significant changes to its operations.
+
+The 45th Conclave was held at the Indianapolis Hyatt Regency Hotel in 1989, and James S. Margolin was elected Grand Prytanis. During the Conclave, the Grand Chapter adopted legislation to eliminate traditional pledging. The Membership Development Program included a structured candidate education program as well as continuing education that included levels of achievement, membership standards, and the Membership Quality Board. The program also included a prompt initiation requirement, requiring the initiation of new members within 14-days after bid acceptance. The fraternity also required all TKE chapters to maintain comprehensive liability insurance.
+</br>
+Responding to Changes in the Nineties
+Fraternity membership continued to decline despite the new Membership Development Program, and the loss of revenue resulting from lower initiate counts was becoming a burden for the Fraternity. The 46th Conclave was held at the Fairmont Hotel in New Orleans, Louisiana in 1991, and Robert J. Borel was elected Grand Prytanis. TKE reaffirmed its prompt initiation requirement and mandated that all chapters convert to the Membership Development Program. TKE adopted a new theme "The Choice to Belong, the Challenge to Become" to help overcome objections to the Membership Development Program. The Grand Chapter also acted to abolish female auxiliary organizations, known as "little sister" groups.
+
+New and formidable challenges continued to arise during the decade as TKE dealt with membership decline and loss of revenue, and increased costs associated with risk management. The Fraternity adopted another long-range plan in 1992, reacting to many of these financial and membership pressures.
+
+The 47th Conclave was held at the Hyatt Burlingame in San Francisco, California. During this Conclave, TKE elected its first "legacy" Grand Prytanis, Rear Admiral John R. Fisher. His father, Donald A. Fisher, served as Grand Prytanis from 1935-1937, and Frater Fisher proudly wore his father's Past Grand Prytanis medallion during his own installation ceremony.
+</br>
+Leaving A Legacy
+Like his father, Frater Fisher set out to realign and strengthen the Fraternity's finances and membership. In December of 1993, Executive Vice President T.J. Schmitz retired after 25 years of service to the Fraternity. Frater Schmitz had been the TKE Chief Executive Officer since 1973, and a nationwide search was held to select his replacement. William J. Metzger, Jr., an initiate of Epsilon-Nu chapter at the University of Wisconsin-Stevens Point, who had served a long and distinguished career in the U.S. Navy including six years as a prisoner of war in North Vietnam, became the new Executive Vice President/CEO.
+
+The 48th Conclave, held at the Grand Hyatt Hotel in Washington, D.C. in 1995, saw Thomas M. Castner elected as Grand Prytanis. The Grand Chapter also modified the prompt initiation period, increasing the amount of time between bid acceptance and initiation from 2 weeks to 6 weeks. Also, TKE found itself on the cutting edge of innovation with the development of the TKE website, one of the first in the fraternity world.
+
+By this time Fraternity finances and membership had become more stable and in 1996, Grand Council member Timothy J. Murphy, CFC, was selected to follow Frater Metzger as Executive Vice President. TKE also launched its first official website.
+
+In 1997, TKE held its 49th Conclave at the Westin Innisbrook Resort in Tarpon Springs, Florida, and Gary A. LaBranche was installed as Grand Prytanis. Frater LaBranche began a campaign to increase volunteerism in TKE, and the District President program was dissolved for a more comprehensive Province system. A significant moment at this Conclave was the naming of Bruce B. Melchert as an Expansion Leader. The Fraternity also began planning for its Centennial Celebration.
+</br>
+Centennial
+The Centennial Celebration took place in seven cities across North America on January 9, 1999, counting down to midnight on January 10th. Each of the sites was linked via satellite to Bloomington, Illinois, where the Knights of Classic Lore had begun 100 years ago.
+
+In 1999, our 50th Conclave, known as the Centennial Conclave, was held in Indianapolis, Indiana. The Indianapolis Scottish Rite Cathedral was the opening site of the Conclave that saw Lon G. Justice elected as Grand Prytanis.
+
+Our Second Century
+The Fraternity prepared for its second century with a change in professional leadership. Kevin M. Mayeux, an initiate of Gamma-Theta Chapter at the University of Florida, was selected as Executive Vice President/CEO on July 1, 2000 following an international search.
+
+For the first time in more than a decade, the Fraternity was in a position to address the fraternal experience and focus its efforts on enhancing the experience for all members. TKE invested considerable resources upgrading its infrastructure, with a strong emphasis on communications. The TKE website was fully expanded for easy access by undergraduates and alumni, and TKE became the first fraternity in the world to offer an on-line registration system for its new members. In order to provide better chapter service, TKE was divided into regions and the professional staff was reorganized to support this servicing concept.
+
+The 51st Conclave was held at the Fairmont Hotel in New Orleans, Louisiana. Robert D. Planck was elected Grand Prytanis and TKE released material to solidify the Fraternitys identity with a "Redefining Fraternity" public awareness campaign and a focus on scholarship, character, leadership, teamwork, service, and brotherhood. Regional Leadership Conferences, a springtime weekend leadership and training program started in 1984 and suspended prior to Centennial, were reinstated in cities across North America in 2002. The regional servicing concept was further enhanced during the biennium as Province volunteers became an integral part of the chapter service team. For the first time in more than a decade, TKE began to experience growth in our average chapter size and in our total number of collegiate members.
+
+In 2003, TKE held its 52nd Conclave at the Omni Mandalay Hotel at Las Colinas in Irving, Texas and Mark C. Romig was elected Grand Prytanis. Life Loyal Teke was unveiled as the newest Fraternity program.
+
+The 53rd Conclave returned to The Fairmont Hotel in New Orleans, Louisiana, just weeks before Hurricane Katrina made landfall in the summer of 2005. Mark A. Fite was elected Grand Prytanis, and the TKE staff was reorganized to place further emphasis on volunteer chapter servicing, as the focus of the biennium was declared to be involvement, recruitment, and achievement. This Conclave made TKE history, as The Fairmont has now hosted more Conclaves than any other property, including the original Alpha Chapter house.
+
+In 2007, TKE ventured back to the west coast for the 54th Conclave, held at the historic Riviera Hotel and Casino on the Las Vegas strip. This was the first time in Fraternity history that TKE held an off-site event at a casino/hotel owned by Fraters, as the owners of the Hooters Casino hosted an off-site celebration. The next morning, hundreds of Tekes traveled to the Boys and Girls Club of Las Vegas for Kids Day, a TKE service project. Another first was the induction of members into the TKE Circle of Excellence, the newest Fraternity recognition for lifetime achievement.
+      </p>
+    </div>
+    </script>
+
+    <script src="text/template" id="contact-template">
+    <header>
+      <img id="letters2" src="images/tke-letters.svg">
+      <img id="logo2" src="images/TKE_2.png">
+      <nav>
+        <ul>
+          <li><a href="#/undergraduates">Home</a></li>
+          <li><a href="#/undergraduates/information">Information</a></li>
+          <li><a href="#/undergraduates/contact">Contact</a></li>
+          <li><a href="#/alumni">Alumni</a></li>
+          <li><a href="http://www.tkegear.com/">Shop</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="mitch-block"></div>
+    <div id="mitch-contact">
+      <h1>Mitchell Tomlinson</h1>
+      <h2>Position: Epi-Prytanis</h2>
+      <a href="">336-816-1170</a>
+    </div>
+    <div id="john-block"></div>
+    <div id="john-contact">
+      <h1>John Scott Martin</h1>
+      <a href="">919-357-8836</a>
+    </div>
+    <div id="trey-block"></div>
+    <div id="trey-contact">
+      <h1>Trey Lawson</h1>
+      <h2>Position: Prytanis</h2>
+      <a href="">813-924-3254</a>
+    </div>
+    <div id="nick-block"></div>
+    <div id="nick-contact">
+      <h1>Nick Lavella</h1>
+      <h2>Position: Histor</h2>
+      <a href="">704-439-6166</a>
+    </div>
+    <div id="will-block"></div>
+    <div id="will-contact">
+      <h1>Will Abee</h1>
+      <a href="">336-240-2132</a>
+    </div>
+    <div id="james-block"></div>
+    <div id="james-contact">
+      <h1>James Charles</h1>
+      <a href="">910-554-7638</a>
+    </div>
+    <div id="jason-block"></div>
+    <div id="jason-contact">
+      <h1>Jason Kirschner</h1>
+      <a href="">336-813-1850</a>
+    </div>
+    </script>
+
+    <script src="scripts/vendor.js"></script>
+            <script src="//www.parsecdn.com/js/parse-1.2.19.min.js"></script>
+
+        <script src="scripts/main.js"></script>
+</body>
+</html>
