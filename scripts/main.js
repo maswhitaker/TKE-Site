@@ -22,7 +22,7 @@ var AlumniView = Parse.View.extend({
   initialize: function(){
     this.render();
     $(".container").html(this.el);
-    $("body").css("background-image","url('images/tke-beach.JPG')");
+    $("body").css("background-image","url('http://cl.ly/image/1K0z381Z3X07/tke-beach.JPG')");
   },
   render: function(){
     this.$el.html(this.template(this.model));
@@ -34,7 +34,7 @@ var UndergraduatesView = Parse.View.extend({
   initialize: function(){
     this.render();
     $(".container").html(this.el);
-    $("body").css("background-image","url('images/tke-beach.JPG')");
+    $("body").css("background-image","url('http://cl.ly/image/1K0z381Z3X07/tke-beach.JPG')");
   },
   render: function(){
     this.$el.html(this.template(this.model));
