@@ -46,7 +46,7 @@ var InformationView = Parse.View.extend({
   initialize: function(){
     this.render();
     $(".container").html(this.el);
-    $("body").css("background-image","url('images/tke-trophy.jpg')");
+    $("body").css("background-image","url('http://cl.ly/image/1f0e181a3O2M/tke-trophy.jpg')");
 
   },
   render: function(){
@@ -59,7 +59,7 @@ var ScrollsView = Parse.View.extend({
   initialize: function(){
     this.render();
     $(".container").html(this.el);
-    $("body").css("background-image","url('images/tke-trophy.jpg')");
+    $("body").css("background-image","url('http://cl.ly/image/1f0e181a3O2M/tke-trophy.jpg')");
 
   },
   render: function(){
@@ -72,7 +72,7 @@ var ActivememberView = Parse.View.extend({
   initialize: function(){
     this.render();
     $(".container").html(this.el);
-    $("body").css("background-image","url('images/tke-trophy.jpg')");
+    $("body").css("background-image","url('http://cl.ly/image/1f0e181a3O2M/tke-trophy.jpg')");
 
   },
   render: function(){
@@ -85,7 +85,7 @@ var AwardsView = Parse.View.extend({
   initialize: function(){
     this.render();
     $(".container").html(this.el);
-    $("body").css("background-image","url('images/tke-trophy.jpg')");
+    $("body").css("background-image","url('http://cl.ly/image/1f0e181a3O2M/tke-trophy.jpg')");
 
   },
   render: function(){
@@ -98,7 +98,7 @@ var PhotoView = Parse.View.extend({
   initialize: function(){
     this.render();
     $(".container").html(this.el);
-    $("body").css("background-image","url('images/tke-trophy.jpg')");
+    $("body").css("background-image","url('http://cl.ly/image/1f0e181a3O2M/tke-trophy.jpg')");
 
   },
   render: function(){
@@ -111,7 +111,7 @@ var OfficerView = Parse.View.extend({
   initialize: function(){
     this.render();
     $(".container").html(this.el);
-    $("body").css("background-image","url('images/tke-trophy.jpg')");
+    $("body").css("background-image","url('http://cl.ly/image/1f0e181a3O2M/tke-trophy.jpg')");
 
   },
   render: function(){
@@ -124,7 +124,7 @@ var HistoryView = Parse.View.extend({
   initialize: function(){
     this.render();
     $(".container").html(this.el);
-    $("body").css("background-image","url('images/tke-trophy.jpg')");
+    $("body").css("background-image","url('http://cl.ly/image/1f0e181a3O2M/tke-trophy.jpg')");
 
   },
   render: function(){
@@ -137,7 +137,7 @@ var ContactView = Parse.View.extend({
   initialize: function(){
     this.render();
     $(".container").html(this.el);
-    $("body").css("background-image","url('images/tke-trophy.jpg')");
+    $("body").css("background-image","url('http://cl.ly/image/1f0e181a3O2M/tke-trophy.jpg')");
     $("body").css("background-size","1100px 800px");
     $("body").css("background-repeat", "no-repeat");
     $("#mitch-block").mouseover(function(){
